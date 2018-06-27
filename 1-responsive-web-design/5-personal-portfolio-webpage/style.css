@@ -1,0 +1,301 @@
+/* some basic setup */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  line-height: 1.5 !important;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #bec4ce;
+  background-color: #dadee5;
+}
+
+header div.container {
+  text-align: center;
+  max-width: 80%
+}
+
+h1 {
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 5% 0
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin: 3% 0;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center
+}
+
+p,
+p ul {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+}
+
+a:link {
+  text-decoration: none
+}
+
+a:visited {
+  text-decoration: none;
+  color: #303030;
+}
+
+/*dont quite get this yet
+.glyphicon.glyphicon-triangle-bottom {
+  position: fixed;
+  top: 40%; left: 10%;} */
+
+/*navigation bar*/
+
+nav.navbar,
+.navbar-brand {
+  position: fixed;
+  /*needs to be fixed, not absolute*/
+  padding: 1rem;
+  opacity: 0.75;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .navbar-brand {
+  padding: 1.5rem;
+}
+
+nav ul.nav {
+  display: inline-block;
+}
+
+/*-- header--*/
+
+header {
+  background-image: url(https://s19.postimg.cc/kkcut3sk3/headerwrapper.jpg);
+  /* to stop the background from tiling as the viewport gets bigger and small you must include 2 values for the background-size, 100% is the best so the whole image fits within the box */
+  background-size: 100% 100%;
+  background-color: white;
+}
+
+header {
+  padding: 20% 0 20% 0;
+  color: white;
+}
+
+header .col-md-9 {
+  /*  background-color: blue; */
+  padding: 2.5% 0;
+}
+
+header .col-md-9 h1 {
+  /*  background-color: green; */
+  padding: 5% 0;
+}
+
+header .col-md-3 {
+  /*  background-color: red;   */
+}
+
+header .col-md-3 img {
+  height: 100%;
+  width: 100%;
+  border: 1rem solid #15B3C5;
+  border-radius: 15rem;
+  margin: 0 auto;
+}
+
+header .glyphicon.glyphicon-triangle-bottom {
+  opacity: 0.8;
+  position: fixed;
+  top: 35rem;
+}
+
+/* portfolio */
+
+#portfolio {
+  background-color: white;
+}
+
+#portfolio .col-md-4 {
+  text-align: center;
+}
+
+#portfolio h2 {
+  color: white;
+  font-weight: bold;
+}
+
+#portfolio .material-icons.md-48 {
+  font-size: 8rem;
+  padding: 15% 0;
+  width: 100%;
+  background: url();
+  background-size: 100%;
+  background-color: #15B3C5;
+  /*googled how to do this */
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0
+}
+
+#portfolio .bkg-bubbles {
+  background-image: url(https://s19.postimg.cc/3l3wdlwpf/rain-380634_960_720.jpg);
+  background-color: white;
+}
+
+#portfolio .col-md-4 p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+#portfolio .col-md-4 h3 {
+  padding-top: 1rem;
+}
+
+#portfolio .thumbnail {
+  max-width: 600px;
+  padding: 0;
+  opacity: 0.85
+}
+
+#portfolio .thumbnail:hover {
+  background-color: #15B3C5;
+  color: white;
+  border-color: #15B3C5;
+  font-weight: bolder;
+  box-shadow: 0 0 1.5rem white;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#portfolio .thumbnail:focus {
+  background-color: #15B3C5;
+  color: white;
+  border-color: #15B3C5;
+  font-weight: bolder;
+  box-shadow: 0 0 1.5rem white;
+}
+
+/*about section */
+
+#about {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-size: 100%;
+  background-color: white;
+  padding-bottom: 5%;
+}
+
+#about h2 {
+  font-weight: bold;
+  color: #303030;
+}
+
+#about p,
+#about ul {
+  font-size: 1.2rem
+}
+
+#about .col-md-6 {
+  margin: 0 auto;
+  border: 0.25rem solid #303030;
+  background-color: white;
+}
+
+#about img {
+  display: inline-block;
+  margin: 0 auto;
+  border: 0.25rem solid #303030;
+}
+
+#about i {
+  font-size: 5rem;
+  padding: 2rem;
+}
+
+#about .col-md-1 {
+  background-color: white;
+  border: 0.25rem solid #303030
+}
+
+/* contact section */
+
+#contact {
+  background-image: url(https://s19.postimg.cc/5bmxfbbqb/wv_X65_GJj.jpg);
+  background-size: 100%;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+#contact h2 {
+  color: ;
+  font-weight: bold;
+}
+
+#contact .row {
+  background-color: hsla(186, 0%, 87%, 0.4);
+}
+
+#contact i {
+  font-size: 6rem;
+  padding: 2rem;
+/*  height: 100%;*/
+  color: #303030;
+}
+
+#contact i.fab-facebook {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+#contact i:hover {
+  color: white;
+  background-color: #15B3C5;
+  transition: 0.3s;
+}
+
+#contact i:focus {
+  color: white;
+  background-color: #15B3C5;
+}
+
+#contact .col-md-2 {
+  /*dont know how to use these properly */
+  max-width: 130px;
+  margin: 0 auto;
+}
+
+/*footer*/
+
+footer {
+  height: 9rem;
+  background-color: #303030;
+  border-top: 0.2rem solid #26ABBA;
+}
+
+footer p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem;
+}

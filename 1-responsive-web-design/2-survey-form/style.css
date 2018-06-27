@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	position: relative;
+	padding: 30px;
+	background-color: #798796;
+	color: white;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: #798796;
+}
+
+/* theme changing */
+
+.theme-changer {
+  position: absolute;
+  height: 15px;
+  width: 160px;
+}
+
+.theme-changer button {
+	border: 0;
+	box-shadow: 0 0 2px grey;
+/*	outline: none;
+*/
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+.theme-changer .dark, .theme-changer .light {
+	height: 100%;
+  width: 80px;
+  padding: 5px 15px;
+}
+
+.theme-changer .dark {
+  float: left;
+  border-radius: 5px 0 0 5px;
+}
+
+.theme-changer .light {
+  float: right;
+  border-radius: 0 5px 5px 0;
+}
+
+.theme-changer button:hover {
+	opacity: 0.9;
+}
+
+.theme-changer .dark {
+	background: #2A2F34;
+}
+
+.theme-changer .light {
+  background: #F6F6F6;
+}
+
+.theme-changer .dark#lighton {
+	background: #798796;
+}
+
+.theme-changer .light#darkon {
+	background: #D3D3D3;
+}
+
+/* form styling */
+
+@media (max-width: 376px) {
+	body {
+		padding: 0;
+	}
+}
+
+@media (min-width: 1440px) {
+	body {
+		font-size: 1.2rem;
+	}
+}
+
+.form-container {
+	background: rgba(0,0,0,0.65);
+	width: 60%;
+	min-width: 350px;
+	max-width: 800px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 0 2px grey;
+	padding: 20px 40px;
+}
+
+.form-container h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #0ed0e6;
+}
+
+.form-container abbr {
+	color: #ff0080;
+}
+
+.form-container .abbreviated {
+	font-size: 0.9rem;
+}
+
+.form-container .emoji {
+	font-size: 1.5rem;
+}
+
+.form-container form > div, .form-container form > fieldset {
+	margin-top: 1em;
+}
+
+.form-container fieldset {
+	padding: 10px;
+}
+
+.form-container select, .form-container textarea {
+	display: block;
+	margin-top: 5px;
+	font-size: 1rem;
+}
+
+.form-container form li {
+	list-style-type: none;
+} 
+
+.form-container textarea {
+	vertical-align: top;
+	min-width: 100%;
+	max-width: 100%;
+	margin-top: 10px;
+}
+
+.form-container div > input {
+	width: 100%;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+
+.form-container li > input {
+	margin-top: 10px;
+}
+
+.form-container fieldset:nth-of-type(1) {
+	border-color: #0ed0e6;
+}
+
+.form-container fieldset:nth-of-type(2) {
+	border-color: #0ed0e6;
+}
+
+.form-container button {
+	  display: block;
+	  margin: 20px auto;
+	  padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background: #ffbf00;
+    color: white;
+}
+
+.form-container button:hover {
+	background: rgba(255, 191, 0, 0.85);
+}
+
+.form-container button:active {
+	box-shadow: 0 0 2px grey;
+}
+
+.form-container input, .form-container textarea {
+	text-indent: 5px;
+}
+
+.form-container input:focus, .form-container select:focus, .form-container textarea:focus {
+  outline-color: #ffbf00;
+}	
+
+/* github logo */
+
+img {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 20px;
+	transform: scale(1.1);
+}
+
+
+
+/*===============================*/
+
+
+
+
+
+/*input, textarea, select {*/
+	  /* remove default styling */
+/*	border: 0;
+	box-shadow: none;*/
+/*	outline: none;*/
+
+/*	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;*/
+}
+
+/*input:focus, textarea:focus, select:focus {
+	border: 2px solid cyan;
+}*/
+
+/*input::-webkit-input-placeholder {
+	color: cyan;
+}
+
+input::-moz-input-placeholder {
+	color: cyan;
+}
+
+ input:-moz-input-placeholder {
+	color: cyan;
+}
+
+input::-ms-input-placeholder {
+	color: cyan;}*/
