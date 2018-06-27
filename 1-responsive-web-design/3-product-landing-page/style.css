@@ -275,6 +275,17 @@ img[src="images/block1.jpg"] {
 	overflow: hidden;
 }
 
+.two .fa-play {
+	font-size: 2rem;
+	color: white;
+	margin-top: 30vh;
+	transition: all 0.5s ease
+}
+
+.two .fa-play:hover {
+	/*set using javascript*/
+}
+
 .two > button > img {
 	width: 50vw;
 	visibility: hidden;
@@ -319,17 +330,6 @@ img[src="images/block1.jpg"] {
 
 .two button:last-child:hover {
 	background-color: #C6B27B;
-}
-
-.two .fa-play {
-	font-size: 2rem;
-	color: white;
-	margin-top: 30vh;
-	transition: all 0.5s ease
-}
-
-.two .fa-play:hover {
-	/*set using javascript*/
 }
 
 @media (max-width: 900px) {
