@@ -289,27 +289,11 @@ img[src="images/block1.jpg"] {
 	transform: skewY(3.5deg);
 	transform-origin: right;
 	height: 100vh;
-	transition: all 1s ease;
-}
-
-.two button:hover {
-	background-blend-mode: hard-light;
-	cursor: pointer;
-}
-
-.two .fa-play {
-	font-size: 2rem;
-	color: white;
-	margin-top: 30vh;
-	transition: all 0.3s ease
-}
-
-.two .fa-play:hover {
-	/*set using javascript*/
+	transition: all 0.5s ease;
 }
 
 .two > button:first-child {
-	background: url('images/block2a.jpg') #8974C2;
+	background: url('images/block2a.jpg');
 	background-size: 50vw;
 	background-position: left 5vh;
 	background-attachment: fixed;
@@ -317,11 +301,35 @@ img[src="images/block1.jpg"] {
 }
 
 .two > button:last-child {
-	background: url('images/block2b.jpg') #C6B27B;
+	background: url('images/block2b.jpg');
 	background-size: 50vw;
 	background-position: right 5vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+}
+
+.two button:hover {
+	background-blend-mode: hard-light;
+	cursor: pointer;
+}
+
+.two button:first-child:hover {
+	background-color: #8974C2;
+}
+
+.two button:last-child:hover {
+	background-color: #C6B27B;
+}
+
+.two .fa-play {
+	font-size: 2rem;
+	color: white;
+	margin-top: 30vh;
+	transition: all 0.5s ease
+}
+
+.two .fa-play:hover {
+	/*set using javascript*/
 }
 
 @media (max-width: 900px) {
