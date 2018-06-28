@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Wallpoet');
+
+.logo {
+	position: relative;
+	width: 10rem;
+	height: 10rem;
+}
+
+.logo-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: 'Wallpoet', cursive;
+	color: white;
+	font-size: 4rem;
+	padding: 2.8rem 1.8rem; 
+	letter-spacing: -5px;
+}
+
+.logo-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
