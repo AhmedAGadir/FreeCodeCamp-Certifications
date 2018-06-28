@@ -7,6 +7,11 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 /* ========== header and navbar styling =========*/
 
 header {
@@ -92,7 +97,6 @@ nav li a {
 	margin: 0 15px;
 	padding: 10px 5px 15px 5px;
 	color: #828282;
-	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 0.05rem;
 	font-size: 0.8rem;
@@ -133,6 +137,10 @@ nav button span {
 	animation-fill-mode: forwards;
 }
 
+nav button:hover {
+	cursor: pointer;
+}
+
 @keyframes buttonEffect {
 	0% {
 		width: 0px;
@@ -167,11 +175,6 @@ main {
 	padding: 50px;
 	/*padding top needed for navbar links */
 	padding-top: 50px;
-}
-
-.block a {
-	text-decoration: none;
-	color: inherit;
 }
 
 @media (max-width: 780px) {
@@ -350,7 +353,7 @@ img[src="images/block1.jpg"] {
 
 #modal {
 	position: fixed;
-	background-color: rgba(0,0,0,0.9);
+	background-color: rgba(0,0,0,1);
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -365,7 +368,7 @@ img[src="images/block1.jpg"] {
 	font-size: 40px;
 	color: white;
 	float: right;
-	padding: 10px 20px;
+	padding: 10px 20px 0 20px;
 	display: none;
 	transition: all 0.3s ease;
 	cursor: pointer;
@@ -443,6 +446,7 @@ img[src="images/block3.png"] {
 	background-size: 100vw;
 	background-attachment: scroll;
 	background-position: center;
+	margin-bottom: 20vh;
 }
 
 #block4, 
@@ -608,7 +612,143 @@ img[src="images/block3.png"] {
 
 /* ========== footer =========*/
 
+footer {
+	border-top: 2px solid #E5E5E5;
+	display: flex;
+	flex-wrap: wrap;
+	color: #828282;
+	justify-content: space-between;
+	margin: 5vh 0;
+}
 
+.contact, .bottom {
+	width: 100%;
+	padding: 40px 20px 0 20px;
+}
+
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.contact p, 
+.contact button {
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+}
+
+.contact p {
+	margin-bottom: 20px;
+}
+
+.contact form, 
+.contact .social-media {
+	flex: 1 400px;
+	margin-bottom: 40px;
+}
+
+.contact input[type="email"] {
+	width: 250px;
+	height: 40px;
+	font-size: 1rem;
+	text-indent: 5px;
+	box-shadow: none;
+
+}
+
+.contact button {
+	width: 110px;
+	height: 40px;
+	font-size: 0.9rem;
+	background-color: #00C4ED;
+	color: white;
+	transition: all 0.3s ease;
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	border-radius: 2px;
+	position: relative;
+	z-index: 1;
+}
+
+.contact button span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 2px;
+	background: #00A7CA;
+	height: 100%;
+	z-index: -1;
+
+	/*javascript used for animation-name setting*/
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.contact button:hover {
+	/*background-color: #00A7CA;*/
+	cursor: pointer;
+}
+
+@media (max-width: 425px) {
+	.contact button {
+		margin-top: 10px;
+	}
+}
+
+.contact .social-media i {
+	font-size: 2rem;
+	padding: 0px 20px;
+	color: #828282;
+	transition: all 0.3s ease;
+}
+
+.contact .social-media i:hover {
+	color: #EB0028;
+	cursor: pointer;
+}
+
+.bottom {
+	background-color: #F9F9F9;
+}
+
+.bottom .phone-number {
+	color: #49B5D9
+}
+
+.bottom p {
+	padding: 10px 0;
+}
+
+.bottom p:first-of-type {
+	float: left;
+}
+
+.bottom p:last-of-type {
+	float: right;
+}
+
+.bottom hr {
+	clear: both;
+	margin: 20px 0;
+	border-top: 1px solid #E5E5E5;
+}
+
+@media (max-width: 768px) {
+	.bottom p:first-of-type,
+	.bottom p:last-of-type {
+		float: initial;
+	}
+}
+
+.bottom > span, 
+.bottom > a {
+	font-size: 0.8rem;
+	margin-right: 20px;
+}
 
 /* ========== github logo =========*/
 

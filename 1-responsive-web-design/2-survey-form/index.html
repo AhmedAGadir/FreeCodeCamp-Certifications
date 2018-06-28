@@ -27,7 +27,7 @@
 		<h1 id="title">Survey Form</h1>
 
 		<p id="description">Let us know how we can improve freeCodeCamp <span class="emoji">👨‍💻</span></p>
-		<p class="abbreviated">(<abbr title-"required">*</abbr> - indicates a required field)</p>
+		<p class="abbreviated">(<abbr title="required">*</abbr> - indicates a required field)</p>
 
 		<form action='#' method='POST' id="survey-form">
 			<!-- the id attribute in the label tag is unneccessary and is just confusing. the only things that are neccessary are:
@@ -37,15 +37,15 @@
 			.....
 			the id attribute in the label tag is only there to fulfill the freecodecamp criteria for this challenge-->
 			<div>
-				<label for="name" id="name-label"><abbr title-"required">*</abbr>Name:</label>
+				<label for="name" id="name-label"><abbr title="required">*</abbr>Name:</label>
 				<input type="text" id="name" name="user_name" placeholder="Enter your name" required>
 			</div>
 			<div>
-				<label for="mail" id="email-label"><abbr title-"required">*</abbr>Email:</label>
-				<input type="email" id="mail" name="user_mail" placeholder="Enter your email address" required min=10 max=120>
+				<label for="mail" id="email-label"><abbr title"required">*</abbr>Email:</label>
+				<input type="email" id="mail" name="user_mail" placeholder="Enter your email address" required>
 			</div>
 			<div>
-				<label for="number" id="number-label"><abbr title-"required">*</abbr>Age:</label>
+				<label for="number" id="number-label"><abbr title="required">*</abbr>Age:</label>
 				<input type="number" id="number" name="user_age" placeholder="Enter your age" required min="1" max="110">
 			</div>
 			<div>
@@ -60,7 +60,7 @@
 				</select>
 			</div>
 			<fieldset>
-				<legend><abbr title-"required">*</abbr>How likely is it that you would recommend freeCodeCamp to a friend?</legend>
+				<legend><abbr title"required">*</abbr>How likely is it that you would recommend freeCodeCamp to a friend?</legend>
 				<ul>
 					<li>
 						<input type="radio" checked id="definitely" name="user_recommendation" value="definitely">

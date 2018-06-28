@@ -66,11 +66,18 @@ function closeModal() {
 
 
 
-// ============= NAVIGATION BAR BUTTON EFFECT =================
+// ============= NAVIGATION BAR AND CONTACT BUTTON EFFECT =================
 
 document.querySelector('nav button').addEventListener('mouseover', () => {
 	document.querySelector('nav button span').style.animationName = 'buttonEffect'
 })
 document.querySelector('nav button').addEventListener('mouseout', () => {
 	document.querySelector('nav button span').style.animationName = 'buttonEffectRemoval'
+})
+
+document.querySelector('.contact button').addEventListener('mouseover', () => {
+	document.querySelector('.contact button span').style.animationName = 'buttonEffect'
+})
+document.querySelector('.contact button').addEventListener('mouseout', () => {
+	document.querySelector('.contact button span').style.animationName = 'buttonEffectRemoval'
 })
