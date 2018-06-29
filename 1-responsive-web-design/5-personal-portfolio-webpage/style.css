@@ -27,6 +27,7 @@ h3 {
 header {
 	height: 100vh;
 	text-align: center;
+	/*background-color: #436cff;*/
 	background-image: url('close-up-code-coding-160107.jpg');
   background-size: 100vw;
   background-position: top center;
@@ -45,9 +46,9 @@ header h1 {
 	color: white;
 	display: inline-block;
 	text-align: left;
-	padding: 15px;
+	padding: 20px 30px;
 	border-radius: 5px;
-	line-height: 1.5;
+	line-height: 1.4;
 	background: rgba(0,0,0,0.6);
 	position: absolute;
 	top: 50%;
@@ -56,7 +57,7 @@ header h1 {
 }
 
 header .role {
-	text-align: left;
+	
 }
 
 header .pipe {
@@ -74,8 +75,8 @@ header .pipe {
 
 .one .selfie-wrap {
 	position: relative;
-	width: 220px;
-	height: 220px;
+	width: 300px;
+	height: 300px;
 	margin: 20vh auto 0; 
 }
 
@@ -87,7 +88,7 @@ header .pipe {
 	position: absolute;
 }
 
-.one img[src="selfie.jpg"] {
+.one img[src="photo3.png"] {
 	width: 85%;
 	border-radius: 50%;
 

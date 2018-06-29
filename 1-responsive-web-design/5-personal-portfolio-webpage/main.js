@@ -1,5 +1,5 @@
 
-// ================ INPUT FIELD STYLING =====
+// ================ HEA STYLING =====
 
 
 let role = document.querySelector('header h1 .role');
@@ -16,7 +16,7 @@ let careers = {
 
 	updateRoleText() {
 		if (this.letterInd == this.roleArr[this.roleInd].length) {
-			if (this.counter <= 30) {
+			if (this.counter < 40) {
 				if (this.counter < 5 || this.counter > 9 && this.counter < 15 || this.counter > 19 && this.counter < 25 || this.counter > 29) {
 					pipe.style.borderRightColor = 'white';
 				} else {
@@ -41,4 +41,4 @@ let careers = {
 let inputFill = setInterval(() => {
 	careers.updateRoleText()
 	role.textContent = careers.roleText;
-}, 100)
+}, 90)
