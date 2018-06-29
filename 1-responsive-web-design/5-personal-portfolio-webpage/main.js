@@ -2,46 +2,43 @@
 // ================ INPUT FIELD STYLING =====
 
 
-let input =document.querySelector('header h1 input')
-
-let approxCharacterLength = 16; /* in pixels */
-let updateInputFieldLength = () => input.style.width = ((input.value.length + 1) * approxCharacterLength) + 'px';
-
-window.addEventListener('DOMContentLoaded', updateInputFieldLength);  
-input.addEventListener('input', updateInputFieldLength);
+let role = document.querySelector('header h1 .role');
+let pipe = document.querySelector('header h1 .pipe')
 
 let careers = {
 	roleArr: ['Front-End Developer.','User Interface Designer.', 'Full-Stack Engineer.'],
 	roleInd: 0,
 	letterInd: 0,
-	inputValue: '',
+	roleText: '',
+	
 	counter: 0,
+	delay: 30, //ms
 
-	updateInputValue() {
+	updateRoleText() {
 		if (this.letterInd == this.roleArr[this.roleInd].length) {
-			
-			if (this.counter < 30) {
-				this.inputValue = (this.counter % 10 == 0) ? this.inputValue.trim() + '|' : this.inputValue.replace('|', ' ');
+			if (this.counter <= 30) {
+				if (this.counter < 5 || this.counter > 9 && this.counter < 15 || this.counter > 19 && this.counter < 25 || this.counter > 29) {
+					pipe.style.borderRightColor = 'white';
+				} else {
+					pipe.style.borderRightColor = 'transparent';
+				}
 				this.counter++
 				return;
 			}
 			this.counter = 0;
-			this.inputValue = '';
+			this.roleText = '';
 			this.roleInd += 1;
 			this.letterInd = 0;
 		}
 		if (this.roleInd > this.roleArr.length - 1) {
 			this.roleInd = 0;
 		}
-		this.inputValue += this.roleArr[this.roleInd][this.letterInd];
+		this.roleText += this.roleArr[this.roleInd][this.letterInd];
 		this.letterInd += 1;
 	}
-
-
 }
 
 let inputFill = setInterval(() => {
-	careers.updateInputValue()
-	input.value = careers.inputValue;
-	updateInputFieldLength()
+	careers.updateRoleText()
+	role.textContent = careers.roleText;
 }, 100)
