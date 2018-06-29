@@ -84,11 +84,19 @@ header input {
 	border: 6px solid white;
 }
 
-.one p {
-	font-size: 1.6rem;
+.one h2, .one p{
 	color: white;
 	width: 60%;
 	margin: 0 auto;
 	text-align: center
+}
+
+.one h2 {
+	font-size: 1.8rem;
+	margin-bottom: 15px;
+}
+
+.one p {
+	font-size: 1.4rem;
 }
 
