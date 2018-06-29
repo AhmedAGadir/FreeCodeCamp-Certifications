@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Roboto');
 
+/*
+blue: 436CFF;
+purple: 8C43FF;
+red: ff4359;
+
+*/
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,6 +17,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	color: #161618;
 }
 
 /* ============ HEADER ============ */
@@ -177,6 +187,7 @@ p {
 
 .introduction {
 	background-color: #ff4359;
+	min-height: 100vh;
 }
 
 .introduction .logo {
@@ -192,14 +203,8 @@ p {
 }
 
 .degree {
-	min-height: 200vh;
-	background-color: #8C43FF;;
-}
-
-.degree-image {
-	width: 325px;
-	border: 5px solid white;
-	border-radius: 10px;
+	min-height: 100vh;
+	background-color: #ff4359;;
 }
 
 .degree-text {
@@ -271,6 +276,11 @@ p {
 	}
 }
 
+.degree-image {
+	width: 325px;
+	border: 5px solid white;
+	border-radius: 10px;
+}
 
 .expertise {
 	width: 70%;
