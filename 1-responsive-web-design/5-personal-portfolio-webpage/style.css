@@ -172,8 +172,11 @@ p {
 
 .introduction, .degree {
 	padding: 20vh 10vw;
-	background-color: #8C43FF;
 	color: white;
+}
+
+.introduction {
+	background-color: #ff4359;
 }
 
 .introduction .logo {
@@ -188,7 +191,10 @@ p {
 	text-align: center
 }
 
-.degree {}
+.degree {
+	min-height: 200vh;
+	background-color: #8C43FF;;
+}
 
 .degree-image {
 	width: 325px;
@@ -265,3 +271,15 @@ p {
 	}
 }
 
+
+.expertise {
+	width: 70%;
+	border: 2px solid lightgrey;
+	border-radius: 10px;
+	height: 600px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: -10vh;
+	background-color: white;
+}
