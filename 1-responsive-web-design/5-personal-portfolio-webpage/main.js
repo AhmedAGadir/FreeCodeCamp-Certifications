@@ -9,9 +9,8 @@ let careers = {
 	roleInd: 0,
 	letterInd: 0,
 	roleText: '',
-	
 	counter: 0,
-	delay: 30, //ms
+
 
 	updateRoleText() {
 		if (this.letterInd == this.roleArr[this.roleInd].length) {
