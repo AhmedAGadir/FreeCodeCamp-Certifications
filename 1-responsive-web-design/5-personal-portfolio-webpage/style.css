@@ -13,13 +13,13 @@ body {
 header {
 	width: 100vw;
 	height: 100vh;
-	background-color: #798796;
-	text-align: center
-		/* background-image: url('close-up-code-coding-160107.jpg');
-  background-image: url('https://s19.postimg.cc/kkcut3sk3/headerwrapper.jpg');
-  background-size: 100vw;
+	background-color: #5299EF;
+	text-align: center;
+/*	background-image: url('close-up-code-coding-160107.jpg');*/
+/*  background-image: url('https://s19.postimg.cc/kkcut3sk3/headerwrapper.jpg');
+  background-size: 100vw;*/
 	background-repeat: no-repeat;
-	background-blend-mode: multiply; */
+	background-blend-mode: multiply; 
 }
 
 /*a wrap is needed infront of the header 
@@ -59,6 +59,8 @@ header input {
 	font-weight: inherit;
 	color: inherit;
 	/*width set using JS*/
+	/*background-color: blue;*/
+	display: block;
 }
 
 .logo {
