@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 * {
 	margin: 0;
@@ -7,36 +7,37 @@
 }
 
 body {
-	height: 1000px;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 header {
-	width: 100vw;
 	height: 100vh;
-	background-color: #5299EF;
+	/*background-color: #436cff;*/
+	/*background-color: #57729c;*/	
 	text-align: center;
-/*	background-image: url('close-up-code-coding-160107.jpg');*/
-/*  background-image: url('https://s19.postimg.cc/kkcut3sk3/headerwrapper.jpg');
-  background-size: 100vw;*/
+	background-image: url('close-up-code-coding-160107.jpg');
+ /* background-image: url('https://s19.postimg.cc/kkcut3sk3/headerwrapper.jpg');*/
+  background-size: 100vw;
 	background-repeat: no-repeat;
-	background-blend-mode: multiply; 
+	background-blend-mode: hard-light; 
 }
 
 /*a wrap is needed infront of the header 
 to stop users from being able to change the input value*/
 
 header h1 {
-	font-family: 'Lato', sans-serif;
 	color: white;
 	display: inline-block;
-	margin: 20vh auto;
+	height: 120px;
+	margin: 15vh auto;
 	text-align: center;
 	padding: 15px;
 	border-radius: 5px;
 	position: relative;
 
 	line-height: 1.5;
-	background: rgba(255,255,255,0.5);
+	/*background: rgba(255,255,255,0.5);*/
+	background: rgba(0,0,0,0.6);
 }
 
 h1:before {
@@ -67,3 +68,27 @@ header input {
 	transform: scale(0.5);
 	margin: 0 auto;
 }
+
+.one {
+	padding: 40px;
+	height: 300vh;
+	background-color: #8C43FF;
+}
+
+.one img[src="selfie.jpg"] {
+	width: 200px;
+	border-radius: 50%;
+	display: block;
+	margin: 20vh auto 5vh auto;
+	position: relative;
+	border: 6px solid white;
+}
+
+.one p {
+	font-size: 1.6rem;
+	color: white;
+	width: 60%;
+	margin: 0 auto;
+	text-align: center
+}
+

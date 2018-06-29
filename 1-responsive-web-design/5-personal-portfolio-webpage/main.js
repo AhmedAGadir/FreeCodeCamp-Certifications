@@ -4,7 +4,7 @@
 
 let input =document.querySelector('header h1 input')
 
-let approxCharacterLength = 14; /* in pixels */
+let approxCharacterLength = 16; /* in pixels */
 let updateInputFieldLength = () => input.style.width = ((input.value.length + 1) * approxCharacterLength) + 'px';
 
 window.addEventListener('DOMContentLoaded', updateInputFieldLength);  
