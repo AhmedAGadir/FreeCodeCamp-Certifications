@@ -1,6 +1,5 @@
 
-// ================ HEA STYLING =====
-
+// ================ HEADER STYLING =====
 
 let role = document.querySelector('header h1 .role');
 let pipe = document.querySelector('header h1 .pipe')
@@ -42,3 +41,4 @@ let inputFill = setInterval(() => {
 	careers.updateRoleText()
 	role.textContent = careers.roleText;
 }, 90)
+
