@@ -41,3 +41,10 @@ let inputFill = setInterval(() => {
 	role.textContent = careers.roleText;
 }, 90)
 
+
+//============ 
+let cogsWrap = document.querySelector('.cogs-wrap')
+cogsWrap.addEventListener('mouseover', () => Array.from(cogsWrap.children).forEach(cog => cog.style.animationDuration = '1s'));
+cogsWrap.addEventListener('mouseout', () => Array.from(cogsWrap.children).forEach(cog => cog.style.animationDuration = '4s'))
+
+

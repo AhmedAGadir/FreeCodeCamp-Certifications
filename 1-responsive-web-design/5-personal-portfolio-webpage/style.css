@@ -27,57 +27,64 @@ header {
 	background-color: #436cff;
 }
 
-header .button-wrap {
+header .header-button-wrap {
   position: absolute;
 	top: 20px;
 	right: 60px;
-	z-index: 1;
 	width: 90px;
 	height: 50px;
-	border-top: 3px solid white;
-	border-bottom: 3px solid white;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-color: #fff;
 	background-color: #436CFF;
-	color: white;
-
+	color: #fff;
+	transition: all 0.3s ease;
+	z-index: 2;
 }
 
-header .button-wrap button {
+header .header-button-wrap:hover {
+	border-color: #436CFF;
+	background-color: #fff;
+	color: #436CFF;
+}
+
+header .header-button-wrap button {
 	outline: none;
-	border: none;
 	box-shadow: none;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
 	width: 100%;
 	height: 100%;
+	font-size: 1.2rem;
 	background-color: inherit;
 	color: inherit;
-	font-size: 1.2rem;
-	transition: 0.3s all ease;
 }
 
-header .button-wrap button:before, 
-header .button-wrap button:after {
+header .header-button-wrap button:before, 
+header .header-button-wrap button:after {
 	content: '';
 	position: absolute;
 	top: -3px;
-	width: 50%;
-	height: 100%;
-	border: 3px solid white;
-	border-radius: 50%;
 	z-index: -1;
+	width: 50px;
+	height: 100%;
+	border: 3px solid;
+	border-radius: 50%;
 	background-color: inherit;
+	border-color: inherit;
 }
 
-header .button-wrap button:before {
-	left: -25%;
+header .header-button-wrap button:before {
+	left: -25px;
 }
-header .button-wrap button:after {
-	right: -25%;
+header .header-button-wrap button:after {
+	right: -25px;
 }
 
-header .button-wrap button:hover {
-	background-color: white;
-	border-color: #436CFF;
-	color: #436CFF;
-}
 
 header .header-wrap  {
 	width: 80%;
@@ -172,9 +179,14 @@ header i.fa-chevron-down:hover {
 
 
 h3 {
-	font-size: 1.8rem;
+	font-size: 2rem;
 	margin-top: 10vh;
 	margin-bottom: 5vh;
+}
+
+h4 {
+	font-size: 1.6rem;
+	margin: 5vh 0;
 }
 
 p {
@@ -222,7 +234,7 @@ p {
 }
 
 .degree-text {
-	width: 50%;
+	width: 52%;
 	order: 2;
 	text-align: left;
 }
@@ -294,10 +306,81 @@ p {
 	width: 70%;
 	border: 2px solid lightgrey;
 	border-radius: 10px;
-	height: 600px;
+	height: 140vh;
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
 	top: -10vh;
-	background-color: white;
+	background-color: #8C43FF;
+	color: #fff;
 }
+
+
+.recent-work {
+	color: #8C43FF;
+}
+
+
+.recent-work .recent-work-button-wrapper {
+	margin: 40px;
+	height: 60px;
+	width: 250px;
+	position: relative;
+	z-index:;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-color: #8C43FF;
+	color: #8C43FF;
+	background-color: #fff;
+	transition: all 0.3s ease;
+	z-index: ; /*messes up elemeent if set*/
+}
+
+.recent-work .recent-work-button-wrapper:hover {
+	border-color: #fff;
+	background-color: #8C43FF;
+	color: #fff;
+
+}
+
+.recent-work-button-wrapper button {
+	outline: none;
+	box-shadow: none;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+
+	width: 100%;
+	height: 100%;
+	font-size: 1.2rem;
+	background-color: inherit;
+	color: inherit;
+	position: relative;
+
+}
+
+.recent-work-button-wrapper button:before,
+.recent-work-button-wrapper button:after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	z-index: -1;
+	width: 60px;
+	background-color: inherit;
+	height: 100%;
+	border-radius: 50%;
+	border: 3px solid;
+	border-color: inherit;
+}
+
+.recent-work-button-wrapper button:before {
+	right: -30px;
+}
+
+.recent-work-button-wrapper button:after {
+	left: -30px;
+}
+

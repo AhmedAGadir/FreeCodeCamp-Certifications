@@ -8,12 +8,12 @@
 
 .logo-text {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	font-family: 'Wallpoet', cursive;
 	color: white;
 	font-size: 4rem;
-	padding: 2.8rem 1.8rem; 
 	letter-spacing: -5px;
 }
 
