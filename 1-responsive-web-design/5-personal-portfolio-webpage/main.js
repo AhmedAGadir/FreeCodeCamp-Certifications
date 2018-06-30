@@ -2,7 +2,7 @@
 // ================ HEADER STYLING =====
 
 let role = document.querySelector('header h1 .role');
-let pipe = document.querySelector('header h1 .pipe')
+let pipebar = document.querySelector('header h1 .pipebar')
 
 let careers = {
 	roleArr: ['Front-End Developer.','User Interface Designer.', 'Full-Stack Engineer.'],
@@ -16,9 +16,9 @@ let careers = {
 		if (this.letterInd == this.roleArr[this.roleInd].length) {
 			if (this.counter < 40) {
 				if (this.counter < 5 || this.counter > 9 && this.counter < 15 || this.counter > 19 && this.counter < 25 || this.counter > 29) {
-					pipe.style.borderRightColor = 'white';
+					pipebar.style.borderRightColor = 'white';
 				} else {
-					pipe.style.borderRightColor = 'transparent';
+					pipebar.style.borderRightColor = 'transparent';
 				}
 				this.counter++
 				return;
