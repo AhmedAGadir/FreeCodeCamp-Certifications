@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu|Lato|Roboto|Open+sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Roboto');
 
 * {
 	margin: 0;
@@ -6,43 +6,40 @@
 	box-sizing: border-box;
 }
 
-/* ========= TYPOGRAPHY ========= */
-
 body {
-	font-family: 'Open sans', sans-serif;
-	color: #fff;
+	font-family: 'Roboto', sans-serif;
 }
 
-h1 {	
-	font-family: 'Ubuntu', sans-serif;
+/*color:; white -- make everything */
+
+h1 {
 	font-size: 2rem;
 }
 
- h2 {
-	font-size: 1.8rem;
-	font-weight: lighter;
+h2 {
+	font-size: 2rem;
+	margin-top: 10vh;
+	margin-bottom: 5vh;
 }
 
-
-h3 {
+h2 {
 	font-size: 1.6rem;
+	margin: 5vh 0;
 }
 
-p, button, li {
+p {
 	font-size: 1.2rem;
 }
 
-
-/* ========= HEADER ========= */
+/* ======================== HEADER ====================== */
 
 header {
 	height: 100vh;
-	background-color: #ff4359; 
+	background-color: #436cff;
 }
 
 header .button-wrap {
-	position: absolute;
-	z-index: 1;
+  position: absolute;
 	top: 20px;
 	right: 60px;
 	width: 90px;
@@ -50,21 +47,22 @@ header .button-wrap {
 	border-top: 3px solid;
 	border-bottom: 3px solid;
 	border-color: #fff;
+	background-color: #436CFF;
 	color: #fff;
-	background-color: #ff4359;
-	transition: 0.5s all ease;
+	transition: all 0.3s ease;
+	z-index: 2;
 }
 
 header .button-wrap:hover {
-	border-color: #ff4359;
-	color: #ff4359;
+	border-color: #436CFF;
 	background-color: #fff;
+	color: #436CFF;
 }
 
-header button {
-	border: none;
+header .button-wrap button {
 	outline: none;
 	box-shadow: none;
+	border: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	-o-appearance: none;
@@ -73,81 +71,95 @@ header button {
 	width: 100%;
 	height: 100%;
 	font-size: 1.2rem;
-	color: inherit;
 	background-color: inherit;
+	color: inherit;
 }
 
-header button:before,
-header button:after {
+header .button-wrap button:before, 
+header .button-wrap button:after {
 	content: '';
 	position: absolute;
 	top: -3px;
-	border: 3px solid;
-	border-color: inherit;
+	z-index: -1;
 	width: 50px;
 	height: 100%;
+	border: 3px solid;
 	border-radius: 50%;
 	background-color: inherit;
-	z-index: -1;
+	border-color: inherit;
 }
 
-header button:before {
+header .button-wrap button:before {
 	left: -25px;
 }
-
-header button:after {
+header .button-wrap button:after {
 	right: -25px;
 }
 
-header .title-wrap {
+header .title-wrap  {
+	width: 80%;
 	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
+	 flex-wrap: wrap; 
 	align-items: center;
 	justify-content: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
 
-header .avatar-wrap {
-	width: 200px;
-	height: 200px;
-	position: relative;
-	margin: 20px;
-}
-
-header .avatar-outer-ring {
-	display: block;
-	width: 100%;
-	height: 100%;
-	border: 4px solid white;
-	border-radius: 50%
-}
-
-header h1 {
-	width: 500px;
-	text-align: center;
-}
-
-header img.avatar-img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
 
-	width: 85%;
+header .avatar-wrap {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+
+header .avatar-outer-ring {
+	width: 100%;
+	height: 100%;
+	border: 4px solid white;
 	border-radius: 50%;
+	position: absolute;
+}
+
+header .avatar-img {
+	width: 87.5%;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+header h1 {
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	width: 500px;
+	text-align: left;
+	line-height: 1.4;
+	padding: 0 20px;
+}
+
+header .pipebar {
+	border-right: 1px solid white;
+}
+
+@media (max-width: 768px) {
+	header h1 {
+		text-align: center;
+	}
 }
 
 header i.fa-chevron-down {
+	font-size: 1.5rem;
 	position: absolute;
 	bottom: 20px;
 	right: 50%;
-	font-size: 1.5rem;
 	color: white;
-
 	transition: all 0.5s ease;
 	transform: translateX(10px);
 
@@ -173,96 +185,70 @@ header i.fa-chevron-down:hover {
 	color: #293347;
 }
 
-/* ========= INTRODUCTION ========= */
+/* ======================== MAIN BODY ====================== */
 
-.intro-wrap {
-	min-height: 120vh;
-	padding: 10vh 60px;
+
+.introduction, .degree {
+	padding: 20vh 10vw;
+	min-height: 115vh;
 	background-color: #ff4359;
-	position: relative;
+	color: white;
 }
 
-.intro {
-	width: 70%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.intro .logo {
+.introduction .logo {
 	transform: scale(0.5);
-	margin: 0 auto 5vh;
+	margin: 0 auto;
 }
 
-.intro h2 {
-	margin-bottom: 40px;
-	color: #fff;
+.introduction h2, .introduction p {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center
 }
-
-.intro p {
-	color: #fff;
-	text-align: center
-}
-
-/* ========= DEGREE ========= */
 
 .degree {
-	padding: 10vh 60px 30vh;
-	background-color: #293347;
+	min-height: 125vh;
+	padding-top: 0;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
-@media (max-width: 767px) {
-	.degree {
-		flex-wrap: wrap;
-	}
-}
-
-.degree .text-wrap {
-	width: 650px;
-	padding: 30px;
-}
-
-.degree .img-wrap {
-	max-width: 350px;
-}
-
-@media (min-width: 767px) {
-	.degree .img-wrap {
-		order: -1;
-	}
-}
-
-.degree-img {
-	width: 100%;
+.degree-image {
+	width: 275px;
+	border: 5px solid white;
 	border-radius: 10px;
-	border: 2px solid lightgrey;
-	margin: 10vh 0;
+	margin: 5vh 0;
 }
 
-.degree .title-wrap {
+.degree-text {
+	width: 450px;
+	text-align: left;
+	order: 2;
+}
+
+.degree-title {
 	display: flex;
-	margin-bottom: 40px;
+	flex-wrap: wrap;
 	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 3vh
 }
 
-.degree h2 {
-	color: #fff;
-}
-.degree p {
-	color: #fff;
+.degree-text h2 {
+	position: relative;
+	margin: 0;
 }
 
-/* === COGS == */
 
-.degree .text-wrap .cogs-wrap {
+/* ======================== COGS ANIMATION ====================== */
+
+.degree-text .cogs-wrap {
 	transform: scale(0.8);
 	position: relative;
-  min-width: 73px;
+  width: 73px;
 	height: 55px;
 }
 
@@ -276,9 +262,10 @@ header i.fa-chevron-down:hover {
 	animation-timing-function: linear;
 }
 
-#cog2, #cog3 {
+#cog2 {
 	font-size: 1.5rem;
 	position: absolute;
+	top: 0;
 	right: 0;
 
 	animation-name: cog-rotate-clockwise;
@@ -287,12 +274,17 @@ header i.fa-chevron-down:hover {
 	animation-timing-function: linear;
 }
 
-#cog2 {
-	top: 0;
-}
-
 #cog3 {
+	font-size: 1.5rem;
+	position: absolute;
 	bottom: 0;
+	right: 0;
+
+	animation-name: cog-rotate-clockwise;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+
 }
 
 
@@ -314,65 +306,21 @@ header i.fa-chevron-down:hover {
 	}
 }
 
-
-/* ========= EXPERTISE ========= */
-
-.expertise-wrap {
-	border-top: 2px solid #8C43FF;
-}
+/* ============================================== */
 
 .expertise {
 	width: 70%;
+	border: 2px solid lightgrey;
 	border-radius: 10px;
-	height: 100vh;
+	height: 140vh;
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
-	top: -20vh;
+	top: -10vh;
 	background-color: #8C43FF;
-}
-
-
-.expertise h2 {
 	color: #fff;
 }
 
-.expertise .cards {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-}
-
-.expertise .cards ul {
-	flex: 1;
-	min-width: 200px;
-	height: 80%;
-	background-color: orange;
-}
-
-.cards li {
-	margin: 1rem 0;
-	list-style-type: none;
-}
-
-.cards li:first-of-type {
-	font-size: 1.8rem;
-}
-
-.expertise .cards ul:last-of-type {
-	width: 100%;
-	flex-basis: 100%;
-	background-color: green;
-	flex: 0;
-}
-
-.expertise .cards ul:last-of-type li {
-	display: inline-block;
-}
-
-/* ========= RECENT WORK ========= */
 
 .recent-work {
 	color: #8C43FF;
@@ -440,18 +388,18 @@ header i.fa-chevron-down:hover {
 
 
 
-/* ========= COLOR PALETTE ========= 
+
+
+
+
+
+
+
+
+/* ======================== COLOR PALETTE ====================== 
 
 blue: 436CFF;
 purple: 8C43FF;
 red: ff4359;
 darkgrey: 292929;
-darkblue: #293347;
 */
-
-
-
-
-
-
-
