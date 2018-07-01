@@ -11,6 +11,7 @@
 body {
 	font-family: 'Open sans', sans-serif;
 	color: #fff;
+	line-height: 1.5;
 }
 
 h1 {	
@@ -37,7 +38,7 @@ p, button, li {
 
 header {
 	height: 100vh;
-	background-color: #ff4359; 
+	background-color: #436CFF; 
 }
 
 header .button-wrap {
@@ -51,13 +52,13 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: #ff4359;
+	background-color: #436CFF;
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-	border-color: #ff4359;
-	color: #ff4359;
+	border-color: #436CFF;
+	color: #436CFF;
 	background-color: #fff;
 }
 
@@ -131,6 +132,10 @@ header h1 {
 	text-align: center;
 }
 
+header h1 .pipebar {
+	border-right: 2px solid white;
+}
+
 header img.avatar-img {
 	position: absolute;
 	top: 50%;
@@ -176,23 +181,23 @@ header i.fa-chevron-down:hover {
 /* ========= INTRODUCTION ========= */
 
 .intro-wrap {
-	min-height: 120vh;
+	min-height: 130vh;
 	padding: 10vh 60px;
-	background-color: #ff4359;
+	background-color: #436CFF;
 	position: relative;
 }
 
 .intro {
 	width: 70%;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
 .intro .logo {
 	transform: scale(0.5);
-	margin: 0 auto 5vh;
+	margin: 0 auto;
 }
 
 .intro h2 {
@@ -209,15 +214,22 @@ header i.fa-chevron-down:hover {
 /* ========= DEGREE ========= */
 
 .degree {
-	padding: 10vh 60px 30vh;
+
+}
+
+.degree-wrap {
+	height: 120vh;
+	margin: 0 auto;
+	padding: 20px;
 	background-color: #293347;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	position: relative;
 }
 
 @media (max-width: 767px) {
-	.degree {
+	.degree-wrap {
 		flex-wrap: wrap;
 	}
 }
@@ -232,7 +244,7 @@ header i.fa-chevron-down:hover {
 }
 
 @media (min-width: 767px) {
-	.degree .img-wrap {
+	.img-wrap {
 		order: -1;
 	}
 }
@@ -241,7 +253,6 @@ header i.fa-chevron-down:hover {
 	width: 100%;
 	border-radius: 10px;
 	border: 2px solid lightgrey;
-	margin: 10vh 0;
 }
 
 .degree .title-wrap {
@@ -317,19 +328,10 @@ header i.fa-chevron-down:hover {
 
 /* ========= EXPERTISE ========= */
 
-.expertise-wrap {
-	border-top: 2px solid #8C43FF;
-}
-
 .expertise {
-	width: 70%;
-	border-radius: 10px;
-	height: 100vh;
-	margin: 0 auto;
+	padding: 0 60px;
 	text-align: center;
-	position: relative;
-	top: -20vh;
-	background-color: #8C43FF;
+	background-color: #fff;
 }
 
 
@@ -339,43 +341,36 @@ header i.fa-chevron-down:hover {
 
 .expertise .cards {
 	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
 }
 
-.expertise .cards ul {
+.expertise ul {
 	flex: 1;
-	min-width: 200px;
-	height: 80%;
-	background-color: orange;
+	text-align: left;
 }
 
-.cards li {
-	margin: 1rem 0;
+.expertise li {
+	margin: 0.5rem 0;
 	list-style-type: none;
+	color: #293347;
 }
 
-.cards li:first-of-type {
+.expertise li:first-of-type {
 	font-size: 1.8rem;
+	color: #436CFF;
+	letter-spacing: 1px;
 }
 
-.expertise .cards ul:last-of-type {
-	width: 100%;
-	flex-basis: 100%;
-	background-color: green;
-	flex: 0;
-}
-
-.expertise .cards ul:last-of-type li {
-	display: inline-block;
+.cards + ul li:not(:first-of-type) {
+	display: inline;
 }
 
 /* ========= RECENT WORK ========= */
 
 .recent-work {
-	color: #8C43FF;
+	color: #436CFF;
 	margin-top: 60vh;
 }
 
@@ -386,8 +381,8 @@ header i.fa-chevron-down:hover {
 	position: relative;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
-	border-color: #8C43FF;
-	color: #8C43FF;
+	border-color: #436CFF;
+	color: #436CFF;
 	background-color: #fff;
 	transition: all 0.3s ease;
 	z-index: 2;
@@ -396,7 +391,7 @@ header i.fa-chevron-down:hover {
 
 .recent-work > div > .button-wrap:hover {
 	border-color: #fff;
-	background-color: #8C43FF;
+	background-color: #436CFF;
 	color: #fff;
 }
 
@@ -447,6 +442,7 @@ purple: 8C43FF;
 red: ff4359;
 darkgrey: 292929;
 darkblue: #293347;
+orange: ff9443;
 */
 
 
