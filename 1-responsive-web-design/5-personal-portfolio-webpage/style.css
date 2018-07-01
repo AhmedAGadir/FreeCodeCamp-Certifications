@@ -21,12 +21,12 @@ h1 {
 
  h2 {
 	font-size: 1.8rem;
-	font-weight: lighter;
 }
 
 
 h3 {
 	font-size: 1.6rem;
+	font-weight: lighter;
 }
 
 p, button, li {
@@ -196,8 +196,8 @@ header i.fa-chevron-down:hover {
 }
 
 .intro .logo {
-	transform: scale(0.5);
-	margin: 0 auto;
+	transform: scale(0.55);
+	margin: 0 auto 5vh;
 }
 
 .intro h2 {
@@ -329,14 +329,20 @@ header i.fa-chevron-down:hover {
 /* ========= EXPERTISE ========= */
 
 .expertise {
-	padding: 0 60px;
+	padding: 10vh 60px;
 	text-align: center;
 	background-color: #fff;
 }
 
 
 .expertise h2 {
-	color: #fff;
+	color: #436CFF;
+	margin: 10vh 0 40px;
+}
+.expertise p {
+	color: #293347;
+	text-align: center;
+	margin: 0 0 20vh;
 }
 
 .expertise .cards {
@@ -357,22 +363,26 @@ header i.fa-chevron-down:hover {
 	color: #293347;
 }
 
-.expertise li:first-of-type {
-	font-size: 1.8rem;
+.expertise h3:first-of-type {
 	color: #436CFF;
-	letter-spacing: 1px;
 }
 
 .cards + ul li:not(:first-of-type) {
 	display: inline;
 }
 
+
+li i {
+	font-size: 3.5rem;
+}
 /* ========= RECENT WORK ========= */
 
 .recent-work {
 	color: #436CFF;
-	margin-top: 60vh;
+	margin-top: 10vh;
 }
+
+
 
 .recent-work > div > .button-wrap {
 	margin: 40px;
