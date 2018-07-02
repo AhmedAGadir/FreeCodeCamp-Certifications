@@ -193,7 +193,7 @@ header i.fa-chevron-down:hover {
 .intro-wrap {
 	height: 100vh;
 	padding: 10vh 60px;
-	background-color: #455165;
+	background-color: #97A3B7;
 	color: #fff;
 	position: relative;
 }
@@ -213,7 +213,7 @@ header i.fa-chevron-down:hover {
 	min-height: 120vh;
 	margin: 0 auto;
 	padding: 10vh 60px;
-	background-color: #97A3B7;
+	background-color: #54637A;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -350,7 +350,7 @@ header i.fa-chevron-down:hover {
 	border: 1px solid lightgrey;
 	margin: 5px;
 	padding: 10px;
-	background-color: #436cff;
+	background-color: #97A3B7;
 	min-width: 300px;
 }
 
@@ -434,8 +434,11 @@ li i {
 	height: 175px;
 	margin:10px;
 	border-radius: 15px;
-	background-color: #455165;
-
+	background-color: #97A3B7;
+	transition: 0.5s all ease;
+}
+.thumbnail:hover {
+	background-color: #54637A;
 }
 
 @media (min-width: 925px) {
@@ -454,8 +457,8 @@ li i {
 	position: relative;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
-	border-color: #ff4359;
-	color: #ff4359;
+	border-color: #97A3B7;
+	color: #97A3B7;
 	background-color: #fff;
 	transition: all 0.3s ease;
 	z-index: 2;
@@ -464,7 +467,7 @@ li i {
 
 .recent-work .button-wrap:hover {
 	border-color: #fff;
-	background-color: #ff4359;
+	background-color: #97A3B7;
 	color: #fff;
 }
 
@@ -523,11 +526,11 @@ blockquote p {
 
 blockquote i {
 	font-size: 1.8rem;
-	color: #97A3B7;
+	color: #54637A;
 }
 
 blockquote span.close-quote {
-	color: #97A3B7;
+	color: #54637A;
 }
 blockquote span.quote-footer {
 	display: block;
@@ -539,7 +542,7 @@ blockquote span.quote-footer {
 /* ========= COLOR PALETTE ========= 
 
 homagegrey: 97A3B7;
-darker: 455165;
+darker : #54637A;
 blue: 436cff;
 purple: 8C43FF;
 red: ff4359;
