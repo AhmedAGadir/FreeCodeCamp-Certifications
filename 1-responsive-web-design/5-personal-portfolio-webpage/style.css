@@ -10,13 +10,13 @@
 
 body {
 	font-family: 'Open sans', sans-serif;
-	color: #fff;
 	line-height: 1.5;
 }
 
 h1 {	
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 2rem;
+	color: #fff;
 }
 
  h2 {
@@ -48,7 +48,7 @@ p, button, li {
 
 header {
 	height: 100vh;
-	background-color: #436CFF; 
+	background-color: #97A3B7; 
 }
 
 header .button-wrap {
@@ -62,13 +62,13 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: #436CFF;
+	background-color: #97A3B7;
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-	border-color: #436CFF;
-	color: #436CFF;
+	border-color: #97A3B7;
+	color: #97A3B7;
 	background-color: #fff;
 }
 
@@ -185,22 +185,22 @@ header i.fa-chevron-down {
 }
 
 header i.fa-chevron-down:hover {
-	color: #293347;
+	color: #436cff;
 }
 
 /* ========= INTRODUCTION ========= */
 
 .intro-wrap {
-	min-height: 130vh;
+	height: 100vh;
 	padding: 10vh 60px;
-	background-color: #436CFF;
+	background-color: #455165;
 	color: #fff;
 	position: relative;
 }
 
 .intro .logo {
 	transform: scale(0.55);
-	margin: 10vh auto;
+	margin: 0 auto;
 }
 
 /* ========= DEGREE ========= */
@@ -213,11 +213,12 @@ header i.fa-chevron-down:hover {
 	min-height: 120vh;
 	margin: 0 auto;
 	padding: 10vh 60px;
-	background-color: #293347;
+	background-color: #97A3B7;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	position: relative;
+	color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -253,11 +254,11 @@ header i.fa-chevron-down:hover {
 }
 
 .degree h2 {
-	color: #fff;
 	text-align: left;
+	font-family: 'teko', sans-serif;
+	font-size: 2.5rem;
 }
 .degree p {
-	color: #fff;
 	text-align: left;
 }
 
@@ -328,11 +329,11 @@ header i.fa-chevron-down:hover {
 
 
 .skills h2 {
-	color: #436CFF;
+	color: #97A3B7;
 }
 
 .skills p {
-	color: #293347;
+	color: #97A3B7;
 }
 
 .skills .cards {
@@ -349,7 +350,7 @@ header i.fa-chevron-down:hover {
 	border: 1px solid lightgrey;
 	margin: 5px;
 	padding: 10px;
-	background-color: #436CFF;
+	background-color: #436cff;
 	min-width: 300px;
 }
 
@@ -359,15 +360,14 @@ header i.fa-chevron-down:hover {
 	list-style-type: none;
 	color: #293347;
 	color: #fff;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	font-weight: 300;
 	letter-spacing: 1px;
 }
 
 .skills h3:first-of-type {
-	color: #ff4359;
 	color: #fff;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	text-align: center;
 }
 
@@ -385,7 +385,7 @@ li i {
 
 .recent-work {
 	/*background: lightgrey;*/
-	color: #436CFF;
+	color: #97A3B7;
 	padding: 10vh 60px;
 }
 
@@ -396,35 +396,79 @@ li i {
 
 .recent-work p {
 	text-align: center;
-	color: #293347;
+	color: #97A3B7;
 }
 
 .recent-work h3 {
 
 }
 
-.recent-work > div > .button-wrap {
+.recent-work h3 i {
+	font-size: 2rem;
+	transition: 0.3s all ease;
+}
+
+.respons-web-wrap, 
+.algo-and-data-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+/*	background-color: orange;*/
+	margin: 10vh 0;
+}
+
+.topic-wrap {
+	width: 400px;
+}
+
+.thumbnail-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+/*	background-color: lightgrey;*/
+	max-width: 600px;
+}
+
+.thumbnail {
+	width: 250px;
+	height: 175px;
+	margin:10px;
+	border-radius: 15px;
+	background-color: #455165;
+
+}
+
+@media (min-width: 925px) {
+	.algo-and-data-wrap .thumbnail-wrap {
+		order: -1;
+		justify-content: flex-start;
+	}
+}
+
+
+
+.recent-work .button-wrap {
 	margin: 40px;
 	height: 60px;
 	width: 220px;
 	position: relative;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
-	border-color: #436CFF;
-	color: #436CFF;
+	border-color: #ff4359;
+	color: #ff4359;
 	background-color: #fff;
 	transition: all 0.3s ease;
 	z-index: 2;
 	box-sizing: content-box;
 }
 
-.recent-work > div > .button-wrap:hover {
+.recent-work .button-wrap:hover {
 	border-color: #fff;
-	background-color: #436CFF;
+	background-color: #ff4359;
 	color: #fff;
 }
 
-.recent-work > div > .button-wrap button {
+.recent-work .button-wrap button {
 	outline: none;
 	box-shadow: none;
 	border: none;
@@ -440,8 +484,8 @@ li i {
 	color: inherit;
 }
 
-.recent-work > div > .button-wrap button:before,
-.recent-work > div > .button-wrap button:after {
+.recent-work .button-wrap button:before,
+.recent-work .button-wrap button:after {
 	content: '';
 	position: absolute;
 	top: -3px;
@@ -454,19 +498,49 @@ li i {
 	border-color: inherit;
 }
 
-.recent-work > div > .button-wrap button:before {
+.recent-work .button-wrap button:before {
 	left: -30px;
 }
 
-.recent-work > div > .button-wrap button:after {
+.recent-work .button-wrap button:after {
 	right: -30px;
 }
 
 
 
+
+blockquote {
+	margin: 20vh auto;
+	max-width: 600px;
+	color: #97A3B7;
+}
+
+blockquote p {
+	margin-bottom: 20px;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+blockquote i {
+	font-size: 1.8rem;
+	color: #97A3B7;
+}
+
+blockquote span.close-quote {
+	color: #97A3B7;
+}
+blockquote span.quote-footer {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+}
+
+
 /* ========= COLOR PALETTE ========= 
 
-blue: 436CFF;
+homagegrey: 97A3B7;
+darker: 455165;
+blue: 436cff;
 purple: 8C43FF;
 red: ff4359;
 darkgrey: 292929;
