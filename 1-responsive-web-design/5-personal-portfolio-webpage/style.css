@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Lato|Roboto|Open+sans|Teko:300,400');
 
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* ========= TYPOGRAPHY ========= */
+
+/* ============== TYPOGRAPHY ============== */
+
 
 body {
 	font-family: 'Open sans', sans-serif;
@@ -21,7 +24,7 @@ h1 {
 
  h2 {
 	font-size: 1.8rem;
-	font-family: 'lato', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -44,11 +47,16 @@ p, button, li {
 	text-align: center;
 }
 
-/* ========= HEADER ========= */
+button {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* ============== HEADER ============== */
+
 
 header {
 	height: 100vh;
-	background-color: #97A3B7; 
+	background-color: #436cff; 
 }
 
 header .button-wrap {
@@ -62,14 +70,15 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: #97A3B7;
+	background-color: #436cff;
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-	border-color: #97A3B7;
-	color: #97A3B7;
+	border-color: #436cff;
+	color: #436cff;
 	background-color: #fff;
+	cursor: pointer;
 }
 
 header button {
@@ -83,7 +92,7 @@ header button {
 	appearance: none;
 	width: 100%;
 	height: 100%;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	color: inherit;
 	background-color: inherit;
 }
@@ -137,15 +146,6 @@ header .avatar-outer-ring {
 	border-radius: 50%
 }
 
-header h1 {
-	width: 500px;
-	text-align: center;
-}
-
-header h1 .pipebar {
-	border-right: 2px solid white;
-}
-
 header img.avatar-img {
 	position: absolute;
 	top: 50%;
@@ -155,6 +155,16 @@ header img.avatar-img {
 	width: 85%;
 	border-radius: 50%;
 }
+
+header h1 {
+	width: 500px;
+	text-align: center;
+}
+
+header h1 .pipebar {
+	border-right: 2px solid white;
+}
+
 
 header i.fa-chevron-down {
 	position: absolute;
@@ -185,15 +195,18 @@ header i.fa-chevron-down {
 }
 
 header i.fa-chevron-down:hover {
-	color: #436cff;
+	color: #54637A;
+	cursor: pointer;
 }
 
-/* ========= INTRODUCTION ========= */
 
-.intro-wrap {
-	height: 100vh;
+/* ============== INTRODUCTION ============== */
+
+
+.intro {
+	min-height: 100vh;
 	padding: 10vh 60px;
-	background-color: #97A3B7;
+	background-color: #436cff;
 	color: #fff;
 	position: relative;
 }
@@ -203,40 +216,34 @@ header i.fa-chevron-down:hover {
 	margin: 0 auto;
 }
 
-/* ========= DEGREE ========= */
+
+/* ============== DEGREE ============== */
+
 
 .degree {
-/**/
-}
-
-.degree-wrap {
 	min-height: 120vh;
 	margin: 0 auto;
 	padding: 10vh 60px;
 	background-color: #54637A;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 	position: relative;
 	color: #fff;
 }
 
-@media (max-width: 767px) {
-	.degree-wrap {
-		flex-wrap: wrap;
-	}
-}
-
 .degree .text-wrap {
-	width: 650px;
+	width: 550px;
+	height: 550px;
 	padding: 30px;
 }
 
 .degree .img-wrap {
-	max-width: 350px;
+	width: 350px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1024px) {
 	.img-wrap {
 		order: -1;
 	}
@@ -256,7 +263,8 @@ header i.fa-chevron-down:hover {
 .degree h2 {
 	text-align: left;
 	font-family: 'teko', sans-serif;
-	font-size: 2.5rem;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
 }
 .degree p {
 	text-align: left;
@@ -320,7 +328,8 @@ header i.fa-chevron-down:hover {
 }
 
 
-/* ========= skills ========= */
+/* ============== SKILLS ============== */
+
 
 .skills {
 	padding: 10vh 60px;
@@ -329,11 +338,11 @@ header i.fa-chevron-down:hover {
 
 
 .skills h2 {
-	color: #97A3B7;
+	color: #54637A;
 }
 
 .skills p {
-	color: #97A3B7;
+	color: #54637A;
 }
 
 .skills .cards {
@@ -348,10 +357,10 @@ header i.fa-chevron-down:hover {
 	text-align: left;
 	font-family: 'Teko', sans-serif;
 	border: 1px solid lightgrey;
-	margin: 5px;
+	margin: 4px;
 	padding: 10px;
-	background-color: #97A3B7;
-	min-width: 300px;
+	background-color: #436cff;
+	min-width: 250px;
 }
 
 .skills li {
@@ -367,7 +376,8 @@ header i.fa-chevron-down:hover {
 
 .skills h3:first-of-type {
 	color: #fff;
-	font-size: 2.5rem;
+	font-size: 2.2rem;
+	font-weight: 400;
 	text-align: center;
 }
 
@@ -381,97 +391,80 @@ header i.fa-chevron-down:hover {
 li i {
 	font-size: 3rem;
 }
+
+
 /* ========= RECENT WORK ========= */
 
-.recent-work {
-	/*background: lightgrey;*/
-	color: #97A3B7;
-	padding: 10vh 60px;
+.projects {
+	color: #54637A;
+	padding: 0 60px;
 }
 
-.recent-work h2 {
-	text-align: center;
-	color:;
-} 
-
-.recent-work p {
-	text-align: center;
-	color: #97A3B7;
-}
-
-.recent-work h3 {
-
-}
-
-.recent-work h3 i {
-	font-size: 2rem;
-	transition: 0.3s all ease;
-}
-
-.respons-web-wrap, 
-.algo-and-data-wrap {
+.web-design,
+.algo-data {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	align-items: center;
-	justify-content: center;
-/*	background-color: orange;*/
 	margin: 10vh 0;
 }
 
 .topic-wrap {
-	width: 400px;
+	width: 350px;
+	text-align: center;
+	margin: 10vh 0;
 }
 
 .thumbnail-wrap {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-end;
-/*	background-color: lightgrey;*/
-	max-width: 600px;
+	justify-content: center;
+	width: 800px;
 }
 
 .thumbnail {
-	width: 250px;
-	height: 175px;
-	margin:10px;
-	border-radius: 15px;
+	width: 320px;
+	height: calc(320px / 16 * 9);
+	margin: 5px;
+	border-radius: 10px;
 	background-color: #97A3B7;
 	transition: 0.5s all ease;
+	flex-shrink: 0;
 }
 .thumbnail:hover {
 	background-color: #54637A;
+	cursor: pointer;
 }
 
-@media (min-width: 925px) {
-	.algo-and-data-wrap .thumbnail-wrap {
+@media (min-width: 1300px) {
+	.algo-data .thumbnail-wrap {
 		order: -1;
-		justify-content: flex-start;
 	}
 }
 
-
-
-.recent-work .button-wrap {
-	margin: 40px;
+.projects .button-wrap {
+	margin: 40px auto;
 	height: 60px;
 	width: 220px;
 	position: relative;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
-	border-color: #97A3B7;
-	color: #97A3B7;
+	border-color: #54637A;
+	color: #54637A;
 	background-color: #fff;
 	transition: all 0.3s ease;
 	z-index: 2;
 	box-sizing: content-box;
 }
 
-.recent-work .button-wrap:hover {
+.projects .button-wrap:hover {
 	border-color: #fff;
-	background-color: #97A3B7;
+	background-color: #54637A;
 	color: #fff;
+	cursor: pointer;
 }
 
-.recent-work .button-wrap button {
+.projects .button-wrap button {
 	outline: none;
 	box-shadow: none;
 	border: none;
@@ -487,8 +480,8 @@ li i {
 	color: inherit;
 }
 
-.recent-work .button-wrap button:before,
-.recent-work .button-wrap button:after {
+.projects .button-wrap button:before,
+.projects .button-wrap button:after {
 	content: '';
 	position: absolute;
 	top: -3px;
@@ -501,54 +494,274 @@ li i {
 	border-color: inherit;
 }
 
-.recent-work .button-wrap button:before {
+.projects .button-wrap button:before {
 	left: -30px;
 }
 
-.recent-work .button-wrap button:after {
+.projects .button-wrap button:after {
 	right: -30px;
 }
 
 
+/* ============== BLOCKQUOTE ============== */
 
-
-blockquote {
-	margin: 20vh auto;
-	max-width: 600px;
-	color: #97A3B7;
+.inspiration {
+	height: 80vh;
+	position: relative;
+	background-color: #97A3B7;
 }
 
-blockquote p {
+.inspiration blockquote {
+	max-width: 600px;
+	color: #fff;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.inspiration blockquote p {
 	margin-bottom: 20px;
 	font-size: 1.6rem;
 	text-align: center;
 }
 
-blockquote i {
-	font-size: 1.8rem;
-	color: #54637A;
+.inspiration blockquote i {
+	font-size: 2rem;
+	color: #fff;
+	margin: 2px;
 }
 
-blockquote span.close-quote {
-	color: #54637A;
+.inspiration blockquote span.close-quote {
+	color: #fff;
 }
-blockquote span.quote-footer {
+.inspiration blockquote span.quote-footer {
 	display: block;
 	text-align: right;
 	text-decoration: none;
+	font-size: 1rem;
 }
 
+
+/* ============== TESTIMONIALS ============== */
+
+
+.testimonials {
+	height: calc(100% + 80px);
+	margin: 10vh 60px;
+}
+
+.testimonials h2, .testimonials p {
+	text-align: center;
+	color: #54637A;
+}
+
+.testimonials p {
+	margin-bottom: 10vh
+}
+
+.testimonials .img-wrap {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	margin: 20px auto;
+}
+
+.testimonials .img-outer-ring {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 4px solid #97A3B7;
+	border-radius: 50%
+}
+
+.testimonials img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 85%;
+	border-radius: 50%;
+}
+
+.testimonials blockquote {
+	max-width: 600px;
+	margin: 10vh auto;
+}
+
+.testimonials blockquote p {
+	margin-bottom: 5vh;
+}
+
+
+
+
+
+/* ============== TESTIMONIALS ============== */
+
+
+footer {
+	height: 100vh;
+	background-color: #436cff;
+	position: relative;
+	color: #fff;
+}
+
+.invitation {
+	position: relative;
+	top: -80px;
+	margin: 0 auto;
+	width: 80%;
+	min-height: 160px;
+	border-radius: 10px;
+	background-color: #54637A;
+	padding: 15px 15px 15px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.invitation p {
+	text-align: center;
+	padding: 15px 0;
+}
+
+@media (min-width: 950px) {
+	.invitation p {
+			max-width: 400px;
+	}
+}
+
+.invitation .button-wrap {
+	position: relative;
+	z-index: 1;
+	width: 110px;
+	height: 50px;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-color: #fff;
+	color: #fff;
+	background-color: #54637A;
+	transition: 0.5s all ease;
+}
+
+.invitation .button-wrap:hover {
+	border-color: #54637A;
+	color: #54637A;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.invitation button {
+	border: none;
+	outline: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 100%;
+	font-size: 1.2rem;
+	color: inherit;
+	background-color: inherit;
+}
+
+.invitation button:before,
+.invitation button:after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	border: 3px solid;
+	border-color: inherit;
+	width: 50px;
+	height: 100%;
+	border-radius: 50%;
+	background-color: inherit;
+	z-index: -1;
+}
+
+.invitation button:before {
+	left: -25px;
+}
+
+.invitation button:after {
+	right: -25px;
+}
+
+footer .logo {
+	transform: scale(0.55);
+	margin: 0 auto;
+}
+
+footer > p {
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: bold;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.connect-wrap {
+	margin: 5vh auto;
+	text-align: center;
+}
+
+.connect-wrap > div {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin: 5vh 10px;
+	transition: 1s all ease;
+	position: relative;
+}
+
+.connect-wrap > div:hover {
+	cursor: pointer;
+	background-color: #fff;
+	color: #436cff;
+
+	animation-name: float-up;
+	animation-duration: 1s;
+}
+
+
+@keyframes float-up {
+	0% {
+		bottom: 0px;
+	}
+	50% {
+		bottom: 10px;
+	}
+	100% {
+		bottom: 0px;
+	}
+}
+
+.connect-wrap a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 2rem;
+	position: relative;
+	top: 12px;
+}
 
 /* ========= COLOR PALETTE ========= 
 
 homagegrey: 97A3B7;
-darker : #54637A;
+darker : 54637A;
+
 blue: 436cff;
-purple: 8C43FF;
+purple: 8C43ff;
 red: ff4359;
+orange: ff9443;
+
 darkgrey: 292929;
 darkblue: #293347;
-orange: ff9443;
+
 */
 
 
