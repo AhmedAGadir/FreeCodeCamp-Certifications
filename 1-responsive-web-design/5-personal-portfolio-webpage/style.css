@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu|Lato|Roboto|Open+sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Lato|Roboto|Open+sans|Teko:300,400');
 
 * {
 	margin: 0;
@@ -21,6 +21,7 @@ h1 {
 
  h2 {
 	font-size: 1.8rem;
+	font-family: 'lato', sans-serif;
 }
 
 
@@ -33,6 +34,15 @@ p, button, li {
 	font-size: 1.2rem;
 }
 
+.text-title {
+	margin: 10vh 0 7vh;
+	text-align: center;
+}
+
+.text-body  {
+	margin-bottom: 20vh;
+	text-align: center;
+}
 
 /* ========= HEADER ========= */
 
@@ -184,31 +194,13 @@ header i.fa-chevron-down:hover {
 	min-height: 130vh;
 	padding: 10vh 60px;
 	background-color: #436CFF;
+	color: #fff;
 	position: relative;
-}
-
-.intro {
-	width: 70%;
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .intro .logo {
 	transform: scale(0.55);
-	margin: 0 auto 5vh;
-}
-
-.intro h2 {
-	margin-bottom: 40px;
-	color: #fff;
-	text-align: center
-}
-
-.intro p {
-	color: #fff;
-	text-align: center
+	margin: 10vh auto;
 }
 
 /* ========= DEGREE ========= */
@@ -218,9 +210,9 @@ header i.fa-chevron-down:hover {
 }
 
 .degree-wrap {
-	height: 120vh;
+	min-height: 120vh;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 10vh 60px;
 	background-color: #293347;
 	display: flex;
 	align-items: center;
@@ -255,17 +247,18 @@ header i.fa-chevron-down:hover {
 	border: 2px solid lightgrey;
 }
 
-.degree .title-wrap {
+.degree .text-title {
 	display: flex;
-	margin-bottom: 40px;
 	align-items: center;
 }
 
 .degree h2 {
 	color: #fff;
+	text-align: left;
 }
 .degree p {
 	color: #fff;
+	text-align: left;
 }
 
 /* === COGS == */
@@ -326,68 +319,94 @@ header i.fa-chevron-down:hover {
 }
 
 
-/* ========= EXPERTISE ========= */
+/* ========= skills ========= */
 
-.expertise {
+.skills {
 	padding: 10vh 60px;
-	text-align: center;
-	background-color: #fff;
+	background-color: ;
 }
 
 
-.expertise h2 {
+.skills h2 {
 	color: #436CFF;
-	margin: 10vh 0 40px;
-}
-.expertise p {
-	color: #293347;
-	text-align: center;
-	margin: 0 0 20vh;
 }
 
-.expertise .cards {
+.skills p {
+	color: #293347;
+}
+
+.skills .cards {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: stretch;
+	align-items: flex-end;
 }
 
-.expertise ul {
+.skills ul {
 	flex: 1;
 	text-align: left;
+	font-family: 'Teko', sans-serif;
+	border: 1px solid lightgrey;
+	margin: 5px;
+	padding: 10px;
+	background-color: #436CFF;
+	min-width: 300px;
 }
 
-.expertise li {
+.skills li {
 	margin: 0.5rem 0;
+	padding-right: 20px;
 	list-style-type: none;
 	color: #293347;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: 1px;
 }
 
-.expertise h3:first-of-type {
-	color: #436CFF;
+.skills h3:first-of-type {
+	color: #ff4359;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
 }
 
+.cards + ul:last-of-type h3 {
+	text-align: left;
+}
 .cards + ul li:not(:first-of-type) {
 	display: inline;
 }
 
-
 li i {
-	font-size: 3.5rem;
+	font-size: 3rem;
 }
 /* ========= RECENT WORK ========= */
 
 .recent-work {
+	/*background: lightgrey;*/
 	color: #436CFF;
-	margin-top: 10vh;
+	padding: 10vh 60px;
 }
 
+.recent-work h2 {
+	text-align: center;
+	color:;
+} 
 
+.recent-work p {
+	text-align: center;
+	color: #293347;
+}
+
+.recent-work h3 {
+
+}
 
 .recent-work > div > .button-wrap {
 	margin: 40px;
 	height: 60px;
-	width: 250px;
+	width: 220px;
 	position: relative;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
