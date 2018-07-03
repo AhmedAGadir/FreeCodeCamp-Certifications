@@ -60,7 +60,7 @@ button:hover {
 
 header {
 	height: 100vh;
-	background-color: #97A3B7; 
+	background-color: #436cff; 
 /*	background-image: url('close-up-code-coding-160107.jpg');
 	background-size: 100%;
 	background-blend-mode: soft-light;*/
@@ -77,13 +77,13 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: #97A3B7;
+	background-color: #436cff;
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-	border-color: #97A3B7;
-	color: #97A3B7;
+	border-color: #436cff;
+	color: #436cff;
 	background-color: #fff;
 }
 
@@ -230,7 +230,7 @@ header i.fa-chevron-down:hover {
 	min-height: 120vh;
 	margin: 0 auto;
 	padding: 10vh 60px;
-	background-color: #54637A;
+	background-color: #97A3B7;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -365,7 +365,7 @@ header i.fa-chevron-down:hover {
 	border: 1px solid lightgrey;
 	margin: 4px;
 	padding: 10px;
-	background-color: #436cff;
+	background-color: #97A3B7;
 	min-width: 250px;
 }
 
