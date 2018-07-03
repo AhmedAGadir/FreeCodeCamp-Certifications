@@ -60,7 +60,7 @@ button:hover {
 
 header {
 	height: 100vh;
-	background-color: #436cff; 
+	background-color: #97A3B7; 
 /*	background-image: url('close-up-code-coding-160107.jpg');
 	background-size: 100%;
 	background-blend-mode: soft-light;*/
@@ -77,13 +77,13 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: #436cff;
+	background-color: #97A3B7;
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-	border-color: #436cff;
-	color: #436cff;
+	border-color: #97A3B7;
+	color: #97A3B7;
 	background-color: #fff;
 }
 
@@ -212,7 +212,7 @@ header i.fa-chevron-down:hover {
 .intro {
 	min-height: 100vh;
 	padding: 10vh 60px;
-	background-color: #436cff;
+	background-color: #97A3B7;
 	color: #fff;
 	position: relative;
 }
@@ -230,7 +230,7 @@ header i.fa-chevron-down:hover {
 	min-height: 120vh;
 	margin: 0 auto;
 	padding: 10vh 60px;
-	background-color: #97A3B7;
+	background-color: #54637A;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -354,8 +354,8 @@ header i.fa-chevron-down:hover {
 .skills .cards {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: flex-end;
+	flex-wrap: wrap;
 }
 
 .skills ul {
@@ -418,6 +418,15 @@ li i {
 	background-image: url('thumbnail4.png');
 }
 
+/* dummmy */
+
+.web-design .thumbnail:nth-of-type(5) {
+	background-image: url('thumbnail3.png');
+}
+
+.web-design .thumbnail:nth-of-type(6) {
+	background-image: url('thumbnail3.png');
+}
 .algo-data .thumbnail:nth-of-type(1) {
 	background-image: url('thumbnail5.png');
 }
@@ -434,31 +443,36 @@ li i {
 	background-image: url('thumbnail8.png');
 }
 
+/*dummy */
+
+.algo-data .thumbnail:nth-of-type(5) {
+	background-image: url('thumbnail7.png');
+}
+
+.algo-data .thumbnail:nth-of-type(6) {
+	background-image: url('thumbnail8.png');
+}
+
 .projects {
 	color: #54637A;
 	padding: 0 60px;
 }
 
-.web-design,
-.algo-data {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	margin: 10vh auto;
+.projects h2 {
+	text-align: center;
+	margin: 20vh auto 10vh;
+	color: #54637A;
 }
 
-.topic-wrap {
-	width: 400px;
-	text-align: center;
-	margin: 10vh 0;
+.web-design,
+.algo-data {
+	margin: 10vh auto;
 }
 
 .thumbnail-wrap {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	max-width: 800px;
 }
 
 .thumbnail {
@@ -499,24 +513,6 @@ li i {
 	cursor: pointer;
 }
 
-@media (min-width: 1300px) {
-	.algo-data .thumbnail-wrap {
-		order: -1;
-	}
-	.web-design,
-	.algo-data {
-		justify-content: center;
-	}
-
-	.web-design .thumbnail-wrap {
-		justify-content: flex-end;
-	}
-
-	.algo-data .thumbnail-wrap {
-		justify-content: flex-start;
-	}
-}
-
 .projects .button-wrap {
 	margin: 40px auto;
 	height: 60px;
@@ -524,7 +520,7 @@ li i {
 	position: relative;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
-	border-color: #54637A;
+	border-color: #54637A; 
 	color: #54637A;
 	background-color: #fff;
 	transition: all 0.3s ease;
@@ -581,7 +577,7 @@ li i {
 
 
 .inspiration {
-	height: 80vh;
+	min-height: calc(80vh + 80px);
 	position: relative;
 	background-color: #fff;
 }
@@ -593,7 +589,7 @@ li i {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, calc(-50% - 80px));
 }
 
 .inspiration blockquote p {
@@ -622,7 +618,7 @@ li i {
 /* ============== TESTIMONIALS ============== */
 
 
-.testimonials {
+/*.testimonials {
 	height: calc(100% + 80px);
 	margin: 10vh 60px;
 }
@@ -668,7 +664,7 @@ li i {
 .testimonials blockquote p {
 	margin-bottom: 5vh;
 }
-
+*/
 
 /* ============== INVITATION ============== */
 
@@ -763,7 +759,7 @@ li i {
 
 footer {
 	min-height: 100vh;
-	background-color: #ff4359;
+	background-color: #436cff;
 	position: relative;
 	color: #fff;
 }
@@ -781,7 +777,7 @@ footer > p:first-of-type {
 footer > p:last-of-type {
 	text-align: center;
 	font-size: 1rem;
-	padding: 5vh 0;
+	padding-bottom: 5vh;
 }
 footer > p:last-of-type span {
 	font-size: 1.5rem;
@@ -812,7 +808,7 @@ footer > p:last-of-type span {
 .connect-wrap .link:hover {
 	cursor: pointer;
 	background-color: #fff;
-	color: #ff4359;
+	color: #436cff;
 
 	animation-name: float-up;
 	animation-duration: 0.5s;
@@ -841,6 +837,7 @@ blue: 436cff;
 purple: 8C43ff;
 red: ff4359;
 orange: ff9443;
+yellow: ffc743;
 
 darkgrey: 292929;
 darkblue: #293347;
