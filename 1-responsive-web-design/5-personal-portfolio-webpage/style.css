@@ -403,50 +403,51 @@ li i {
 /* ========= RECENT WORK ========= */
 
 
-.web-design .thumbnail:nth-of-type(1) {
+.web-design a:nth-of-type(1) .thumbnail {
 	background-image: url('thumbnail1.png');
 }
 
-.web-design .thumbnail:nth-of-type(2) {
+.web-design a:nth-of-type(2) .thumbnail {
 	background-image: url('thumbnail2.png');
 }
 
-.web-design .thumbnail:nth-of-type(3) {
+.web-design a:nth-of-type(3) .thumbnail {
 	background-image: url('thumbnail3.png');
 }
 
-.web-design .thumbnail:nth-of-type(4) {
+.web-design a:nth-of-type(4) .thumbnail {
 	background-image: url('thumbnail4.png');
 }
 
-.web-design .thumbnail:nth-of-type(5) {
+.web-design a:nth-of-type(5) .thumbnail {
 	background-image: url('thumbnail5.png');
 }
 
-.web-design .thumbnail:nth-of-type(6) {
+.web-design a:nth-of-type(6) .thumbnail {
 	background-image: url('thumbnail6.png');
 }
-.algo-data .thumbnail:nth-of-type(1) {
+
+.algo-data a:nth-of-type(1) .thumbnail {
 	background-image: url('thumbnail7.png');
 }
 
-.algo-data .thumbnail:nth-of-type(2) {
+.algo-data a:nth-of-type(2) .thumbnail {
 	background-image: url('thumbnail8.png');
 }
 
-.algo-data .thumbnail:nth-of-type(3) {
+.algo-data a:nth-of-type(3) .thumbnail {
 	background-image: url('thumbnail9.png');
 }
 
-.algo-data .thumbnail:nth-of-type(4) {
+.algo-data a:nth-of-type(4) .thumbnail {
 	background-image: url('thumbnail10.png');
 }
 
-.algo-data .thumbnail:nth-of-type(5) {
+.algo-data a:nth-of-type(5) .thumbnail {
 	background-image: url('thumbnail7.png');
 }
 
-.algo-data .thumbnail:nth-of-type(6) {
+.algo-data a:nth-of-type(6) .thumbnail {
 	background-image: url('thumbnail8.png');
 }
 
@@ -832,7 +833,7 @@ footer .invitation button:after {
 }
  
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  /*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
 }
  
 ::-webkit-scrollbar-thumb {
