@@ -656,6 +656,11 @@ footer {
 	font-size: 1rem;
 	text-indent: 5px;
 	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
 }
 
 .contact button {
