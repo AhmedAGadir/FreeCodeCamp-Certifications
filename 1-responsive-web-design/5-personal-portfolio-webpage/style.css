@@ -60,8 +60,8 @@ button:hover {
 
 header {
 	height: 100vh;
-	background-color: #97A3B7; 
-/*	background-image: url('close-up-code-coding-160107.jpg');
+	background-color: #436cff; 
+/*	background-image: url('images/close-up-code-coding-160107.jpg');
 	background-size: 100%;
 	background-blend-mode: soft-light;*/
 }
@@ -77,13 +77,13 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: #97A3B7;
+	background-color: #436cff;
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-	border-color: #97A3B7;
-	color: #97A3B7;
+	border-color: #436cff;
+	color: #436cff;
 	background-color: #fff;
 }
 
@@ -402,53 +402,56 @@ li i {
 
 /* ========= RECENT WORK ========= */
 
+.web-design a, .algo-data a {
+	text-decoration: none;
+}
 
 .web-design a:nth-of-type(1) .thumbnail {
-	background-image: url('thumbnail1.png');
+	background-image: url('images/thumbnail1.png');
 }
 
 .web-design a:nth-of-type(2) .thumbnail {
-	background-image: url('thumbnail2.png');
+	background-image: url('images/thumbnail2.png');
 }
 
 .web-design a:nth-of-type(3) .thumbnail {
-	background-image: url('thumbnail3.png');
+	background-image: url('images/thumbnail3.png');
 }
 
 .web-design a:nth-of-type(4) .thumbnail {
-	background-image: url('thumbnail4.png');
+	background-image: url('images/thumbnail4.png');
 }
 
 .web-design a:nth-of-type(5) .thumbnail {
-	background-image: url('thumbnail5.png');
+	background-image: url('images/thumbnail5.png');
 }
 
 .web-design a:nth-of-type(6) .thumbnail {
-	background-image: url('thumbnail6.png');
+	background-image: url('images/thumbnail6.png');
 }
 
 .algo-data a:nth-of-type(1) .thumbnail {
-	background-image: url('thumbnail7.png');
+	background-image: url('images/thumbnail7.png');
 }
 
 .algo-data a:nth-of-type(2) .thumbnail {
-	background-image: url('thumbnail8.png');
+	background-image: url('images/thumbnail8.png');
 }
 
 .algo-data a:nth-of-type(3) .thumbnail {
-	background-image: url('thumbnail9.png');
+	background-image: url('images/thumbnail9.png');
 }
 
 .algo-data a:nth-of-type(4) .thumbnail {
-	background-image: url('thumbnail10.png');
+	background-image: url('images/thumbnail10.png');
 }
 
 .algo-data a:nth-of-type(5) .thumbnail {
-	background-image: url('thumbnail7.png');
+	background-image: url('images/thumbnail7.png');
 }
 
 .algo-data a:nth-of-type(6) .thumbnail {
-	background-image: url('thumbnail8.png');
+	background-image: url('images/thumbnail8.png');
 }
 
 .projects {
@@ -692,30 +695,30 @@ footer > p:last-of-type {
 footer > p:last-of-type span {
 	font-size: 1.5rem;
 }
-footer .connect-wrap {
+footer .social-media {
 	margin: 5vh auto;
 	text-align: center;
 }
 
-footer .connect-wrap .link {
+footer .social-media .link {
 	display: inline-block;
-	width: 70px;
-	height: 70px;
+	width: 65px;
+	height: 65px;
 	border-radius: 50%;
 	margin: 5vh 10px;
 	transition: 1s all ease;
 	position: relative;
 }
 
-footer .connect-wrap a {
+footer .social-media a {
 	text-decoration: none;
 	color: inherit;
 	font-size: 2.5rem;
 	position: relative;
-	top: 7px;
+	top: 4px;
 }
 
-footer .connect-wrap .link:hover {
+footer .social-media .link:hover {
 	cursor: pointer;
 	background-color: #fff;
 	color: #436cff;
