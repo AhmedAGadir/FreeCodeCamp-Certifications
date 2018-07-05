@@ -4,7 +4,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   line-height: 1.5 !important;
-  max-width: 1000px;
   margin: 0 auto;
   border: 1px solid #bec4ce;
   background-color: #dadee5;
@@ -130,7 +129,7 @@ header .glyphicon.glyphicon-triangle-bottom {
 /* portfolio */
 
 #portfolio {
-  background-color: white;
+  background-color: ;
 }
 
 #portfolio .col-md-4 {
@@ -203,6 +202,7 @@ header .glyphicon.glyphicon-triangle-bottom {
 #about {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  background-image: url('https://s19.postimg.cc/an1u01so3/Untitled.png');
   background-size: 100%;
   background-color: white;
   padding-bottom: 5%;
