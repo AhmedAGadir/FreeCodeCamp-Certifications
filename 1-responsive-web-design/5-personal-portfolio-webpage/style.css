@@ -212,7 +212,7 @@ header i.fa-chevron-down:hover {
 .intro {
 	min-height: 100vh;
 	padding: 10vh 60px;
-	background-color: #97A3B7;
+	background-color: #436cff;
 	color: #fff;
 	position: relative;
 }
@@ -447,11 +447,11 @@ li i {
 }
 
 .algo-data a:nth-of-type(5) .thumbnail {
-	background-image: url('images/thumbnail7.png');
+	background-image: url('images/thumbnail11.png');
 }
 
 .algo-data a:nth-of-type(6) .thumbnail {
-	background-image: url('images/thumbnail8.png');
+	background-image: url('images/thumbnail12.png');
 }
 
 .projects {
