@@ -61,7 +61,7 @@ button:hover {
 header {
 	height: 100vh;
 	background-color: #436cff; 
-/*	background-image: url('images/close-up-code-coding-160107.jpg');
+/*	background-image: url('./images/close-up-code-coding-160107.jpg');
 	background-size: 100%;
 	background-blend-mode: soft-light;*/
 }
@@ -407,51 +407,51 @@ li i {
 }
 
 .web-design a:nth-of-type(1) .thumbnail {
-	background-image: url('images/thumbnail1.png');
+	background-image: url('./images/thumbnail1.png');
 }
 
 .web-design a:nth-of-type(2) .thumbnail {
-	background-image: url('images/thumbnail2.png');
+	background-image: url('./images/thumbnail2.png');
 }
 
 .web-design a:nth-of-type(3) .thumbnail {
-	background-image: url('images/thumbnail3.png');
+	background-image: url('./images/thumbnail3.png');
 }
 
 .web-design a:nth-of-type(4) .thumbnail {
-	background-image: url('images/thumbnail4.png');
+	background-image: url('./images/thumbnail4.png');
 }
 
 .web-design a:nth-of-type(5) .thumbnail {
-	background-image: url('images/thumbnail5.png');
+	background-image: url('./images/thumbnail5.png');
 }
 
 .web-design a:nth-of-type(6) .thumbnail {
-	background-image: url('images/thumbnail6.png');
+	background-image: url('./images/thumbnail6.png');
 }
 
 .algo-data a:nth-of-type(1) .thumbnail {
-	background-image: url('images/thumbnail7.png');
+	background-image: url('./images/thumbnail7.png');
 }
 
 .algo-data a:nth-of-type(2) .thumbnail {
-	background-image: url('images/thumbnail8.png');
+	background-image: url('./images/thumbnail8.png');
 }
 
 .algo-data a:nth-of-type(3) .thumbnail {
-	background-image: url('images/thumbnail9.png');
+	background-image: url('./images/thumbnail9.png');
 }
 
 .algo-data a:nth-of-type(4) .thumbnail {
-	background-image: url('images/thumbnail10.png');
+	background-image: url('./images/thumbnail10.png');
 }
 
 .algo-data a:nth-of-type(5) .thumbnail {
-	background-image: url('images/thumbnail11.png');
+	background-image: url('./images/thumbnail11.png');
 }
 
 .algo-data a:nth-of-type(6) .thumbnail {
-	background-image: url('images/thumbnail12.png');
+	background-image: url('./images/thumbnail12.png');
 }
 
 .projects {
