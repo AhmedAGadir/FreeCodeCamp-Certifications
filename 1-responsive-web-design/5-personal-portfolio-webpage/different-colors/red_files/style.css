@@ -61,7 +61,7 @@ button:hover {
 
 header {
 	height: 100vh;
-	background-color: dodgerblue; 
+	background-color: #ff4359; 
 /*	background-image: url('./images/close-up-code-coding-160107.jpg');
 	background-size: 100%;
 	background-blend-mode: soft-light;*/
@@ -78,13 +78,13 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: dodgerblue;
+	background-color: #ff4359;
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-	border-color: dodgerblue;
-	color: dodgerblue;
+	border-color: #ff4359;
+	color: #ff4359;
 	background-color: #fff;
 }
 
@@ -213,7 +213,7 @@ header i.fa-chevron-down:hover {
 .intro {
 	min-height: 100vh;
 	padding: 10vh 60px;
-	background-color: dodgerblue;
+	background-color: #ff4359;
 	color: #fff;
 	position: relative;
 }
@@ -367,7 +367,7 @@ header i.fa-chevron-down:hover {
 	border: 1px solid lightgrey;
 	margin: 4px;
 	padding: 10px;
-	background-color: dodgerblue;
+	background-color: #ff4359;
 	min-width: 250px;
 }
 
@@ -765,7 +765,7 @@ footer .invitation button:after {
 
 footer {
 	min-height: 100vh;
-	background-color: dodgerblue;
+	background-color: #ff4359;
 	position: relative;
 	color: #fff;
 }
@@ -814,7 +814,7 @@ footer .social-media a {
 footer .social-media .link:hover {
 	cursor: pointer;
 	background-color: #fff;
-	color: dodgerblue;
+	color: #ff4359;
 
 	animation-name: float-up;
 	animation-duration: 0.5s;
@@ -846,10 +846,10 @@ footer .social-media .link:hover {
 }
  
 ::-webkit-scrollbar-thumb {
-    background: dodgerblue; 
+    background: #ff4359; 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: dodgerblue; 
+	background: #ff4359; 
 }
 
 /* ========= COLOR PALETTE ========= 
