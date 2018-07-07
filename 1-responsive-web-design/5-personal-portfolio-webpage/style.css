@@ -14,6 +14,7 @@
 body {
 	font-family: 'Open sans', sans-serif;
 	line-height: 1.5;
+	/*background-color: #faf7ff;*/
 }
 
 h1 {	
@@ -60,7 +61,7 @@ button:hover {
 
 header {
 	height: 100vh;
-	background-color: #436cff; 
+	background-color: DODGERBLUE; 
 /*	background-image: url('./images/close-up-code-coding-160107.jpg');
 	background-size: 100%;
 	background-blend-mode: soft-light;*/
@@ -77,13 +78,13 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: #436cff;
+	background-color: DODGERBLUE;
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-	border-color: #436cff;
-	color: #436cff;
+	border-color: DODGERBLUE;
+	color: DODGERBLUE;
 	background-color: #fff;
 }
 
@@ -201,7 +202,7 @@ header i.fa-chevron-down {
 }
 
 header i.fa-chevron-down:hover {
-	color: #54637A;
+	color: #5F7089;
 	cursor: pointer;
 }
 
@@ -212,7 +213,7 @@ header i.fa-chevron-down:hover {
 .intro {
 	min-height: 100vh;
 	padding: 10vh 60px;
-	background-color: #436cff;
+	background-color: DODGERBLUE;
 	color: #fff;
 	position: relative;
 }
@@ -230,19 +231,19 @@ header i.fa-chevron-down:hover {
 	min-height: 100vh;
 	margin: 0 auto;
 	padding: 10vh 60px;
-	background-color: #54637A;
+	background-color: #5F7089;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 	position: relative;
-	color: #fff;
 }
 
 .degree .text-wrap {
 	width: 550px;
 	min-height: 550px;
 	padding: 30px;
+	color: #fff;
 }
 
 .degree .img-wrap {
@@ -272,6 +273,7 @@ header i.fa-chevron-down:hover {
 	font-family: 'teko', sans-serif;
 	font-size: 2.2rem;
 	letter-spacing: 1px;
+
 }
 .degree p {
 	text-align: left;
@@ -340,16 +342,15 @@ header i.fa-chevron-down:hover {
 
 .skills {
 	padding: 10vh 60px;
-	background-color: ;
 }
 
 
 .skills h2 {
-	color: #54637A;
+	color: #5F7089;
 }
 
 .skills p {
-	color: #54637A;
+	color: #5F7089;
 }
 
 .skills .cards {
@@ -366,7 +367,7 @@ header i.fa-chevron-down:hover {
 	border: 1px solid lightgrey;
 	margin: 4px;
 	padding: 10px;
-	background-color: #97A3B7;
+	background-color: DODGERBLUE;
 	min-width: 250px;
 }
 
@@ -455,15 +456,19 @@ li i {
 }
 
 .projects {
-	color: #54637A;
+	color: #5F7089;
 	padding: 0 60px;
 }
 
 .projects h2 {
 	text-align: center;
 	margin: 20vh auto 10vh;
-	color: #54637A;
+	color: #5F7089;
 }
+
+/*.projects h2 i {
+	color: #6900ff;
+}*/
 
 .web-design,
 .algo-data {
@@ -522,8 +527,8 @@ li i {
 	position: relative;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
-	border-color: #54637A; 
-	color: #54637A;
+	border-color: #5F7089; 
+	color: #5F7089;
 	background-color: #fff;
 	transition: all 0.3s ease;
 	z-index: 2;
@@ -532,7 +537,7 @@ li i {
 
 .projects .button-wrap:hover {
 	border-color: #fff;
-	background-color: #54637A;
+	background-color: #5F7089;
 	color: #fff;
 }
 
@@ -581,11 +586,12 @@ li i {
 .inspiration {
 	min-height: 80vh;
 	position: relative;
+	background-color: #faf7ff;
 }
 
 .inspiration blockquote {
 	max-width: 600px;
-	color: #54637A;
+	color: #5F7089;
 
 	position: absolute;
 	top: 50%;
@@ -601,12 +607,12 @@ li i {
 
 .inspiration blockquote i {
 	font-size: 2rem;
-	color: #54637A;
+	color: #5F7089;
 	margin: 2px;
 }
 
 .inspiration blockquote span.close-quote {
-	color: #54637A;
+	color: #5F7089;
 }
 .inspiration blockquote span.quote-footer {
 	display: block;
@@ -626,7 +632,7 @@ li i {
 
 .testimonials h2, .testimonials p {
 	text-align: center;
-	color: #54637A;
+	color: #5F7089;
 }
 
 .testimonials p {
@@ -667,12 +673,99 @@ li i {
 }
 
 
+/* ============== INVITATION ============== */
+
+
+footer .invitation {
+	position: relative;
+	top: -80px;
+	margin: 0 auto;
+	width: 80%;
+	min-height: 160px;
+	border-radius: 10px;
+	background-color: #5F7089;
+	padding: 15px 15px 15px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+footer .invitation p {
+	text-align: center;
+	padding: 20px;
+}
+
+@media (min-width: 950px) {
+	footer .invitation p {
+			max-width: 400px;
+	}
+}
+
+footer .invitation .button-wrap {
+	position: relative;
+	z-index: 1;
+	width: 110px;
+	height: 50px;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-color: #fff;
+	color: #fff;
+	background-color: #5F7089;
+	transition: 0.5s all ease;
+}
+
+footer .invitation .button-wrap:hover {
+	border-color: #5F7089;
+	color: #5F7089;
+	background-color: #fff;
+}
+
+footer .invitation button {
+	border: none;
+	outline: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 100%;
+	font-size: 1.2rem;
+	color: inherit;
+	background-color: inherit;
+}
+
+footer .invitation button:before,
+footer .invitation button:after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	border: 3px solid;
+	border-color: inherit;
+	width: 50px;
+	height: 100%;
+	border-radius: 50%;
+	background-color: inherit;
+	z-index: -1;
+}
+
+footer .invitation button:before {
+	left: -25px;
+}
+
+footer .invitation button:after {
+	right: -25px;
+}
+
 /* ============== FOOTER ============== */
 
 
 footer {
 	min-height: 100vh;
-	background-color: #436cff;
+	background-color: DODGERBLUE;
 	position: relative;
 	color: #fff;
 }
@@ -721,7 +814,7 @@ footer .social-media a {
 footer .social-media .link:hover {
 	cursor: pointer;
 	background-color: #fff;
-	color: #436cff;
+	color: DODGERBLUE;
 
 	animation-name: float-up;
 	animation-duration: 0.5s;
@@ -741,93 +834,6 @@ footer .social-media .link:hover {
 	}
 }
 
-
-/* ============== INVITATION ============== */
-
-
-footer .invitation {
-	position: relative;
-	top: -80px;
-	margin: 0 auto;
-	width: 80%;
-	min-height: 160px;
-	border-radius: 10px;
-	background-color: #54637A;
-	padding: 15px 15px 15px 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	box-shadow: 0 2px 2px #2C333F;
-}
-
-footer .invitation p {
-	text-align: center;
-	padding: 20px;
-}
-
-@media (min-width: 950px) {
-	footer .invitation p {
-			max-width: 400px;
-	}
-}
-
-footer .invitation .button-wrap {
-	position: relative;
-	z-index: 1;
-	width: 110px;
-	height: 50px;
-	border-top: 3px solid;
-	border-bottom: 3px solid;
-	border-color: #fff;
-	color: #fff;
-	background-color: #54637A;
-	transition: 0.5s all ease;
-}
-
-footer .invitation .button-wrap:hover {
-	border-color: #54637A;
-	color: #54637A;
-	background-color: #fff;
-}
-
-footer .invitation button {
-	border: none;
-	outline: none;
-	box-shadow: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-o-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-	width: 100%;
-	height: 100%;
-	font-size: 1.2rem;
-	color: inherit;
-	background-color: inherit;
-}
-
-footer .invitation button:before,
-footer .invitation button:after {
-	content: '';
-	position: absolute;
-	top: -3px;
-	border: 3px solid;
-	border-color: inherit;
-	width: 50px;
-	height: 100%;
-	border-radius: 50%;
-	background-color: inherit;
-	z-index: -1;
-}
-
-footer .invitation button:before {
-	left: -25px;
-}
-
-footer .invitation button:after {
-	right: -25px;
-}
 
 /* ============== SCROLLBAR ============== */
 
@@ -849,7 +855,8 @@ footer .invitation button:after {
 /* ========= COLOR PALETTE ========= 
 
 homagegrey: 97A3B7;
-darker : 54637A;
+darker : 5F7089; 
+offwhite: faf7ff;
 
 blue: 436cff;
 purple: 8C43ff;
