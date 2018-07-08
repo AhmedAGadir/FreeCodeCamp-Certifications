@@ -36,6 +36,12 @@ p, button, li {
 	font-size: 1.2rem;
 }
 
+button {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* ==============  ============== */
+
 .text-title {
 	margin: 10vh 0 7vh;
 	text-align: center;
@@ -46,9 +52,6 @@ p, button, li {
 	text-align: center;
 }
 
-button {
-	font-family: 'Ubuntu', sans-serif;
-}
 
 button:hover {
 	cursor: pointer;
