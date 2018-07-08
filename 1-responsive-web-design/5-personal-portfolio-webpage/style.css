@@ -27,7 +27,6 @@ h1 {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-
 h3 {
 	font-size: 1.6rem;
 	font-weight: lighter;
@@ -533,7 +532,8 @@ li i {
 }
 
 
-.thumbnail .text-wrap:hover {
+.thumbnail .text-wrap:hover, 
+.thumbnail .text-wrap:focus {
 	opacity: 0.9;
 	cursor: pointer;
 }
@@ -606,16 +606,14 @@ li i {
 	min-height: 80vh;
 	position: relative;
 	background-color: #faf7ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .inspiration blockquote {
 	max-width: 600px;
 	color: #4D5A6F;
-
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
 }
 
 .inspiration blockquote p {
