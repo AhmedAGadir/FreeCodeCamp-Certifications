@@ -14,7 +14,6 @@
 body {
 	font-family: 'Open sans', sans-serif;
 	line-height: 1.5;
-	/*background-color: #faf7ff;*/
 }
 
 h1 {	
@@ -61,7 +60,7 @@ button:hover {
 
 header {
 	height: 100vh;
-	background-color: dodgerblue; 
+	/*background-color: dodgerblue; */
 /*	background-image: url('./images/close-up-code-coding-160107.jpg');
 	background-size: 100%;
 	background-blend-mode: soft-light;*/
@@ -78,14 +77,14 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: dodgerblue;
+	/*background-color: dodgerblue;*/
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-	border-color: dodgerblue;
+/*	border-color: dodgerblue;
 	color: dodgerblue;
-	background-color: #fff;
+	background-color: #fff;*/
 }
 
 header button {
@@ -202,7 +201,7 @@ header i.fa-chevron-down {
 }
 
 header i.fa-chevron-down:hover {
-	color: #5F7089;
+	color: #4D5A6F;
 	cursor: pointer;
 }
 
@@ -213,7 +212,7 @@ header i.fa-chevron-down:hover {
 .intro {
 	min-height: 100vh;
 	padding: 10vh 60px;
-	background-color: dodgerblue;
+	/*background-color: dodgerblue;*/
 	color: #fff;
 	position: relative;
 }
@@ -240,10 +239,17 @@ header i.fa-chevron-down:hover {
 }
 
 .degree .text-wrap {
-	width: 550px;
-	min-height: 550px;
+	width: 750px;
 	padding: 30px;
 	color: #fff;
+}
+
+.degree .text-wrap .text-title {
+	margin: 5vh auto;
+}
+
+.degree .text-wrap p {
+	margin-bottom: 10vh;
 }
 
 .degree .img-wrap {
@@ -251,7 +257,7 @@ header i.fa-chevron-down:hover {
 	flex-shrink: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 	.img-wrap {
 		order: -1;
 	}
@@ -346,18 +352,35 @@ header i.fa-chevron-down:hover {
 
 
 .skills h2 {
-	color: #5F7089;
+	color: #4D5A6F;
 }
 
 .skills p {
-	color: #5F7089;
+	color: #4D5A6F;
 }
 
 .skills .cards {
 	width: 100%;
 	display: flex;
-	align-items: flex-end;
+	align-items: strech;
 	flex-wrap: wrap;
+}
+
+@media (min-width: 920px) {
+	.skills .cards {
+		align-items: flex-end;
+	}
+	
+	.skills ul:last-of-type li:not(:first-of-type) {
+		display: inline-block;
+	}
+
+}
+
+@media (min-width: 1125px) {
+	.skills ul:last-of-type li:not(:first-of-type) {
+		display: block;
+	}
 }
 
 .skills ul {
@@ -367,7 +390,7 @@ header i.fa-chevron-down:hover {
 	border: 1px solid lightgrey;
 	margin: 4px;
 	padding: 10px;
-	background-color: dodgerblue;
+	/*background-color: dodgerblue;*/
 	min-width: 250px;
 }
 
@@ -456,19 +479,15 @@ li i {
 }
 
 .projects {
-	color: #5F7089;
+	color: #4D5A6F;
 	padding: 0 60px;
 }
 
 .projects h2 {
 	text-align: center;
 	margin: 20vh auto 10vh;
-	color: #5F7089;
+	color: #4D5A6F;
 }
-
-/*.projects h2 i {
-	color: #6900ff;
-}*/
 
 .web-design,
 .algo-data {
@@ -502,7 +521,7 @@ li i {
 }
 
 .thumbnail .text-wrap {
-	background: rgba(26,30,36,0.8);
+	background: #4D5A6F;
 	color: #fff;
 	height: 100%;
 	display: flex;
@@ -515,7 +534,7 @@ li i {
 
 
 .thumbnail .text-wrap:hover {
-	opacity: 1;
+	opacity: 0.9;
 	cursor: pointer;
 }
 
@@ -525,8 +544,8 @@ li i {
 	height: 60px;
 	width: 220px;
 	position: relative;
-	border-color: #5F7089; 
-	color: #5F7089;
+	border-color: #4D5A6F; 
+	color: #4D5A6F;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
 	background-color: #fff;
@@ -537,7 +556,7 @@ li i {
 
 .projects .button-wrap:hover {
 	border-color: #fff;
-	background-color: #5F7089;
+	background-color: #4D5A6F;
 	color: #fff;
 }
 
@@ -591,7 +610,7 @@ li i {
 
 .inspiration blockquote {
 	max-width: 600px;
-	color: #5F7089;
+	color: #4D5A6F;
 
 	position: absolute;
 	top: 50%;
@@ -607,13 +626,9 @@ li i {
 
 .inspiration blockquote i {
 	font-size: 2rem;
-	color: #5F7089;
 	margin: 2px;
 }
 
-.inspiration blockquote span.close-quote {
-	color: #5F7089;
-}
 .inspiration blockquote span.quote-footer {
 	display: block;
 	text-align: right;
@@ -627,12 +642,12 @@ li i {
 
 .testimonials {
 	height: calc(100% + 80px);
-	margin: 10vh 60px;
+	padding: 10vh 60px;
 }
 
 .testimonials h2, .testimonials p {
 	text-align: center;
-	color: #5F7089;
+	color: #4D5A6F;
 }
 
 .testimonials p {
@@ -650,7 +665,8 @@ li i {
 	display: block;
 	width: 100%;
 	height: 100%;
-	border: 3px solid #97A3B7;
+	border: 3px solid;
+	border-color: #4D5A6F;
 	border-radius: 50%
 }
 
@@ -683,8 +699,8 @@ footer .invitation {
 	width: 80%;
 	min-height: 160px;
 	border-radius: 10px;
-	background-color: #5F7089;
-	padding: 15px 15px 15px 0;
+	background-color: #4D5A6F;
+	padding: 15px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -701,6 +717,9 @@ footer .invitation p {
 	footer .invitation p {
 			max-width: 400px;
 	}
+	footer .invitation .button-wrap {
+		right: 10px;
+	}
 }
 
 footer .invitation .button-wrap {
@@ -712,13 +731,13 @@ footer .invitation .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	background-color: #5F7089;
+	background-color: #4D5A6F;
 	transition: 0.5s all ease;
 }
 
 footer .invitation .button-wrap:hover {
-	border-color: #5F7089;
-	color: #5F7089;
+	border-color: #4D5A6F;
+	color: #4D5A6F;
 	background-color: #fff;
 }
 
@@ -765,7 +784,7 @@ footer .invitation button:after {
 
 footer {
 	min-height: 100vh;
-	background-color: dodgerblue;
+	/*background-color: dodgerblue;*/
 	position: relative;
 	color: #fff;
 }
@@ -813,11 +832,9 @@ footer .social-media a {
 
 footer .social-media .link:hover {
 	cursor: pointer;
-	background-color: #fff;
-	color: dodgerblue;
-
+	/*color: dodgerblue;*/
 	animation-name: float-up;
-	animation-duration: 0.5s;
+	animation-duration: 0.3s;
 	animation-timing-function: ease-in;
 }
 
@@ -846,19 +863,46 @@ footer .social-media .link:hover {
 }
  
 ::-webkit-scrollbar-thumb {
-    background: dodgerblue; 
+    background: #4D5A6F; 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: dodgerblue; 
+	background: #4D5A6F; 
 }
+
+/* ========= remove padding when screen is small ========= */
+
+@media (max-width: 425px) {
+
+	.intro,
+	.degree,
+	.skills,
+	.testimonials {
+		padding: 10vh 15px;
+	}
+
+	.degree .text-wrap {
+		padding: 30px 15px;
+	}
+
+	.projects {
+		padding: 0 15px;
+	}
+
+	.projects .thumbnail {
+		margin: 10px 0;
+	}
+
+}
+
 
 /* ========= COLOR PALETTE ========= 
 
 homagegrey: 97A3B7;
-darker : 5F7089; 
+darker : 4D5A6F; 
 offwhite: faf7ff;
 
 dodgerblue 
+complementary yellow: ffe11e;
 nice purple; 6900ff;
 
 blue: 436cff

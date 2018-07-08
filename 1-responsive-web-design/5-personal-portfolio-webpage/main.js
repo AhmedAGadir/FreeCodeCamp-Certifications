@@ -1,5 +1,37 @@
 
-// ================ HEADER STYLING =====
+// ================ PAGE THEME =====
+let themes = ['dodgerblue', '#ff4359'];
+let randomTheme = themes[Math.floor(Math.random() * themes.length)];
+
+if (localStorage.getItem('theme')) {
+	let previousTheme = JSON.parse(localStorage.getItem('theme'));
+	if (previousTheme == 'dodgerblue') {
+		randomTheme = '#ff4359';
+	} else {
+		randomTheme = 'dodgerblue';
+	}
+}
+
+localStorage.setItem('theme', JSON.stringify(randomTheme))
+
+document.querySelector('header').style.backgroundColor = randomTheme;
+// ==================
+document.querySelector('header .button-wrap').style.backgroundColor = randomTheme;
+document.querySelector('header .button-wrap').addEventListener('mouseover', () => {
+	document.querySelector('header .button-wrap').style.borderColor = randomTheme;
+	document.querySelector('header .button-wrap').style.color = randomTheme;
+	document.querySelector('header .button-wrap').style.backgroundColor = '#fff';
+});
+document.querySelector('header .button-wrap').addEventListener('mouseout', () => {
+	document.querySelector('header .button-wrap').style.borderColor = '#fff';
+	document.querySelector('header .button-wrap').style.color = '#fff';
+	document.querySelector('header .button-wrap').style.backgroundColor = randomTheme;
+});
+// ==================
+document.querySelector('.intro').style.backgroundColor = randomTheme;
+document.querySelectorAll('.skills ul').forEach(ul => ul.style.backgroundColor = randomTheme);
+document.querySelector('footer').style.backgroundColor = randomTheme;
+// ================ HEADER TYPING TEXT =====
 
 let role = document.querySelector('header h1 .role');
 let pipebar = document.querySelector('header h1 .pipebar')
