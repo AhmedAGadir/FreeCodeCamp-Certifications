@@ -48,8 +48,8 @@ button {
 }
 
 .text-body  {
-	margin-bottom: 20vh;
 	text-align: center;
+	margin-bottom: 20vh;
 }
 
 
@@ -250,7 +250,7 @@ header i.fa-chevron-down:hover {
 	margin: 5vh auto;
 }
 
-.degree .text-wrap p {
+.degree .text-wrap .text-body {
 	margin-bottom: 10vh;
 }
 
