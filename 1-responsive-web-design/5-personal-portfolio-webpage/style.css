@@ -607,7 +607,7 @@ li i {
 
 .inspiration {
 	min-height: 80vh;
-	position: relative;
+	padding: 10vh 60px;
 	background-color: #faf7ff;
 	display: flex;
 	align-items: center;
@@ -877,6 +877,7 @@ footer .social-media .link:hover {
 	.intro,
 	.degree,
 	.skills,
+	.inspiration,
 	.testimonials {
 		padding: 10vh 15px;
 	}
