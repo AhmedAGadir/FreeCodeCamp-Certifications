@@ -32,6 +32,8 @@
 	- put code through linters and validators 
 	- add in metadata so that i can come high on google results - author , description etc etc
 	- add google analytics
+	- make site work on large computers - use a long media query
+	- fix codepen and jsfiddle buttons properly https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link
 	 -->
 
 	<header>
@@ -64,7 +66,7 @@
 			<h2 class="text-title">Thanks for stopping by.</h2>
 			
 			<div class="text-body">
-				<p>Hi, I'm Ahmed. I'm a 24 year old recent grad in mechanical engineering and technology/design enthusiast. I love coffee, birds and my need for adventure is always leading me to try new foods and learn new skills. I began learning to code in September 2017 with <a href="https://www.freecodecamp.org/" target="_blank" title="https://www.freecodecamp.org/">freeCodeCamp</a> and have since found a new passion. The purpose of this page to tell you a bit about who I am, what I do and to show off some of my programming skills.</p>
+				<p>Hi, I'm Ahmed. I'm a 24 year old recent grad in mechanical engineering and technology/design enthusiast. I'm addicted to coffee, obsessed with birds and my need for adventure is always leading me to try new foods and learn new skills. I first started coding in September 2017 with <a href="https://www.freecodecamp.org/" target="_blank" title="https://www.freecodecamp.org/">freeCodeCamp</a> and have been learning ever since. The purpose of this page to tell you a bit about who I am, what I do and to show off some of my programming skills.</p>
 			</div>
 		</div>	
 
@@ -142,7 +144,7 @@
 		<div class="projects">
 			<h2 class="text-title">My Recent Work</h2>
 			<div class="text-body">
-				<p>At this moment in time, I've built around 20 design projects and have solved over 200 programming challenges. Here's some of my favourite work.</p>
+				<p>Currently I've built around 20 design projects and have solved over 200 programming challenges. Here's some of my favourite work.</p>
 			</div>
 
 			<div class="web-design">
@@ -151,7 +153,7 @@
 					<a href="https://codepen.io/AhmedAGadir/full/wXZyGg/" target="_blank">
 						<div class="thumbnail">
 							<div class="text-wrap">
-								<p>html5 canvas survey form</p>
+								<p>canvas survey form</p>
 							</div>
 						</div>
 					</a>
@@ -196,13 +198,13 @@
 						</div>
 					</a>
 				</div>
-				<a href="https://codepen.io/AhmedAGadir/pens/popular/" target="_blank">
 					<div class="button-wrap">
-						<div class="circle1"></div>
-						<button><i class="fab fa-codepen"></i> See more on CodePen</button>
-						<div class="circle2"></div>	
+						<button>
+							<a href="https://codepen.io/AhmedAGadir/pens/popular/" target="_blank">
+								<i class="fab fa-codepen"></i> See more on CodePen
+							</a>
+						</button>
 					</div>	
-				</a>
 			</div>
 
 			<div class="algo-data">
@@ -257,11 +259,13 @@
 						</div>
 					</a>
 				</div>
-				<a href="https://jsfiddle.net/user/ahmedgadir/fiddles/" target="_blank">
 					<div class="button-wrap">	
-						<button><i class="fab fa-jsfiddle"></i> See more on JSFiddle</button>
+						<button>
+							<a href="https://jsfiddle.net/user/ahmedgadir/fiddles/" target="_blank">
+								<i class="fab fa-jsfiddle"></i> See more on JSFiddle
+							</a>
+						</button>
 					</div>	
-				</a>
 			</div>
 			<p class="text-body mono">Right now I'm learning a few different libraries/frameworks/preprocessors (Sass, jQuery, React, Redux), so you can expect to see some projects using those technologies added to this site in the near future.</p>
 		</div>
