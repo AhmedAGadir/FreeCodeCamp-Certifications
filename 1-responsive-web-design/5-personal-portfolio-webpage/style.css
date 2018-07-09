@@ -14,6 +14,8 @@
 body {
 	font-family: 'Open sans', sans-serif;
 	line-height: 1.5;
+	max-width: 1440px;
+  margin: 0 auto;
 }
 
 h1 {	
@@ -62,7 +64,9 @@ button:hover {
 
 header {
 	height: 100vh;
+	position: relative;
 	/*background-color: dodgerblue; */
+
 /*	background-image: url('./images/close-up-code-coding-160107.jpg');
 	background-size: 100%;
 	background-blend-mode: soft-light;*/
@@ -281,8 +285,8 @@ header i.fa-chevron-down:hover {
 	font-family: 'teko', sans-serif;
 	font-size: 2.2rem;
 	letter-spacing: 1px;
-
 }
+
 .degree p {
 	text-align: left;
 }
@@ -528,7 +532,7 @@ li i {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	text-align: center;
+	justify-content: center;
 	opacity: 0;
 	transition: 0.5s all ease;
 	padding: 15px;
@@ -539,6 +543,14 @@ li i {
 .thumbnail .text-wrap:focus {
 	opacity: 0.9;
 	cursor: pointer;
+}
+
+.thumbnail .text-wrap p {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Ubuntu', sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
 }
 
 
@@ -601,6 +613,9 @@ li i {
 	right: -30px;
 }
 
+.projects .mono {
+	font-family: monospace;
+}
 
 /* ============== BLOCKQUOTE ============== */
 
