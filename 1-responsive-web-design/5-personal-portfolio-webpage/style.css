@@ -16,6 +16,7 @@ body {
 	line-height: 1.5;
 	max-width: 1440px;
   margin: 0 auto;
+  color: #4D5A6F;
 }
 
 h1 {	
@@ -218,7 +219,7 @@ header i.fa-chevron-down:hover {
 .intro {
 	min-height: 100vh;
 	padding: 10vh 60px;
-	/*background-color: dodgerblue;*/
+	/*background-color: #97A3B7;*/
 	color: #fff;
 	position: relative;
 }
@@ -356,15 +357,6 @@ header i.fa-chevron-down:hover {
 	padding: 10vh 60px;
 }
 
-
-.skills h2 {
-	color: #4D5A6F;
-}
-
-.skills p {
-	color: #4D5A6F;
-}
-
 .skills .cards {
 	width: 100%;
 	display: flex;
@@ -396,7 +388,7 @@ header i.fa-chevron-down:hover {
 	border: 1px solid lightgrey;
 	margin: 4px;
 	padding: 10px;
-	/*background-color: dodgerblue;*/
+	/*background-color: #4D5A6F;*/
 	min-width: 250px;
 }
 
@@ -485,14 +477,12 @@ li i {
 }
 
 .projects {
-	color: #4D5A6F;
 	padding: 0 60px;
 }
 
 .projects h2 {
 	text-align: center;
 	margin: 20vh auto 10vh;
-	color: #4D5A6F;
 }
 
 .web-design,
@@ -507,8 +497,8 @@ li i {
 }
 
 .thumbnail {
-	width: 360px;
-	height: calc(360px / 16 * 9);
+	width: 380px;
+	height: calc(380px / 16 * 9);
 	margin: 10px;
 	border-radius: 5px;
 	background-color: #97A3B7;
@@ -529,6 +519,7 @@ li i {
 .thumbnail .text-wrap {
 	background: #4D5A6F;
 	color: #fff;
+	border-radius: 5px;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -636,7 +627,6 @@ li i {
 
 .inspiration blockquote {
 	max-width: 600px;
-	color: #4D5A6F;
 }
 
 .inspiration blockquote p {
@@ -668,7 +658,6 @@ li i {
 
 .testimonials h2, .testimonials p {
 	text-align: center;
-	color: #4D5A6F;
 }
 
 .testimonials p {

@@ -14,6 +14,7 @@ if (localStorage.getItem('theme')) {
 
 localStorage.setItem('theme', JSON.stringify(randomTheme))
 
+// ==================
 document.querySelector('header').style.backgroundColor = randomTheme;
 // ==================
 document.querySelector('header .button-wrap').style.backgroundColor = randomTheme;
@@ -29,8 +30,28 @@ document.querySelector('header .button-wrap').addEventListener('mouseout', () =>
 });
 // ==================
 document.querySelector('.intro').style.backgroundColor = randomTheme;
+// document.querySelector('.degree').style.backgroundColor = randomTheme
 document.querySelectorAll('.skills ul').forEach(ul => ul.style.backgroundColor = randomTheme);
 document.querySelector('footer').style.backgroundColor = randomTheme;
+// ==================
+// document.querySelectorAll('.thumbnail .text-wrap').forEach(textWrap => textWrap.style.backgroundColor = randomTheme);
+// document.querySelectorAll('.projects .button-wrap').forEach(buttonWrap => {
+// 	buttonWrap.style.color = randomTheme;
+
+// 	buttonWrap.addEventListener('mouseover', () => {
+// 		buttonWrap.style.borderColor = '#fff';
+// 		buttonWrap.style.color = '#fff';
+// 		buttonWrap.style.backgroundColor = randomTheme;
+// 	});
+
+// 	buttonWrap.addEventListener('mouseout', () => {
+// 		buttonWrap.style.borderColor = randomTheme;
+// 		buttonWrap.style.color = randomTheme;
+// 		buttonWrap.style.backgroundColor = '#fff';
+// 	});
+
+// });
+
 // ================ HEADER TYPING TEXT =====
 
 let role = document.querySelector('header h1 .role');
