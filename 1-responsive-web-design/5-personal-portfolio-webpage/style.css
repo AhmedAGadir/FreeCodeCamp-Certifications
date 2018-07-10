@@ -625,13 +625,17 @@ li i {
 	justify-content: center;
 }
 
+.inspiration .quote-wrap {
+	position: relative;
+	top: 10px;
+}
+
 .inspiration blockquote {
 	max-width: 600px;
 }
 
 .inspiration blockquote p {
 	margin-bottom: 20px;
-	font-size: 1.6rem;
 	text-align: center;
 }
 
@@ -640,18 +644,43 @@ li i {
 	margin: 2px;
 }
 
+.inspiration span.quote-text {
+	font-size: 1.6rem;
+}
+
 .inspiration blockquote span.quote-footer {
 	display: block;
 	text-align: right;
-	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
+.inspiration button {
+	margin-top: 10px;
+	float: right;
+	/*background-color: #4D5A6F;*/
+	color: white;
+	border: 10px solid #4D5A6F;
+	background-clip: padding-box;
+	/*border-image-source: url();*/
+	border-image-slice: 9;
+	border-image-repeat: round;
+	outline: none;
+	opacity: 1;
+}
+
+.inspiration button:hover {
+	opacity: 0.9;
+}
+
+.inspiration button:active {
+	opacity: 1;
+}
 
 /* ============== TESTIMONIALS ============== */
 
 
 .testimonials {
+	clear: both;
 	height: calc(100% + 80px);
 	padding: 10vh 60px;
 }
@@ -695,7 +724,12 @@ li i {
 }
 
 .testimonials blockquote p {
-	margin-bottom: 5vh;
+	margin-bottom: 3vh;
+}
+
+.testimonials blockquote span.quote-footer {
+	display: block;
+	text-align: center;
 }
 
 
@@ -873,10 +907,10 @@ footer .social-media .link:hover {
 }
  
 ::-webkit-scrollbar-thumb {
-    background: #4D5A6F; 
+    background: dodgerblue; 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: #4D5A6F; 
+	background: dodgerblue; 
 }
 
 /* ========= remove padding when screen is small ========= */

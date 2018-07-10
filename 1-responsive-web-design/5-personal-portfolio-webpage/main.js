@@ -35,22 +35,38 @@ document.querySelectorAll('.skills ul').forEach(ul => ul.style.backgroundColor =
 document.querySelector('footer').style.backgroundColor = randomTheme;
 // ==================
 // document.querySelectorAll('.thumbnail .text-wrap').forEach(textWrap => textWrap.style.backgroundColor = randomTheme);
-document.querySelectorAll('.projects .button-wrap').forEach(buttonWrap => {
-	buttonWrap.style.color = randomTheme;
+// document.querySelectorAll('.projects .button-wrap').forEach(buttonWrap => {
+// 	buttonWrap.style.color = randomTheme;
 
-	buttonWrap.addEventListener('mouseover', () => {
-		buttonWrap.style.borderColor = '#fff';
-		buttonWrap.style.color = '#fff';
-		buttonWrap.style.backgroundColor = randomTheme;
-	});
+// 	buttonWrap.addEventListener('mouseover', () => {
+// 		buttonWrap.style.borderColor = '#fff';
+// 		buttonWrap.style.color = '#fff';
+// 		buttonWrap.style.backgroundColor = randomTheme;
+// 	});
 
-	buttonWrap.addEventListener('mouseout', () => {
-		buttonWrap.style.borderColor = randomTheme;
-		buttonWrap.style.color = randomTheme;
-		buttonWrap.style.backgroundColor = '#fff';
-	});
+// 	buttonWrap.addEventListener('mouseout', () => {
+// 		buttonWrap.style.borderColor = randomTheme;
+// 		buttonWrap.style.color = randomTheme;
+// 		buttonWrap.style.backgroundColor = '#fff';
+// 	});
+// });
+// ==================
+document.querySelector('.inspiration button').style.backgroundColor = randomTheme;
+document.querySelector('.inspiration button').style.borderImageSource = `url('images/border-img-${randomTheme.replace('#','')}.png')`;
+// document.querySelector('.inspiration button').addEventListener('mouseover', () => {
+// 	document.querySelector('.inspiration button').style.borderImageSource = `url('images/border-img-hover-${randomTheme.replace('#','')}.png')`;
+// 	document.querySelector('.inspiration button').style.backgroundColor = '#faf7ff';
+// 	document.querySelector('.inspiration button').style.color = randomTheme;
+// });
 
-});
+// document.querySelector('.inspiration button').addEventListener('mouseout', () => {
+// 	document.querySelector('.inspiration button').style.borderImageSource =  `url('images/border-img-${randomTheme.replace('#','')}.png')`;
+// 	document.querySelector('.inspiration button').style.backgroundColor = randomTheme;
+// 	document.querySelector('.inspiration button').style.color = '#fff';
+// });
+
+
+console.log(document.querySelector('.inspiration button').style.borderImageSource)
 
 // ================ HEADER TYPING TEXT =====
 
