@@ -35,22 +35,22 @@ document.querySelectorAll('.skills ul').forEach(ul => ul.style.backgroundColor =
 document.querySelector('footer').style.backgroundColor = randomTheme;
 // ==================
 // document.querySelectorAll('.thumbnail .text-wrap').forEach(textWrap => textWrap.style.backgroundColor = randomTheme);
-// document.querySelectorAll('.projects .button-wrap').forEach(buttonWrap => {
-// 	buttonWrap.style.color = randomTheme;
+document.querySelectorAll('.projects .button-wrap').forEach(buttonWrap => {
+	buttonWrap.style.color = randomTheme;
 
-// 	buttonWrap.addEventListener('mouseover', () => {
-// 		buttonWrap.style.borderColor = '#fff';
-// 		buttonWrap.style.color = '#fff';
-// 		buttonWrap.style.backgroundColor = randomTheme;
-// 	});
+	buttonWrap.addEventListener('mouseover', () => {
+		buttonWrap.style.borderColor = '#fff';
+		buttonWrap.style.color = '#fff';
+		buttonWrap.style.backgroundColor = randomTheme;
+	});
 
-// 	buttonWrap.addEventListener('mouseout', () => {
-// 		buttonWrap.style.borderColor = randomTheme;
-// 		buttonWrap.style.color = randomTheme;
-// 		buttonWrap.style.backgroundColor = '#fff';
-// 	});
+	buttonWrap.addEventListener('mouseout', () => {
+		buttonWrap.style.borderColor = randomTheme;
+		buttonWrap.style.color = randomTheme;
+		buttonWrap.style.backgroundColor = '#fff';
+	});
 
-// });
+});
 
 // ================ HEADER TYPING TEXT =====
 
