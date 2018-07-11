@@ -38,7 +38,6 @@ h3 {
 
 p, button, li {
 	font-size: 1.2rem;
-	letter-spacing: 0.6px
 }
 
 button {
@@ -53,7 +52,9 @@ button {
 	appearance: none;
 }
 
-/* ==============  ============== */
+button:hover {
+	cursor: pointer;
+}
 
 .text-title {
 	margin: 10vh 0 7vh;
@@ -63,11 +64,6 @@ button {
 .text-body  {
 	text-align: center;
 	margin-bottom: 20vh;
-}
-
-
-button:hover {
-	cursor: pointer;
 }
 
 /* ============== HEADER ============== */
@@ -227,6 +223,10 @@ header i.fa-chevron-down:hover {
 	margin: 0 auto;
 }
 
+.intro .text-body {
+	letter-spacing: 0.6px
+}
+
 
 /* ============== DEGREE ============== */
 
@@ -251,10 +251,21 @@ header i.fa-chevron-down:hover {
 
 .degree .text-wrap .text-title {
 	margin: 5vh auto;
+	display: flex;
+	align-items: center;
+}
+
+.degree .text-wrap .text-title h2 {
+	text-align: left;
+	font-family: 'teko', sans-serif;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
 }
 
 .degree .text-wrap .text-body {
 	margin-bottom: 10vh;
+	letter-spacing: 0.4px;
+	text-align: left;
 }
 
 .degree .img-wrap {
@@ -272,22 +283,6 @@ header i.fa-chevron-down:hover {
 	width: 100%;
 	border-radius: 10px;
 	border: 2px solid lightgrey;
-}
-
-.degree .text-title {
-	display: flex;
-	align-items: center;
-}
-
-.degree h2 {
-	text-align: left;
-	font-family: 'teko', sans-serif;
-	font-size: 2.2rem;
-	letter-spacing: 1px;
-}
-
-.degree p {
-	text-align: left;
 }
 
 /* === COGS == */
@@ -355,11 +350,47 @@ header i.fa-chevron-down:hover {
 	padding: 10vh 60px;
 }
 
+.skills .text-body {
+	letter-spacing: 0.3px
+}
+
 .skills .cards {
 	width: 100%;
 	display: flex;
-	align-items: strech;
+	align-items: stretch;
 	flex-wrap: wrap;
+}
+
+.skills .cards ul {
+	flex: 1;
+	text-align: left;
+	font-family: 'Teko', sans-serif;
+	margin: 4px;
+	padding: 10px;
+	/*background-color: see javaScript;*/
+	min-width: 250px;
+}
+
+.skills .cards li {
+	margin: 8px 0;
+	padding-right: 20px;
+	list-style-type: none;
+	color: #293347;
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.skills .cards li h3 {
+	color: #fff;
+	font-size: 2.2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.skills .cards li i {
+	font-size: 3rem;
 }
 
 @media (min-width: 920px) {
@@ -375,52 +406,30 @@ header i.fa-chevron-down:hover {
 
 @media (min-width: 1125px) {
 	.skills ul:last-of-type li:not(:first-of-type) {
-		display: block;
+		display: block;	
 	}
-}
-
-.skills ul {
-	flex: 1;
-	text-align: left;
-	font-family: 'Teko', sans-serif;
-	border: 1px solid lightgrey;
-	margin: 4px;
-	padding: 10px;
-	/*background-color: see javaScript;*/
-	min-width: 250px;
-}
-
-.skills li {
-	margin: 0.5rem 0;
-	padding-right: 20px;
-	list-style-type: none;
-	color: #293347;
-	color: #fff;
-	font-size: 1.7rem;
-	font-weight: 300;
-	letter-spacing: 1px;
-}
-
-.skills h3:first-of-type {
-	color: #fff;
-	font-size: 2.2rem;
-	font-weight: 400;
-	text-align: center;
-}
-
-.cards + ul:last-of-type h3 {
-	text-align: left;
-}
-.cards + ul li:not(:first-of-type) {
-	display: inline;
-}
-
-li i {
-	font-size: 3rem;
 }
 
 
 /* ========= RECENT WORK ========= */
+
+.projects {
+	padding: 0 60px;
+}
+
+.projects .text-body {
+	letter-spacing: 0.3px
+}
+
+.projects h2 {
+	text-align: center;
+	margin: 20vh auto 10vh;
+}
+
+.web-design,
+.algo-data {
+	margin: 10vh auto;
+}
 
 .web-design a, .algo-data a {
 	text-decoration: none;
@@ -474,20 +483,6 @@ li i {
 	background-image: url('./images/thumbnail12.png');
 }
 
-.projects {
-	padding: 0 60px;
-}
-
-.projects h2 {
-	text-align: center;
-	margin: 20vh auto 10vh;
-}
-
-.web-design,
-.algo-data {
-	margin: 10vh auto;
-}
-
 .thumbnail-wrap {
 	display: flex;
 	flex-wrap: wrap;
@@ -528,7 +523,6 @@ li i {
 	font-size: 1.12rem;
 }
 
-
 .thumbnail .text-wrap:hover, 
 .thumbnail .text-wrap:focus {
 	opacity: 0.9;
@@ -546,7 +540,7 @@ li i {
 .projects .button-wrap {
 	margin: 40px auto;
 	height: 60px;
-	width: 230px;
+	width: 220px;
 	position: relative;
 	border-color: #4D5A6F; 
 	color: #4D5A6F;
@@ -623,7 +617,6 @@ li i {
 .inspiration blockquote p {
 	margin-bottom: 10px;
 	text-align: center;
-	letter-spacing: 0.4px;
 }
 
 .inspiration blockquote i {
@@ -631,15 +624,15 @@ li i {
 	margin: 2px;
 }
 
-.inspiration span.quote-text {
+.inspiration blockquote span.quote-text {
 	font-size: 1.6rem;
+	letter-spacing: 0.2px;
 }
 
 .inspiration blockquote span.quote-footer {
 	display: block;
 	text-align: right;
 	font-size: 1.2rem;
-	letter-spacing: 0.4px;
 }
 
 
@@ -650,19 +643,19 @@ li i {
 	clear: both;
 	height: calc(100% + 80px);
 	padding: 10vh 60px;
-}
-
-.testimonials h2, .testimonials p {
 	text-align: center;
 }
 
+.testimonials > p {
+	margin-bottom: 10vh;
+}
+
 .testimonials p {
-	margin-bottom: 10vh
+	letter-spacing: 0.3px;
 }
 
 .testimonials img {
 	width: 180px;
-	height: 180px;
 	display: block;
 	position: relative;
 	left: 10px;
@@ -680,7 +673,6 @@ li i {
 
 .testimonials blockquote span.quote-footer {
 	display: block;
-	text-align: center;
 	letter-spacing: 0.2px;
 }
 
@@ -707,6 +699,7 @@ footer .invitation {
 footer .invitation p {
 	text-align: center;
 	padding: 20px;
+	letter-spacing: 0.3px;
 }
 
 @media (min-width: 950px) {
@@ -784,41 +777,27 @@ footer .logo {
 footer .motto {
 	text-align: center;
 	font-size: 1.4rem;
-	letter-spacing: 0.8px;
+	letter-spacing: 0.6px;
 }
 
-footer > p:last-of-type {
-	text-align: center;
-	font-size: 1rem;
-	padding-bottom: 5vh;
-	letter-spacing: 0.8px;
-}
-footer > p:last-of-type span {
-	font-size: 1.5rem;
-}
 footer .social-media {
-	margin: 0 auto;
 	text-align: center;
 }
 
-footer .social-media .link {
+footer .social-media a {
 	display: inline-block;
-	width: 65px;
-	height: 65px;
-	margin: 5vh 10px;
+	margin: 5vh 20px;
 	transition: 1s all ease;
 	position: relative;
+	font-size: 2.5rem;
 }
 
 footer .social-media a {
 	text-decoration: none;
 	color: inherit;
-	font-size: 2.5rem;
-	position: relative;
-	top: 4px;
 }
 
-footer .social-media .link:hover {
+footer .social-media a:hover {
 	cursor: pointer;
 	/*color: see javaScript;*/
 	animation-name: bounce;
@@ -839,6 +818,15 @@ footer .social-media .link:hover {
 	}
 }
 
+footer > p:last-of-type {
+	text-align: center;
+	font-size: 1rem;
+	padding-bottom: 5vh;
+	letter-spacing: 0.8px;
+}
+footer > p:last-of-type span {
+	font-size: 1.5rem;
+}
 
 /* ============== SCROLLBAR ============== */
 
@@ -856,13 +844,6 @@ footer .social-media .link:hover {
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: #4D5A6F; 
 }
-
-
-
-
-
-
-
 
 /* ========= remove padding when screen is small ========= */
 
