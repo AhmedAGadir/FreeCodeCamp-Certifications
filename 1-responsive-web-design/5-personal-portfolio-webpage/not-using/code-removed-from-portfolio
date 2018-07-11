@@ -1,0 +1,105 @@
+<button>click for more inspiration</button>
+<div class="api-reference">quote of the day supplied by <cite>TheySaidSo Famous Quotes API</cite></div>  
+
+
+.inspiration button {
+	margin: 10px 0;
+	float: right;
+	color: white;
+	border: 5px solid #4D5A6F;
+	padding: 2px 4px;
+	background-clip: padding-box;
+	border-image-slice: 9;
+	border-image-repeat: round;
+	outline: none;
+	opacity: 1;
+	font-size: 1rem;
+}
+
+.inspiration button:hover {
+	opacity: 0.9;
+}
+
+.inspiration button:active {
+	opacity: 1;
+}
+.inspiration .api-reference {
+	clear: both;
+	text-align: right;
+	display: none;
+	margin-top: 10px;
+}
+
+
+
+
+orange: ff9443;
+yellow: ffc743;
+
+darkgrey: 292929;
+darkblue: #293347;
+
+shadow: 2C333F;
+
+complementary yellow: ffe11e;
+nice purple; 6900ff;
+
+blue: 436cff
+purple: 8C43ff;
+shadow: 2C333F;
+
+
+
+// ==================
+// document.querySelectorAll('.thumbnail .text-wrap').forEach(textWrap => textWrap.style.backgroundColor = randomTheme);
+// document.querySelectorAll('.projects .button-wrap').forEach(buttonWrap => {
+// 	buttonWrap.style.color = randomTheme;
+
+// 	buttonWrap.addEventListener('mouseover', () => {
+// 		buttonWrap.style.borderColor = '#fff';
+// 		buttonWrap.style.color = '#fff';
+// 		buttonWrap.style.backgroundColor = randomTheme;
+// 	});
+
+// 	buttonWrap.addEventListener('mouseout', () => {
+// 		buttonWrap.style.borderColor = randomTheme;
+// 		buttonWrap.style.color = randomTheme;
+// 		buttonWrap.style.backgroundColor = '#fff';
+// 	});
+// });
+// ==================
+// document.querySelector('.inspiration button').addEventListener('mouseover', () => {
+// 	document.querySelector('.inspiration button').style.borderImageSource = `url('images/border-img-hover-${randomTheme.replace('#','')}.png')`;
+// 	document.querySelector('.inspiration button').style.backgroundColor = '#faf7ff';
+// 	document.querySelector('.inspiration button').style.color = randomTheme;
+// });
+
+// document.querySelector('.inspiration button').addEventListener('mouseout', () => {
+// 	document.querySelector('.inspiration button').style.borderImageSource =  `url('images/border-img-${randomTheme.replace('#','')}.png')`;
+// 	document.querySelector('.inspiration button').style.backgroundColor = randomTheme;
+// 	document.querySelector('.inspiration button').style.color = '#fff';
+// });
+// document.querySelector('.degree').style.backgroundColor = randomTheme
+
+
+// // ================ INSPIRATION-BUTTON =====
+
+// let inspirationButton = document.querySelector('.inspiration button');
+
+// inspirationButton.style.backgroundColor = randomTheme;
+// inspirationButton.style.borderImageSource = `url('images/border-img-${randomTheme.replace('#','')}.png')`;
+
+
+// inspirationButton.addEventListener('click', () => {	
+// 	fetch('http://quotes.rest/qod.json')
+// 	.then(res => res.json())
+// 	.then(data => data.contents.quotes[0])
+// 	.then(data => {
+// 		document.querySelector('.inspiration .quote-text').textContent = data.quote;
+// 		document.querySelector('.inspiration .quote-footer').textContent = ` - ${data.author}`;
+// 		document.querySelector('.inspiration .api-reference').style.display = 'block';
+// 		inspirationButton.style.display = 'none';
+// 	})
+// 	.catch(err => console.log(err))
+
+// })

@@ -1,69 +1,3 @@
-
-// ================ PAGE THEME =====
-let themes = ['dodgerblue', '#ff4359'];
-let randomTheme = themes[Math.floor(Math.random() * themes.length)];
-
-if (localStorage.getItem('theme')) {
-	let previousTheme = JSON.parse(localStorage.getItem('theme'));
-	if (previousTheme == 'dodgerblue') {
-		randomTheme = '#ff4359';
-	} else {
-		randomTheme = 'dodgerblue';
-	}
-}
-
-localStorage.setItem('theme', JSON.stringify(randomTheme))
-
-// ==================
-document.querySelector('header').style.backgroundColor = randomTheme;
-// ==================
-document.querySelector('header .button-wrap').style.backgroundColor = randomTheme;
-document.querySelector('header .button-wrap').addEventListener('mouseover', () => {
-	document.querySelector('header .button-wrap').style.borderColor = randomTheme;
-	document.querySelector('header .button-wrap').style.color = randomTheme;
-	document.querySelector('header .button-wrap').style.backgroundColor = '#fff';
-});
-document.querySelector('header .button-wrap').addEventListener('mouseout', () => {
-	document.querySelector('header .button-wrap').style.borderColor = '#fff';
-	document.querySelector('header .button-wrap').style.color = '#fff';
-	document.querySelector('header .button-wrap').style.backgroundColor = randomTheme;
-});
-// ==================
-document.querySelector('.intro').style.backgroundColor = randomTheme;
-// document.querySelector('.degree').style.backgroundColor = randomTheme
-document.querySelectorAll('.skills ul').forEach(ul => ul.style.backgroundColor = randomTheme);
-document.querySelector('footer').style.backgroundColor = randomTheme;
-// ==================
-// document.querySelectorAll('.thumbnail .text-wrap').forEach(textWrap => textWrap.style.backgroundColor = randomTheme);
-// document.querySelectorAll('.projects .button-wrap').forEach(buttonWrap => {
-// 	buttonWrap.style.color = randomTheme;
-
-// 	buttonWrap.addEventListener('mouseover', () => {
-// 		buttonWrap.style.borderColor = '#fff';
-// 		buttonWrap.style.color = '#fff';
-// 		buttonWrap.style.backgroundColor = randomTheme;
-// 	});
-
-// 	buttonWrap.addEventListener('mouseout', () => {
-// 		buttonWrap.style.borderColor = randomTheme;
-// 		buttonWrap.style.color = randomTheme;
-// 		buttonWrap.style.backgroundColor = '#fff';
-// 	});
-// });
-// ==================
-// document.querySelector('.inspiration button').addEventListener('mouseover', () => {
-// 	document.querySelector('.inspiration button').style.borderImageSource = `url('images/border-img-hover-${randomTheme.replace('#','')}.png')`;
-// 	document.querySelector('.inspiration button').style.backgroundColor = '#faf7ff';
-// 	document.querySelector('.inspiration button').style.color = randomTheme;
-// });
-
-// document.querySelector('.inspiration button').addEventListener('mouseout', () => {
-// 	document.querySelector('.inspiration button').style.borderImageSource =  `url('images/border-img-${randomTheme.replace('#','')}.png')`;
-// 	document.querySelector('.inspiration button').style.backgroundColor = randomTheme;
-// 	document.querySelector('.inspiration button').style.color = '#fff';
-// });
-
-
 // ================ HEADER TYPING TEXT =====
 
 let role = document.querySelector('header h1 .role');
@@ -107,10 +41,20 @@ let inputFill = setInterval(() => {
 }, 90)
 
 
-//============ 
+
+
+
+
+
+
+// ================ COGS HOVER EFFECT =====
+
 let cogsWrap = document.querySelector('.cogs-wrap')
 cogsWrap.addEventListener('mouseover', () => Array.from(cogsWrap.children).forEach(cog => cog.style.animationDuration = '1s'));
 cogsWrap.addEventListener('mouseout', () => Array.from(cogsWrap.children).forEach(cog => cog.style.animationDuration = '4s'))
+
+
+
 
 
 
@@ -142,31 +86,41 @@ window.smoothScroll = function(target) {
 }
 
 
-// ================ INSPIRATION-BUTTON =====
-
-let inspirationButton = document.querySelector('.inspiration button');
-
-inspirationButton.style.backgroundColor = randomTheme;
-inspirationButton.style.borderImageSource = `url('images/border-img-${randomTheme.replace('#','')}.png')`;
-// inspirationButton.style.borderImageSource = `url('images/border-img-disabled.png')`;
-// inspirationButton.style.backgroundColor = '#97A3B7';
 
 
-inspirationButton.addEventListener('click', () => {	
-	fetch('http://quotes.rest/qod.json')
-	.then(res => res.json())
-	.then(data => data.contents.quotes[0])
-	.then(data => {
-		document.querySelector('.inspiration .quote-text').textContent = data.quote;
-		document.querySelector('.inspiration .quote-footer').textContent = ` - ${data.author}`;
-		document.querySelector('.inspiration .api-reference').style.display = 'block';
-		inspirationButton.style.display = 'none';
-		// inspirationButton.style.borderImageSource = `url('images/border-img-disabled.png')`;
-		// inspirationButton.style.backgroundColor = '#97A3B7';
-		// inspirationButton.style.color = '#97A3B7';
-		// inspirationButton.setAttribute('disabled', 'true');
-		// inspirationButton.removeEventListener(lightenButton);
-	})
-	.catch(err => console.log(err))
 
-})
+// ================ PAGE THEME =====
+
+let themes = ['dodgerblue', '#ff4359'];
+let randomTheme = themes[Math.floor(Math.random() * themes.length)];
+
+if (localStorage.getItem('theme')) {
+	let previousTheme = JSON.parse(localStorage.getItem('theme'));
+	if (previousTheme == 'dodgerblue') {
+		randomTheme = '#ff4359';
+	} else {
+		randomTheme = 'dodgerblue';
+	}
+}
+
+localStorage.setItem('theme', JSON.stringify(randomTheme))
+
+// ==================
+document.querySelector('header').style.backgroundColor = randomTheme;
+// ==================
+document.querySelector('header .button-wrap').style.backgroundColor = randomTheme;
+document.querySelector('header .button-wrap').addEventListener('mouseover', () => {
+	document.querySelector('header .button-wrap').style.borderColor = randomTheme;
+	document.querySelector('header .button-wrap').style.color = randomTheme;
+	document.querySelector('header .button-wrap').style.backgroundColor = '#fff';
+});
+document.querySelector('header .button-wrap').addEventListener('mouseout', () => {
+	document.querySelector('header .button-wrap').style.borderColor = '#fff';
+	document.querySelector('header .button-wrap').style.color = '#fff';
+	document.querySelector('header .button-wrap').style.backgroundColor = randomTheme;
+});
+// ==================
+document.querySelector('.intro').style.backgroundColor = randomTheme;
+document.querySelectorAll('.skills ul').forEach(ul => ul.style.backgroundColor = randomTheme);
+document.querySelector('footer').style.backgroundColor = randomTheme;
+

@@ -651,36 +651,6 @@ li i {
 	transition: 0.5s all ease;
 }
 
-.inspiration button {
-	margin: 10px 0;
-	float: right;
-	/*background-color: #4D5A6F;*/
-	color: white;
-	border: 5px solid #4D5A6F;
-	padding: 2px 4px;
-	background-clip: padding-box;
-	/*border-image-source: url();*/
-	border-image-slice: 9;
-	border-image-repeat: round;
-	outline: none;
-	opacity: 1;
-	font-size: 1rem;
-}
-
-.inspiration button:hover {
-	opacity: 0.9;
-}
-
-.inspiration button:active {
-	opacity: 1;
-}
-.inspiration .api-reference {
-	clear: both;
-	text-align: right;
-	display: none;
-	margin-top: 10px;
-
-}
 
 /* ============== TESTIMONIALS ============== */
 
@@ -951,21 +921,9 @@ footer .social-media .link:hover {
 homagegrey: 97A3B7;
 darker : 4D5A6F; 
 offwhite: faf7ff;
-
-dodgerblue 
-complementary yellow: ffe11e;
-nice purple; 6900ff;
-
-blue: 436cff
-purple: 8C43ff;
+blue: dodgerblue 
 red: ff4359;
-orange: ff9443;
-yellow: ffc743;
 
-darkgrey: 292929;
-darkblue: #293347;
-
-shadow: 2C333F;
 
 */
 
