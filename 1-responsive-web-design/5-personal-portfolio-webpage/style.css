@@ -617,7 +617,7 @@ li i {
 
 
 .inspiration {
-	min-height: 80vh;
+	min-height: 100vh;
 	padding: 10vh 60px;
 	background-color: #faf7ff;
 	display: flex;
@@ -625,47 +625,46 @@ li i {
 	justify-content: center;
 }
 
-.inspiration .quote-wrap {
-	position: relative;
-	top: 10px;
-}
-
 .inspiration blockquote {
 	max-width: 600px;
 }
 
 .inspiration blockquote p {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
 .inspiration blockquote i {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	margin: 2px;
 }
 
 .inspiration span.quote-text {
 	font-size: 1.6rem;
+	transition: 0.5s all ease;
 }
 
 .inspiration blockquote span.quote-footer {
 	display: block;
 	text-align: right;
 	font-size: 1.2rem;
+	transition: 0.5s all ease;
 }
 
 .inspiration button {
-	margin-top: 10px;
+	margin: 10px 0;
 	float: right;
 	/*background-color: #4D5A6F;*/
 	color: white;
-	border: 10px solid #4D5A6F;
+	border: 5px solid #4D5A6F;
+	padding: 2px 4px;
 	background-clip: padding-box;
 	/*border-image-source: url();*/
 	border-image-slice: 9;
 	border-image-repeat: round;
 	outline: none;
 	opacity: 1;
+	font-size: 1rem;
 }
 
 .inspiration button:hover {
@@ -674,6 +673,13 @@ li i {
 
 .inspiration button:active {
 	opacity: 1;
+}
+.inspiration .api-reference {
+	clear: both;
+	text-align: right;
+	display: none;
+	margin-top: 10px;
+
 }
 
 /* ============== TESTIMONIALS ============== */
@@ -907,10 +913,10 @@ footer .social-media .link:hover {
 }
  
 ::-webkit-scrollbar-thumb {
-    background: dodgerblue; 
+    background: #4D5A6F; 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: dodgerblue; 
+	background: #4D5A6F; 
 }
 
 /* ========= remove padding when screen is small ========= */

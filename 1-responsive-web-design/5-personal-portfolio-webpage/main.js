@@ -51,8 +51,6 @@ document.querySelector('footer').style.backgroundColor = randomTheme;
 // 	});
 // });
 // ==================
-document.querySelector('.inspiration button').style.backgroundColor = randomTheme;
-document.querySelector('.inspiration button').style.borderImageSource = `url('images/border-img-${randomTheme.replace('#','')}.png')`;
 // document.querySelector('.inspiration button').addEventListener('mouseover', () => {
 // 	document.querySelector('.inspiration button').style.borderImageSource = `url('images/border-img-hover-${randomTheme.replace('#','')}.png')`;
 // 	document.querySelector('.inspiration button').style.backgroundColor = '#faf7ff';
@@ -65,8 +63,6 @@ document.querySelector('.inspiration button').style.borderImageSource = `url('im
 // 	document.querySelector('.inspiration button').style.color = '#fff';
 // });
 
-
-console.log(document.querySelector('.inspiration button').style.borderImageSource)
 
 // ================ HEADER TYPING TEXT =====
 
@@ -118,8 +114,6 @@ cogsWrap.addEventListener('mouseout', () => Array.from(cogsWrap.children).forEac
 
 
 
-
-
 // ================ CHEVRON SMOOTH SCROLLING =====
 
 document.querySelector('header i.fa-chevron-down').addEventListener('click', () => smoothScroll(document.querySelector('.intro')))
@@ -146,3 +140,33 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+
+// ================ INSPIRATION-BUTTON =====
+
+let inspirationButton = document.querySelector('.inspiration button');
+
+inspirationButton.style.backgroundColor = randomTheme;
+inspirationButton.style.borderImageSource = `url('images/border-img-${randomTheme.replace('#','')}.png')`;
+// inspirationButton.style.borderImageSource = `url('images/border-img-disabled.png')`;
+// inspirationButton.style.backgroundColor = '#97A3B7';
+
+
+inspirationButton.addEventListener('click', () => {	
+	fetch('http://quotes.rest/qod.json')
+	.then(res => res.json())
+	.then(data => data.contents.quotes[0])
+	.then(data => {
+		document.querySelector('.inspiration .quote-text').textContent = data.quote;
+		document.querySelector('.inspiration .quote-footer').textContent = ` - ${data.author}`;
+		document.querySelector('.inspiration .api-reference').style.display = 'block';
+		inspirationButton.style.display = 'none';
+		// inspirationButton.style.borderImageSource = `url('images/border-img-disabled.png')`;
+		// inspirationButton.style.backgroundColor = '#97A3B7';
+		// inspirationButton.style.color = '#97A3B7';
+		// inspirationButton.setAttribute('disabled', 'true');
+		// inspirationButton.removeEventListener(lightenButton);
+	})
+	.catch(err => console.log(err))
+
+})
