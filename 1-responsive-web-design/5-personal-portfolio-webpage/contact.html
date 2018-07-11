@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ahmed Abdel Gadir">
+	<link rel="shortcut icon" href="logo/logo-icon.png">
+	<link rel="stylesheet" type="text/css" href="logo/style-logo.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<title>Ahmed A Gadir | Aspiring Front-End Developer, User Interface Designer and Full-Stack Engineer</title>
+</head>
+<body>
+
+	<header>
+		
+			<div class="logo">
+				<span class="logo-text">AG</span>
+				<img class="logo-image" src="logo/logo-image.svg" alt="logo">
+			</div>
+
+
+			<div class="avatar-wrap">
+				<span class="avatar-outer-ring"></span>
+				<img class="avatar-img" src="./images/avatar.png" alt="avatar">
+			</div>
+
+			<span>&times;</span>
+
+	</header>
+
+	<!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server#how -->
+
+
+	<h2 id="form-title">Thanks for reaching out</h2>
+	
+	<p id="form-para">I'm always excited to hear. Fill in the form below and I'll get back to you as soon as possible, I strive to always respond within a few hours.</p>
+
+	<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwmsQqfuXs07Vq_Z49r6vyXfUEP0cNjBHKR8YB4MvhOQW0Tmq4/exec">
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" name="user_name" id="name" required placeholder="Enter your name">
+		</div>
+		<div>
+			<label for="message">Message:</label>
+			<textarea id="message" name="user_message" required placeholder="Tell me what you're thinking about..."></textarea>
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" name="user_email" id="email" required placeholder="E.g. your.name@example.com">		
+		</div>
+		<div class="button-wrap">
+			<button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+		</div>
+	</form>
+
+
+	<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+	<script src="main.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

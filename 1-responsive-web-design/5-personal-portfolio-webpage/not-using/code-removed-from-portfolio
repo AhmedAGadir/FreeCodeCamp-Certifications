@@ -108,3 +108,12 @@ shadow: 2C333F;
 // 	.catch(err => console.log(err))
 
 // })
+
+
+	<!-- google fonts -->
+	<link rel="stylesheet" href="fonts/Open_sans/OpenSans-Regular.ttf">
+	<link rel="stylesheet" href="fonts/Teko/Teko-Light.ttf">
+	<link rel="stylesheet" href="fonts/Teko/Teko-Regular.ttf">
+	<link rel="stylesheet" href="fonts/Ubuntu/Ubuntu-Regular.ttf">
+	<link rel="stylesheet" href="fonts/Ubuntu/Ubuntu-Bold.ttf">
+	<!-- ====== -->

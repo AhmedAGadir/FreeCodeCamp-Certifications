@@ -17,6 +17,7 @@ body {
   margin: 0 auto;
   color: #4D5A6F;
   line-height: 1.7;
+  font-size: 1.2rem;
 }
 
 h1 {	
@@ -34,10 +35,6 @@ h1 {
 h3 {
 	font-size: 1.6rem;
 	font-weight: lighter;
-}
-
-p, button, li {
-	font-size: 1.2rem;
 }
 
 button {
@@ -632,7 +629,6 @@ header i.fa-chevron-down:hover {
 .inspiration blockquote span.quote-footer {
 	display: block;
 	text-align: right;
-	font-size: 1.2rem;
 }
 
 
@@ -735,6 +731,7 @@ footer .invitation button {
 	height: 100%;
 	color: inherit;
 	background-color: inherit;
+	font-size: 1.2rem;
 }
 
 footer .invitation button:before,
