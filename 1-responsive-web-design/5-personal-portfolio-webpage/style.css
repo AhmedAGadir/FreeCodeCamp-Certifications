@@ -41,6 +41,14 @@ p, button, li {
 
 button {
 	font-family: 'Ubuntu', sans-serif;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
 }
 
 /* ==============  ============== */
@@ -66,11 +74,7 @@ button:hover {
 header {
 	height: 100vh;
 	position: relative;
-	/*background-color: dodgerblue; */
-
-/*	background-image: url('./images/close-up-code-coding-160107.jpg');
-	background-size: 100%;
-	background-blend-mode: soft-light;*/
+	/*background-color: see javaScript; */
 }
 
 header .button-wrap {
@@ -84,25 +88,17 @@ header .button-wrap {
 	border-bottom: 3px solid;
 	border-color: #fff;
 	color: #fff;
-	/*background-color: dodgerblue;*/
+	/*background-color: see javaScript;*/
 	transition: 0.5s all ease;
 }
 
 header .button-wrap:hover {
-/*	border-color: dodgerblue;
-	color: dodgerblue;
-	background-color: #fff;*/
+/*	border-color: see javaScript;
+	color: see javaScript;
+	background-color: see javaScript;*/
 }
 
 header button {
-	border: none;
-	outline: none;
-	box-shadow: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-o-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
 	width: 100%;
 	height: 100%;
 	font-size: 1.4rem;
@@ -219,7 +215,7 @@ header i.fa-chevron-down:hover {
 .intro {
 	min-height: 100vh;
 	padding: 10vh 60px;
-	/*background-color: #97A3B7;*/
+	/*background-color: see javaScript;*/
 	color: #fff;
 	position: relative;
 }
@@ -388,7 +384,7 @@ header i.fa-chevron-down:hover {
 	border: 1px solid lightgrey;
 	margin: 4px;
 	padding: 10px;
-	/*background-color: #4D5A6F;*/
+	/*background-color: see javaScript;*/
 	min-width: 250px;
 }
 
@@ -567,14 +563,6 @@ li i {
 }
 
 .projects .button-wrap button {
-	outline: none;
-	box-shadow: none;
-	border: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-o-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
 	width: 100%;
 	height: 100%;
 	font-size: 1.2rem;
@@ -635,20 +623,18 @@ li i {
 }
 
 .inspiration blockquote i {
-	font-size: 1.6rem;
+	font-size: 2rem;
 	margin: 2px;
 }
 
 .inspiration span.quote-text {
 	font-size: 1.6rem;
-	transition: 0.5s all ease;
 }
 
 .inspiration blockquote span.quote-footer {
 	display: block;
 	text-align: right;
 	font-size: 1.2rem;
-	transition: 0.5s all ease;
 }
 
 
@@ -669,29 +655,12 @@ li i {
 	margin-bottom: 10vh
 }
 
-.testimonials .img-wrap {
+.testimonials img {
 	width: 150px;
 	height: 150px;
+	display: block;
 	position: relative;
 	margin: 20px auto;
-}
-
-.testimonials .img-outer-ring {
-	display: block;
-	width: 100%;
-	height: 100%;
-	border: 3px solid;
-	border-color: #4D5A6F;
-	border-radius: 50%
-}
-
-.testimonials img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 85%;
-	border-radius: 50%;
 }
 
 .testimonials blockquote {
@@ -762,17 +731,8 @@ footer .invitation .button-wrap:hover {
 }
 
 footer .invitation button {
-	border: none;
-	outline: none;
-	box-shadow: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-o-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
 	width: 100%;
 	height: 100%;
-	font-size: 1.2rem;
 	color: inherit;
 	background-color: inherit;
 }
@@ -804,7 +764,7 @@ footer .invitation button:after {
 
 footer {
 	min-height: 100vh;
-	/*background-color: dodgerblue;*/
+	/*background-color: see javaScript;*/
 	position: relative;
 	color: #fff;
 }
@@ -852,7 +812,7 @@ footer .social-media a {
 
 footer .social-media .link:hover {
 	cursor: pointer;
-	/*color: dodgerblue;*/
+	/*color: see javaScript;*/
 	animation-name: float-up;
 	animation-duration: 0.3s;
 	animation-timing-function: ease-in;
@@ -889,6 +849,13 @@ footer .social-media .link:hover {
 	background: #4D5A6F; 
 }
 
+
+
+
+
+
+
+
 /* ========= remove padding when screen is small ========= */
 
 @media (max-width: 425px) {
@@ -914,6 +881,9 @@ footer .social-media .link:hover {
 	}
 
 }
+
+
+
 
 
 /* ========= COLOR PALETTE ========= 

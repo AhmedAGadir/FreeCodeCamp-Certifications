@@ -1,6 +1,11 @@
 <button>click for more inspiration</button>
 <div class="api-reference">quote of the day supplied by <cite>TheySaidSo Famous Quotes API</cite></div>  
 
+.header {
+/*	background-image: url('./images/close-up-code-coding-160107.jpg');
+	background-size: 100%;
+	background-blend-mode: soft-light;*/
+}
 
 .inspiration button {
 	margin: 10px 0;
