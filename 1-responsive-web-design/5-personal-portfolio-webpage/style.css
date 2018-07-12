@@ -609,7 +609,7 @@ header i.fa-chevron-down:hover {
 .inspiration {
 	min-height: 100vh;
 	padding: 10vh 60px;
-	background-color: #eeeeee;
+	background-color: #f4f4f4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -883,7 +883,7 @@ footer > p:last-of-type span {
 
 homagegrey: 97A3B7;
 darker : 4D5A6F; 
-offwhite: eeeeee;
+offwhite: f4f4f4;
 blue: dodgerblue 
 red: ff4359;
 

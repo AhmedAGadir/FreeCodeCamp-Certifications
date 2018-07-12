@@ -75,7 +75,7 @@ header img.avatar-img {
 }
 
 header > span {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	padding: 15px;
 	/*color: see javascript;*/
 	transition: 0.2s all ease;
@@ -114,7 +114,7 @@ form {
 	width: 70%;
 	margin: 0 auto 10vh;
 	padding: 30px 60px;
-	border-radius: 8px;
+	border-radius: 10px;
 /*	background-image: linear-gradient(to right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
 */}
 
@@ -130,13 +130,15 @@ form input, form textarea {
 	margin-bottom: 30px;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.3px;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 3px;
+	border: 2px solid lightgrey;
+	color: #363F4E;
 }
 
 form input:focus, form textarea:focus {
-
+	box-shadow: 0 0 7px lightblue;
 }
 
 form input {
@@ -151,8 +153,8 @@ form .button-wrap {
 	margin: 0 auto;
 	position: relative;
 	z-index: 1;
-	width: 130px;
-	height: 55px;
+	width: 120px;
+	height: 50px;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
 	border-color: #fff;
