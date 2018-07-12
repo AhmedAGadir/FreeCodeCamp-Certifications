@@ -91,44 +91,42 @@ window.smoothScroll = function(target) {
 
 // ================ PAGE THEME =====
 
-let themes = ['dodgerblue', '#ff4359'];
-let randomTheme = themes[Math.floor(Math.random() * themes.length)];
+const themes = ['dodgerblue', '#ff4359'];
+let selectedTheme;
 
 if (localStorage.getItem('theme')) {
 	let previousTheme = JSON.parse(localStorage.getItem('theme'));
-	if (previousTheme == 'dodgerblue') {
-		randomTheme = '#ff4359';
-	} else {
-		randomTheme = 'dodgerblue';
-	}
+	selectedTheme = themes.filter(theme => theme !== previousTheme)[0];
+} else {
+	selectedTheme = themes[Math.floor(Math.random() * themes.length)];
 }
 
-localStorage.setItem('theme', JSON.stringify(randomTheme))
+localStorage.setItem('theme', JSON.stringify(selectedTheme))
 
 // ==================
-document.querySelector('header').style.backgroundColor = randomTheme;
+document.querySelector('header').style.backgroundColor = selectedTheme;
 // ==================
 let headerButton = document.querySelector('header .button-wrap');
-headerButton.style.backgroundColor = randomTheme;
+headerButton.style.backgroundColor = selectedTheme;
 headerButton.addEventListener('mouseover', e => {
-	headerButton.style.borderColor = randomTheme;
-	headerButton.style.color = randomTheme;
+	headerButton.style.borderColor = selectedTheme;
+	headerButton.style.color = selectedTheme;
 	headerButton.style.backgroundColor = '#fff';
 });
 headerButton.addEventListener('mouseout', () => {
 	headerButton.style.borderColor = '#fff';
 	headerButton.style.color = '#fff';
-	headerButton.style.backgroundColor = randomTheme;
+	headerButton.style.backgroundColor = selectedTheme;
 });
 // ==================
-document.querySelector('.intro').style.backgroundColor = randomTheme;
-document.querySelectorAll('.skills ul').forEach(ul => ul.style.backgroundColor = randomTheme);
-document.querySelector('footer').style.backgroundColor = randomTheme;
+document.querySelector('.intro').style.backgroundColor = selectedTheme;
+document.querySelectorAll('.skills ul').forEach(ul => ul.style.backgroundColor = selectedTheme);
+document.querySelector('footer').style.backgroundColor = selectedTheme;
 
 
 
 
 // ================ CONTACT PAGE =====
 
-headerButton.addEventListener('click', () => window.open('./contact.html', '_blank'))
-document.querySelector('footer .invitation .button-wrap').addEventListener('click', () => window.open('./contact.html', '_blank'))
+headerButton.addEventListener('click', () => window.open('contact-page/contact.html', '_blank'))
+document.querySelector('footer .invitation .button-wrap').addEventListener('click', () => window.open('contact-page/contact.html', '_blank'))

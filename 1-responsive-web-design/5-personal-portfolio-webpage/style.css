@@ -711,7 +711,7 @@ footer .invitation .button-wrap {
 	position: relative;
 	z-index: 1;
 	width: 120px;
-	height: 50px;
+	height: 55px;
 	border-top: 3px solid;
 	border-bottom: 3px solid;
 	border-color: #fff;
@@ -879,6 +879,11 @@ darker : 4D5A6F;
 offwhite: faf7ff;
 blue: dodgerblue 
 red: ff4359;
+
+didnt use these: ;
+
+nice green: 21DE4B;
+nice yellow: #FFBC0D;
 
 
 */
