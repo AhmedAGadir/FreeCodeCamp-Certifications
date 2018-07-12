@@ -128,5 +128,11 @@ document.querySelector('footer').style.backgroundColor = selectedTheme;
 
 // ================ CONTACT PAGE =====
 
-headerButton.addEventListener('click', () => window.open('contact-page/contact.html', '_blank'))
-document.querySelector('footer .invitation .button-wrap').addEventListener('click', () => window.open('contact-page/contact.html', '_blank'))
+headerButton.addEventListener('click', () => window.location = 'contact-page/contact.html')
+document.querySelector('footer .invitation .button-wrap').addEventListener('click', () => window.location = 'contact-page/contact.html');
+
+
+// ================ CODEPEN AND JSFIDDLE BUTTONS =====
+
+document.querySelector('.web-design .button-wrap').addEventListener('click', () => window.open('https://codepen.io/AhmedAGadir/pens/popular/', '_blank'));
+document.querySelector('.algo-data .button-wrap').addEventListener('click', () => window.open('https://jsfiddle.net/user/ahmedgadir/fiddles/', '_blank'));

@@ -32,24 +32,14 @@ button, input, textarea {
 /* ================ HEADER =============== */
 
 header {
-	background-color: #fff;
+	background-color: #faf7ff;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 	padding: 15px 30px;
 	border-bottom: 3px solid;
 	/*border-color: see-javascript;*/
 	margin-bottom: 100px;
-}
-
-header .logo {
-	width: 70px;
-	height: 70px;
-}
-
-header .logo-text {
-	font-size: 3rem;
-	/*color: see javascript;*/
 }
 
 header .avatar-wrap {
@@ -70,7 +60,8 @@ header .avatar-outer-ring {
 	height: 100%;
 	border: 3px solid;
 	/*border-color: see javascript;*/
-	border-radius: 50%
+	border-radius: 50%;
+	background-color: #faf7ff;
 }
 
 header img.avatar-img {
@@ -105,7 +96,7 @@ main {
 	margin: 10vh 0 7vh;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #363F4E;
 }
 
@@ -118,12 +109,14 @@ main {
 /* ================ FORM =============== */
 
 form {
-/*background-color: see javascript;*/
-color: white;
-width: 80%;
-margin: 0 auto 10vh;
-padding: 30px 60px;
-}
+	/*background-color: see javascript;*/
+	color: white;
+	width: 70%;
+	margin: 0 auto 10vh;
+	padding: 30px 60px;
+	border-radius: 8px;
+/*	background-image: linear-gradient(to right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
+*/}
 
 form > div {
 	width: 100%;
@@ -139,6 +132,7 @@ form input, form textarea {
 	letter-spacing: 0.3px;
 	font-size: 1.2rem;
 	padding: 10px;
+	border-radius: 5px;
 }
 
 form input:focus, form textarea:focus {
@@ -207,6 +201,22 @@ form .button-wrap:active {
 	position: relative;
 	top: 3px;
 }
+
+
+@media (max-width: 768px) {
+	
+	header {
+		padding: 10px;
+	}
+
+	form {
+		width: 100%;
+		padding: 30px 15px;
+	}
+
+}
+
+
 
 /* ============== SCROLLBAR ============== */
 
