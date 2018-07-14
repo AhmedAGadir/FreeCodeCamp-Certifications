@@ -115,8 +115,7 @@ form {
 	margin: 0 auto 10vh;
 	padding: 30px 60px;
 	border-radius: 10px;
-/*	background-image: linear-gradient(to right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
-*/}
+}
 
 form > div {
 	width: 100%;

@@ -34,7 +34,6 @@ h1 {
 
 h3 {
 	font-size: 1.6rem;
-	font-weight: lighter;
 }
 
 button {
@@ -771,6 +770,16 @@ footer {
 	/*background-color: see javaScript;*/
 	position: relative;
 	color: #fff;
+}
+
+@media (min-width: 768px) {
+	footer {
+		background-image: -ms-linear-gradient(to bottom right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
+		background-image: -moz-linear-gradient(to bottom right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
+		background-image: -o-linear-gradient(to bottom right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
+		background-image: -webkit-linear-gradient(to bottom right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
+		background-image: linear-gradient(to bottom right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
+	}
 }
 
 footer .logo {
