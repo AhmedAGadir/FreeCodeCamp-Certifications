@@ -327,7 +327,7 @@ aside > ul > li > ul > li:first-child {
 }
 
 aside > ul > li > ul > li:not(:first-child) {
-  border-left: 1px solid transparent;
+  border-left: 2px solid transparent;
   padding: 4px 0 4px 40px;
   font-size: 0.85rem;
   display: none;  
