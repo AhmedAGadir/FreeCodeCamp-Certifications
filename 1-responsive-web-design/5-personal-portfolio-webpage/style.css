@@ -240,7 +240,7 @@ header i.fa-chevron-down:hover {
 }
 
 .degree .text-wrap {
-	width: 750px;
+	width: 760px;
 	padding: 30px;
 	color: #fff;
 }
@@ -248,6 +248,7 @@ header i.fa-chevron-down:hover {
 .degree .text-wrap .text-title {
 	margin: 5vh auto;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -261,7 +262,6 @@ header i.fa-chevron-down:hover {
 .degree .text-wrap .text-body {
 	margin-bottom: 10vh;
 	letter-spacing: 0.4px;
-	text-align: left;
 }
 
 .degree .img-wrap {
@@ -269,9 +269,17 @@ header i.fa-chevron-down:hover {
 	max-width: 380px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
 	.img-wrap {
 		order: -1;
+	}
+
+	.degree .text-wrap .text-body {
+		text-align: left;
+	}
+
+	.degree .text-wrap .text-title {
+		justify-content: unset;
 	}
 }
 
