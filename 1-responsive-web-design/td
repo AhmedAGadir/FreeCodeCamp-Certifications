@@ -45,56 +45,66 @@
   
   <div class="documentation-wrap">
     <div class="documentation">
-      <h2>Overview</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa expedita, maiores, veniam dolor voluptatem architecto quis tenetur voluptas enim inventore vitae ab similique temporibus ut, impedit voluptatibus. Saepe, neque, tempore.</p>
+    
+      <div id="overview">
+          <h2>Overview</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa expedita, maiores, veniam dolor voluptatem architecto quis tenetur voluptas enim inventore vitae ab similique temporibus ut, impedit voluptatibus. Saepe, neque, tempore.</p>
 
-      <h3>HTML5 Doctype</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, libero, magni. Odio iste, minus minima. Rerum eaque, illum nulla! Nemo maxime placeat corporis nobis laborum eaque, ea nam eius repudiandae.</p>
-      <pre><code>Lorem ipsum dolor sit ametconsectetur;
-Voluptatem veniam hic;
-...
-quas ipsam eveniet impedit quaerat;</code></pre>
+        <div id="html5-doctype">
+          <h3>HTML5 Doctype</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, libero, magni. Odio iste, minus minima. Rerum eaque, illum nulla! Nemo maxime placeat corporis nobis laborum eaque, ea nam eius repudiandae.</p>
+          <pre><code>Lorem ipsum dolor sit ametconsectetur;
+    Voluptatem veniam hic;
+    ...
+    quas ipsam eveniet impedit quaerat;</code></pre>
+        </div>
 
-      <h3>Mobile first</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, libero, magni. Odio iste, minus minima. Rerum eaque, illum nulla! Nemo maxime placeat corporis nobis laborum eaque, ea nam eius repudiandae.</p>
-      <pre><code>Lorem ipsum dolor sit ametconsectetur;</code></pre>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, libero, magni. Odio iste, minus minima. Rerum eaque, illum nulla! Nemo maxime placeat corporis nobis laborum eaque, ea nam eius repudiandae.</p>
-      <pre><code>Lorem ipsum dolor sit amet, consectetur;
-Possimus, libero, magni. Odio iste.</code></pre>
+        <div id="mobile-first">
+          <h3>Mobile first</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, libero, magni. Odio iste, minus minima. Rerum eaque, illum nulla! Nemo maxime placeat corporis nobis laborum eaque, ea nam eius repudiandae.</p>
+          <pre><code>Lorem ipsum dolor sit ametconsectetur;</code></pre>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, libero, magni. Odio iste, minus minima. Rerum eaque, illum nulla! Nemo maxime placeat corporis nobis laborum eaque, ea nam eius repudiandae.</p>
+          <pre><code>Lorem ipsum dolor sit amet, consectetur;
+    Possimus, libero, magni. Odio iste.</code></pre>
+        </div>
+      
+      </div>
+      
     </div> 
+    
     <aside>
       <ul>
       <li>
         <ul>
-          <p class="active"><a href="#">Overview</a></p>
-          <li class="active"><a href="#">HTML5 doctype</a></li>
-          <li><a href="#">Mobile first</a></li>
-          <li><a href="#">Typography and links</a></li>
-          <li><a href="#">Normalize.css</a></li>
-          <li><a href="#">Containers</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#html5-doctype">HTML5 doctype</a></li>
+          <li><a href="#mobile-first">Mobile first</a></li>
+          <li><a href="#typography-and-links">Typography and links</a></li>
+          <li><a href="#normalize.css">Normalize.css</a></li>
+          <li><a href="#containers">Containers</a></li>
         </ul>
       </li>
       <li>
         <ul>
-          <p><a href="#">Grid system</a></p>
-          <li><a href="#">Introduction</a></li>
-          <li><a href="#">Media queries</a></li>
-          <li><a href="#">Grid</a></li>
-          <li><a href="#">Ex: Stacked-to-horizontal</a></li>
-          <li><a href="#">Ex: Fluid container</a></li>
+          <li><a href="#grid-system">Grid system</a></li>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#media-queries">Media queries</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#ex:-stacked-to-horizontal">Ex: Stacked-to-horizontal</a></li>
+          <li><a href="#ex:-fluid-container">Ex: Fluid container</a></li>
         </ul>
       </li>
       <li>
         <ul>
-          <p><a href="#">Typography</a></p>
-          <li><a href="#">Headings</a></li>
-          <li><a href="#">Body copy</a></li>
-          <li><a href="#">Inline text elements</a></li>
-          <li><a href="#">Alignment classes</a></li>
-          <li><a href="#">Transformation classes</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#headings">Headings</a></li>
+          <li><a href="#body-copy">Body copy</a></li>
+          <li><a href="#inline-text-elements">Inline text elements</a></li>
+          <li><a href="#alignment-classes">Alignment classes</a></li>
+          <li><a href="#transformation-classes">Transformation classes</a></li>
         </ul>
       </li>
-      <li><p><a href="#">Back to top</a></p></li>
+      <li><a href="#back-to-top">Back to top</a></li>
       </ul>
     </aside>
   </div>
@@ -122,6 +132,19 @@ Possimus, libero, magni. Odio iste.</code></pre>
   
   
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 * {
@@ -272,7 +295,6 @@ nav li.active {
 /* ================ TITLE STRIP ============== */
 
 main {
-  height: 2000px;
 }
 
 .title-wrap {
@@ -283,6 +305,12 @@ main {
   padding: 40px 15px;
   background: slateblue;
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1);
+
+  background-image: -ms-linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3));
+  background-image: -moz-linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3));
+  background-image: -o-linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3));
+  background-image: -webkit-linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3));
+  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3));
 }
 
 .title-text {
@@ -323,6 +351,10 @@ main {
   flex: 1;
 }
 
+.goog-ad .replace-with-img:hover {
+  cursor: pointer;
+}
+
 .goog-ad p {
   flex: 1;
   color: #fff;
@@ -337,12 +369,14 @@ main {
 
 .documentation-wrap {
   display: flex;
+  align-items: flex-start;
   max-width: 1200px; 
   margin: 50px auto;
 }
 
 .documentation {
   padding: 0 20px;
+  height: 2000px;
 }
 
 .documentation h2 {
@@ -374,11 +408,14 @@ aside {
   min-width: 220px;
   margin-left: 10px;
   color: grey;
+  position: sticky;
+  top: 0;
+  right: 0;
 }
 
 aside .active {
   font-weight: bold;
-  border-left: 2px solid slateblue;
+  border-left: 2px solid slateblue !important;
   color: slateblue;
 }
 
@@ -386,42 +423,38 @@ aside ul {
   list-style-type: none;
 }
 
-aside > ul > li > ul > p {
+aside > ul > li > ul > li:first-child {
   border-left: 2px solid transparent;
   padding: 2px 0 2px 20px;
   font-size: 0.85rem;
   font-weight: bold;
 }
 
-aside > ul > li > ul > p:hover {
+aside > ul > li > ul > li:not(:first-child) {
+  border-left: 1px solid transparent;
+  padding: 2px 0 2px 40px;
+  font-size: 0.8rem;
+  display: none;  
+}
+
+aside > ul > li > ul > li:hover {
   border-color: slateblue;
   color: slateblue;
 }
 
-aside > ul > li > ul > li {
-  border-left: 1px solid transparent;
-  padding: 2px 0 2px 40px;
-  font-size: 0.8rem;
-}
-
-aside > ul > li > ul > li:hover:not(.active) {
-  border-left: 1px solid slateblue;
-  color: slateblue;
-}
-
-aside > ul > li > p {
+aside > ul > li:last-child {
   padding-left: 20px;
   font-size: 0.85rem; 
   margin-top: 15px;
 }
 
-aside > ul > li > p:hover {
+aside > ul > li:last-child:hover {
   color: slateblue;
 }
 
 @media (max-width: 768px) {
   aside {
-    display: none;
+    display: none;  
   }
 }
 
@@ -455,6 +488,18 @@ footer span.white {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==== bootstrap 4 ad ====== */
 document.querySelector('.b4-ad').addEventListener('click', e => {
   e.target.style.display = 'none';
@@ -467,3 +512,49 @@ document.querySelector('nav button.sandwhich').addEventListener('click', () => {
 
   Array.from(classList).includes('visible') ? classList.remove('visible') : classList.add('visible');
 })
+
+
+/* ========== SIDEBAR ======== */
+
+let sections = Array.from(document.querySelector('.documentation').children)
+
+window.addEventListener('scroll', () => {
+
+	sections.forEach(section => {
+    let sectionID = section.getAttribute('id');
+  
+  	if (section.getBoundingClientRect().bottom >= 0 && section.getBoundingClientRect().bottom <= section.offsetHeight) {
+    
+      document.querySelector(`[href="#${sectionID}"]`).parentElement.classList.add('active');
+      
+      Array.from(document.querySelector(`[href="#${sectionID}"]`).parentElement.parentElement.children).forEach(child => child.style.display = 'block')
+      
+      let subsections = Array.from(document.querySelectorAll(`#${sectionID} div`));
+      
+      subsections.forEach(subsection => {
+      	
+      if (subsection.getBoundingClientRect().bottom >= 0 && subsection.getBoundingClientRect().bottom <= subsection.offsetHeight) {
+    	
+        let subsectionID = subsection.getAttribute('id');
+				
+        document.querySelector(`[href="#${subsectionID}"]`).parentElement.classList.add('active');
+        
+      } else {
+      	document.querySelector(`[href="#${subsection.getAttribute('id')}"]`).parentElement.classList.remove('active');
+      }
+           
+      })
+          
+    } else {
+    	document.querySelector(`[href="#${section.getAttribute('id')}"]`).parentElement.classList.remove('active');
+      Array.from(document.querySelector(`[href="#${sectionID}"]`).parentElement.parentElement.children).forEach((child, index) => {
+      if (index != 0) 
+      	child.style.display = 'none';
+      });
+    }
+  })
+})
+
+
+
+console.log()
