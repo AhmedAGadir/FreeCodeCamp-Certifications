@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 * {
   padding: 0;
   margin: 0;
@@ -9,8 +11,9 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Open sans', sans-serif;
   line-height: 1.5;
+  color: #272727;
 }
 
 button {
@@ -167,6 +170,7 @@ main {
 .title-text {
   width: 600px;
   margin: 10px;
+  padding: 10px;
 }
 
 @media (min-width: 1024px) {
@@ -177,6 +181,7 @@ main {
 
 .title-text h1 {
   font-size: 3.5rem;
+  font-weight: bolder;
   color: #fff;
 }
 
@@ -216,18 +221,21 @@ main {
   color: lightgrey;
 }
 
-/* =========== SIDEBAR ========= */
+/* =========== DOCUMENTATION ========= */
 
 .documentation-wrap {
   display: flex;
   align-items: flex-start;
-  max-width: 1200px; 
+  max-width: 1150px; 
   margin: 50px auto;
 }
 
 .documentation {
   padding: 0 20px;
-  height: 2000px;
+}
+
+.documentation > div {
+  padding-bottom: 50px;
 }
 
 .documentation h2 {
@@ -240,11 +248,43 @@ main {
 }
 
 .documentation h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  padding-top: 15px;
 }
 
 .documentation p {
   margin: 15px 0;
+}
+
+/* =========== HEADING LINKS ICONS ========= */
+
+.documentation h2, .documentation h3 {
+  position: relative;
+}
+
+.documentation i.fa-link {
+  color: lightgrey;
+  opacity: 0;
+  transition: 0.3s all ease;
+  position: absolute;
+}
+
+.documentation h2 i.fa-link {
+  font-size: 1.6rem;
+  left: -34px;
+  top: 13px;
+}
+
+.documentation h3 i.fa-link {
+  font-size: 1.4rem;
+  left: -32px;
+  top: 22px;
+}
+
+.documentation i.fa-link:hover {
+  opacity: 1;
+  color: slateblue;
+  cursor: pointer;
 }
 
 .documentation pre {
@@ -254,6 +294,8 @@ main {
   padding: 15px;
   margin: 15px 0;
 }
+
+/* =========== SIDEBAR ========= */
 
 aside {
   min-width: 220px;
@@ -276,15 +318,15 @@ aside ul {
 
 aside > ul > li > ul > li:first-child {
   border-left: 2px solid transparent;
-  padding: 2px 0 2px 20px;
-  font-size: 0.85rem;
+  padding: 4px 0 4px 20px;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
 aside > ul > li > ul > li:not(:first-child) {
   border-left: 1px solid transparent;
-  padding: 2px 0 2px 40px;
-  font-size: 0.8rem;
+  padding: 4px 0 4px 40px;
+  font-size: 0.85rem;
   display: none;  
 }
 
@@ -301,6 +343,7 @@ aside > ul > li:last-child {
 
 aside > ul > li:last-child:hover {
   color: slateblue;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

@@ -52,3 +52,22 @@ window.addEventListener('scroll', () => {
     }
   })
 })
+
+
+
+//  =========== BACK TO TOP -==============
+
+document.getElementById('back-to-top').addEventListener('click', () => {    
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+})
+
+//  =========== links -==============
+
+let allHeadings = [...document.querySelectorAll('h2'),...document.querySelectorAll('h3')];
+
+allHeadings.forEach(heading => {
+  heading.addEventListener('mouseover', () => heading.firstElementChild.style.opacity = '1');
+  heading.addEventListener('mouseout', () => heading.firstElementChild.style.opacity = '0');
+  heading.firstElementChild.addEventListener('click', () => window.location = `index.html#${heading.textContent.toLowerCase().replace(/\s/g, '-')}`)
+});
