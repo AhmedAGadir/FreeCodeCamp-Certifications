@@ -71,3 +71,12 @@ allHeadings.forEach(heading => {
   heading.addEventListener('mouseout', () => heading.firstElementChild.style.opacity = '0');
   heading.firstElementChild.addEventListener('click', () => window.location = `index.html#${heading.textContent.toLowerCase().replace(/\s/g, '-')}`)
 });
+
+// ========== writing codeblocks =======
+
+function escapeHTML (str) {
+  str = str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  return str
+}
+
+console.log(escapeHTML('<div class="container-fluid"><div class="row">...</div></div>'))

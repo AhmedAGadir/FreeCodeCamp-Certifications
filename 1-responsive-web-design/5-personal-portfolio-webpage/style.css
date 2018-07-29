@@ -220,7 +220,7 @@ header i.fa-chevron-down:hover {
 }
 
 .intro .text-body {
-	letter-spacing: 0.6px
+	letter-spacing: 0.4px
 }
 
 
@@ -435,7 +435,7 @@ header i.fa-chevron-down:hover {
 
 .projects h2 {
 	text-align: center;
-	margin: 20vh auto 10vh;
+	margin: 20vh auto 5vh;
 }
 
 .web-design,
@@ -443,7 +443,14 @@ header i.fa-chevron-down:hover {
 	margin: 10vh auto;
 }
 
-.web-design a, .algo-data a {
+.projects > .web-design > p,
+.projects > .algo-data > p {
+	text-align: center;
+  display: block;
+  margin: 5vh 0;
+}
+
+.web-design .thumbnail-wrap a, .algo-data .thumbnail-wrap a {
 	text-decoration: none;
 }
 
@@ -629,6 +636,7 @@ header i.fa-chevron-down:hover {
 .inspiration blockquote p {
 	margin-bottom: 10px;
 	text-align: center;
+	border-left: 5px solid lightgrey
 }
 
 .inspiration blockquote i {
@@ -643,9 +651,15 @@ header i.fa-chevron-down:hover {
 
 .inspiration blockquote span.quote-footer {
 	display: block;
+	margin: 5px 0;
 	text-align: right;
 }
 
+@media (max-width: 425px) {
+	.inspiration blockquote span.quote-footer {
+		text-align: center;
+	}
+}
 
 /* ============== TESTIMONIALS ============== */
 
