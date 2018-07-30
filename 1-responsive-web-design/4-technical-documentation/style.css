@@ -276,13 +276,13 @@ main {
 
 .documentation h2 i.fa-link {
   font-size: 1.6rem;
-  left: -33px;
+  left: -34px;
   top: 16px;
 }
 
 .documentation h3 i.fa-link {
   font-size: 1.4rem;
-  left: -30px;
+  left: -29px;
   top: 23px;
 }
 
@@ -331,9 +331,11 @@ code {
 }
 
 code.ir {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background: ghostwhite;
 }
+
+/* =========== DOCUMENTATION TEXT ========= */
 
 a.sb:hover {
   color: cornflowerblue;
@@ -342,6 +344,82 @@ a.sb:hover {
 
 #grid-system > p > a.sb {
   text-decoration: none;
+}
+
+/* =========== GRID OPTIONS TABLE  ========= */
+
+table, td, th {
+  border: 1px solid lightgrey;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  /*width: 100%;*/
+}
+
+th {
+  text-align: left;
+  /*text-indent: 5px*/
+}
+
+th > span.small {
+  font-size: 0.8rem;
+ /* display: block;*/
+}
+
+th, td {
+  padding: 7px;
+}
+
+th[scope="row"] {
+  min-width: 140px;
+}
+
+tr:nth-of-type(odd):not(.head) {
+  background: ghostwhite;
+}
+
+thead tr {
+  border-bottom: 2px solid lightgrey;
+
+}
+
+/* =========== STACKED-TO-HORIZONTAL SECTION ========= */
+
+.ex1 > div,
+.ex2 > div {
+  padding: 10px;
+  background: lightsteelblue;
+  border: 1px solid darkgrey;
+}
+
+.ex1, .ex2 {
+  display: flex;
+  margin: 15px 0;
+}
+
+.col-md-1 {
+  flex: 1;
+}
+
+.col-md-8 {
+  flex: 8;
+}
+
+.col-md-4 {
+  flex: 4;
+}
+
+
+@media (max-width: 1024px) {
+  .ex1 {
+    flex-wrap: wrap;
+  }
+
+  .ex1 .col-md-1 {
+    width: 100%;
+  }
 }
 
 /* =========== SIDEBAR ========= */
