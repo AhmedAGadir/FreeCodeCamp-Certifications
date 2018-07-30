@@ -20,6 +20,7 @@ window.addEventListener('scroll', () => {
 
 	sections.forEach(section => {
     let sectionID = section.getAttribute('id');
+    console.log('section and sectionID are ', section, sectionID)
   
   	if (section.getBoundingClientRect().bottom >= 0 && section.getBoundingClientRect().bottom <= section.offsetHeight) {
     
@@ -27,19 +28,17 @@ window.addEventListener('scroll', () => {
       
       Array.from(document.querySelector(`[href="#${sectionID}"]`).parentElement.parentElement.children).forEach(child => child.style.display = 'block')
       
-      let subsections = Array.from(document.querySelectorAll(`#${sectionID} div`));
+      let subsections = Array.from(document.querySelectorAll(`#${sectionID} > div`));
       
       subsections.forEach(subsection => {
-      	
-      if (subsection.getBoundingClientRect().bottom >= 0 && subsection.getBoundingClientRect().bottom <= subsection.offsetHeight) {
-    	
-        let subsectionID = subsection.getAttribute('id');
-				
-        document.querySelector(`[href="#${subsectionID}"]`).parentElement.classList.add('active');
-        
-      } else {
-      	document.querySelector(`[href="#${subsection.getAttribute('id')}"]`).parentElement.classList.remove('active');
-      }
+        if (subsection.getBoundingClientRect().bottom >= 0 && subsection.getBoundingClientRect().bottom <= subsection.offsetHeight) {
+          let subsectionID = subsection.getAttribute('id');
+  				
+          document.querySelector(`[href="#${subsectionID}"]`).parentElement.classList.add('active');
+          
+        } else {
+        	document.querySelector(`[href="#${subsection.getAttribute('id')}"]`).parentElement.classList.remove('active');
+        }
            
       })
           

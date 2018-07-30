@@ -9,8 +9,9 @@
 </head>
 <body>
 	<!-- TO DO:
-		get navigation bar to slide open smoothly when sandwhich button is pressed;
-		make the page world on 4k screens
+		- get navigation bar to slide open smoothly when sandwhich button is pressed;
+		- make the page world on 4k screens
+		- fix code elements - theyre ruining the pages responsiveness
 	 -->
 
 	<header>
@@ -49,7 +50,7 @@
 	      		<p>Global CSS Settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.</p>
 	    	</div>
 	    	<div class="goog-ad">
-	      		<img class="replace-with-img" src="https://cdn4.buysellads.net/uu/1/6167/1531147839-1525211184-62491.png">
+	      		<img class="replace-with-img" src="./mail-chimp-logo.png">
 	      		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 	      		<br>
 	      		<span>ad iste distinctio</span></p>
@@ -170,7 +171,7 @@ To ensure proper rendering and touch zooming, <strong>add the viewport meta tag 
 						<table>
 							<thead>
 								<tr class="head">
-									<td scope="col">&nbsp;</td>
+									<td>&nbsp;</td>
 									<th scope="col">Extra small devices <span class="small">Phones (&lt;768px)</span></th>
 									<th scope="col">Small devices <span class="small">Tablets (≥768px)</span></th>
 									<th scope="col">Medium devices <span class="small">Desktops (≥992px)</span></th>
@@ -233,7 +234,7 @@ To ensure proper rendering and touch zooming, <strong>add the viewport meta tag 
 		          		<h3><i class="fas fa-link"></i>Example: Stacked-to-horizontal</h3>
 		          		<p>Using a single set of <code class="ir">.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code class="ir">.row</code>.</p>
 
-						<div class="ex1">
+						<div class="grid-demo">
 							<div class="col-md-1">.col-md-1</div>
 							<div class="col-md-1">.col-md-1</div>
 							<div class="col-md-1">.col-md-1</div>
@@ -248,9 +249,20 @@ To ensure proper rendering and touch zooming, <strong>add the viewport meta tag 
 							<div class="col-md-1">.col-md-1</div>
 						</div>
 
-						<div class="ex2">
+						<div class="grid-demo">
 							<div class="col-md-8">.col-md-8</div>
 							<div class="col-md-4">.col-md-4</div>
+						</div>
+
+						<div class="grid-demo">
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4">.col-md-4</div>
+						</div>
+
+						<div class="grid-demo">
+							<div class="col-md-6">.col-md-6</div>
+							<div class="col-md-6">.col-md-6</div>
 						</div>
 
 		          		<pre><code><span class="sb">&lt;div <span class="db">class=</span><span class="ir">&quot;row&quot;</span>&gt;</span>

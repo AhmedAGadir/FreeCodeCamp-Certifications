@@ -387,14 +387,13 @@ thead tr {
 
 /* =========== STACKED-TO-HORIZONTAL SECTION ========= */
 
-.ex1 > div,
-.ex2 > div {
+.grid-demo > div {
   padding: 10px;
   background: lightsteelblue;
   border: 1px solid darkgrey;
 }
 
-.ex1, .ex2 {
+.grid-demo {
   display: flex;
   margin: 15px 0;
 }
@@ -411,14 +410,19 @@ thead tr {
   flex: 4;
 }
 
+.col-md-6 {
+  flex: 6;
+}
+
 
 @media (max-width: 1024px) {
-  .ex1 {
+  .grid-demo {
     flex-wrap: wrap;
   }
 
-  .ex1 .col-md-1 {
+  .grid-demo > div {
     width: 100%;
+    flex: unset;
   }
 }
 
