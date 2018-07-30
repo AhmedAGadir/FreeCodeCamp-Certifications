@@ -241,13 +241,14 @@ main {
 
 .documentation h2 {
   border-bottom: 1px solid lightgrey;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-top: 3px;
 }
 
 .documentation h2 + p {
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .documentation h3 {
@@ -256,47 +257,13 @@ main {
   padding-top: 15px;
 }
 
+.documentation h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
 .documentation p {
-  margin: 15px 0;
-}
-
-/* =========== HEADING LINKS ICONS ========= */
-
-.documentation h2, .documentation h3 {
-  position: relative;
-}
-
-.documentation i.fa-link {
-  color: lightgrey;
-  padding-right: 15px;
-  opacity: 0;
-  transition: 0.3s all ease;
-  position: absolute;
-}
-
-.documentation h2 i.fa-link {
-  font-size: 1.6rem;
-  left: -34px;
-  top: 16px;
-}
-
-.documentation h3 i.fa-link {
-  font-size: 1.4rem;
-  left: -29px;
-  top: 23px;
-}
-
-.documentation i.fa-link:hover {
-  opacity: 1;
-  color: slateblue;
-  cursor: pointer;
-}
-
-.documentation pre {
-  background: ghostwhite;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding: 15px;
   margin: 15px 0;
 }
 
@@ -304,7 +271,51 @@ main {
   margin-left: 40px;
 }
 
+/* =========== HEADING LINKS ICONS ========= */
+
+h2, h3 {
+  position: relative;
+}
+
+i.fa-link {
+  color: lightgrey;
+  padding-right: 15px;
+  opacity: 0;
+  transition: 0.3s all ease;
+  position: absolute;
+}
+
+h2 i.fa-link {
+  font-size: 1.6rem;
+  left: -34px;
+  top: 16px;
+}
+
+h3 i.fa-link {
+  font-size: 1.4rem;
+  left: -29px;
+  top: 23px;
+}
+
+i.fa-link:hover {
+  opacity: 1;
+  color: slateblue;
+  cursor: pointer;
+}
+
 /* =========== CODE ELEMENTS ========= */
+
+code, pre {
+  white-space: pre-wrap; /* forces long lines to break - https://olivermak.es/2014/10/design-better-responsive-code/*/
+}
+
+pre {
+  background-color: ghostwhite;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+}
 
 code {
   font-size: 0.85rem;
@@ -335,8 +346,6 @@ code.ir {
   background: ghostwhite;
 }
 
-/* =========== DOCUMENTATION TEXT ========= */
-
 a.sb:hover {
   color: cornflowerblue;
   text-decoration: underline !important;
@@ -355,17 +364,14 @@ table, td, th {
 table {
   border-collapse: collapse;
   margin-bottom: 15px;
-  /*width: 100%;*/
 }
 
 th {
   text-align: left;
-  /*text-indent: 5px*/
 }
 
 th > span.small {
   font-size: 0.8rem;
- /* display: block;*/
 }
 
 th, td {
@@ -387,15 +393,15 @@ thead tr {
 
 /* =========== STACKED-TO-HORIZONTAL SECTION ========= */
 
+.grid-demo {
+  display: flex;
+  margin: 15px 0;
+}
+
 .grid-demo > div {
   padding: 10px;
   background: lightsteelblue;
   border: 1px solid darkgrey;
-}
-
-.grid-demo {
-  display: flex;
-  margin: 15px 0;
 }
 
 .col-md-1 {
@@ -424,6 +430,37 @@ thead tr {
     width: 100%;
     flex: unset;
   }
+}
+
+/* =========== TYPOGRAPHY STUFF ========= */
+
+.example-wrap {
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin: 15px 0;
+  position: relative;
+  padding-top: 60px;
+}
+
+.example-wrap:before {
+  content: 'EXAMPLE';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: 600;
+  color: grey;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.example-wrap .example {
+  border-bottom: 1px solid lightgrey;
+  padding: 15px;
+}
+
+.example-wrap pre {
+  border: none;
+  margin: 0;
 }
 
 /* =========== SIDEBAR ========= */
