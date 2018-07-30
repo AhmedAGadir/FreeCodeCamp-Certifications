@@ -33,6 +33,10 @@ nav a, aside a {
   color: inherit;
 }
 
+strong {
+  font-weight: 600;
+}
+
 /* =========== BOOTSTRAP 4 ADVERTISEMENT ============== */
 
 .b4-ad {
@@ -241,25 +245,25 @@ main {
 
 .documentation h2 {
   border-bottom: 1px solid lightgrey;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 400;
   margin-top: 3px;
 }
 
 .documentation h2 + p {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .documentation h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 400;
   padding-top: 15px;
 }
 
 .documentation h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 400;
   margin-top: 20px;
 }
 
@@ -294,7 +298,7 @@ h2 i.fa-link {
 h3 i.fa-link {
   font-size: 1.4rem;
   left: -29px;
-  top: 23px;
+  top: 28px;
 }
 
 i.fa-link:hover {
@@ -368,6 +372,7 @@ table {
 
 th {
   text-align: left;
+  font-weight: 600;
 }
 
 th > span.small {
@@ -400,7 +405,7 @@ thead tr {
 
 .grid-demo > div {
   padding: 10px;
-  background: lightsteelblue;
+  background: lightblue;
   border: 1px solid darkgrey;
 }
 
@@ -439,7 +444,7 @@ thead tr {
   border: 1px solid lightgrey;
   margin: 15px 0;
   position: relative;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .example-wrap:before {
@@ -461,6 +466,151 @@ thead tr {
 .example-wrap pre {
   border: none;
   margin: 0;
+}
+
+/* ======= */
+
+#headings .example h1,
+#headings .example h2,
+#headings .example h3,
+#headings .example h4,
+#headings .example h5 {
+  border-bottom: 0.5px solid lightgrey;
+  padding: 10px 0;
+}
+
+#headings .example h1 {
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0;
+}
+
+#headings .example h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0;
+}
+
+#headings .example h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+#headings .example h4 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+#headings .example h5 {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+
+#headings .example h6 {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0;
+}
+
+#headings .example small {
+  color: grey;
+  font-size: 75%;
+}
+
+#headings .example-wrap:nth-of-type(1) h1,
+#headings .example-wrap:nth-of-type(1) h2,
+#headings .example-wrap:nth-of-type(1) h3,
+#headings .example-wrap:nth-of-type(1) h4,
+#headings .example-wrap:nth-of-type(1) h5,
+#headings .example-wrap:nth-of-type(1) h6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#headings .example-wrap:nth-of-type(1) span.semibold {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: grey;
+  padding-right: 40px;
+}
+
+#body-copy .example p {
+  font-size: 14px;
+  line-height: 1.428;
+  margin-bottom: 10px;
+}
+
+.lead {
+  font-size: 17px !important;
+}
+
+mark {
+  background-color: lightgoldenrodyellow;
+}
+
+#inline-text-elements .example-wrap {
+  padding-top: 20px;
+}
+
+.alternate-elements {
+  border: 1px solid lightgrey;
+  border-left: 6px solid steelblue;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.alternate-elements h5 {
+  color: steelblue;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.alternate-elements p {
+  margin: 5px 0;
+}
+
+#alignment-classes .example p,
+#transformation-classes .example p {
+  margin: 5px 0;
+}
+
+.text-left {
+  text-align: : left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  text-align: unset;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capatalize {
+  text-transform: capitalize;
 }
 
 /* =========== SIDEBAR ========= */

@@ -20,7 +20,6 @@ window.addEventListener('scroll', () => {
 
 	sections.forEach(section => {
     let sectionID = section.getAttribute('id');
-    console.log('section and sectionID are ', section, sectionID)
   
   	if (section.getBoundingClientRect().bottom >= 0 && section.getBoundingClientRect().bottom <= section.offsetHeight) {
     
@@ -63,7 +62,7 @@ document.getElementById('back-to-top').addEventListener('click', () => {
 
 //  =========== links -==============
 
-let allHeadings = [...document.querySelectorAll('h2'),...document.querySelectorAll('h3')];
+let allHeadings = [...document.querySelectorAll('.documentation > div > h2'),...document.querySelectorAll('.documentation > div > div > h3')];
 
 allHeadings.forEach(heading => {
   heading.addEventListener('mouseover', () => heading.firstElementChild.style.opacity = '1');
@@ -78,4 +77,4 @@ function escapeHTML (str) {
   return str
 }
 
-console.log(escapeHTML('<div class="container-fluid"><div class="row">...</div></div>'))
+console.log(escapeHTML('<h1>h1. Bootstrap heading <small>Secondary text</small></h1>'))
