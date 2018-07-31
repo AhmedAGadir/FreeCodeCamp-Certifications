@@ -121,6 +121,7 @@ headerButton.addEventListener('mouseout', () => {
 // ==================
 document.querySelector('.intro').style.backgroundColor = selectedTheme;
 document.querySelectorAll('.skills ul').forEach(ul => ul.style.backgroundColor = selectedTheme);
+document.querySelector('.inspiration blockquote p').style.borderColor = selectedTheme;
 document.querySelector('footer').style.backgroundColor = selectedTheme;
 
 

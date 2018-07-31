@@ -383,8 +383,10 @@ th, td {
   padding: 7px;
 }
 
-th[scope="row"] {
-  min-width: 140px;
+@media (min-width: 768px) {
+  th[scope="row"] {
+      min-width: 140px;
+  }
 }
 
 tr:nth-of-type(odd):not(.head) {
@@ -393,7 +395,13 @@ tr:nth-of-type(odd):not(.head) {
 
 thead tr {
   border-bottom: 2px solid lightgrey;
+}
 
+@media (max-width: 425px) {
+  th, td {
+    font-size: 90%;
+    padding: 2px;
+  }
 }
 
 /* =========== STACKED-TO-HORIZONTAL SECTION ========= */

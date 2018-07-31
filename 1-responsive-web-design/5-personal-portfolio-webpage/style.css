@@ -794,7 +794,7 @@ footer {
 	color: #fff;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 	footer {
 		background-image: -ms-linear-gradient(to bottom right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
 		background-image: -moz-linear-gradient(to bottom right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
@@ -802,7 +802,7 @@ footer {
 		background-image: -webkit-linear-gradient(to bottom right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
 		background-image: linear-gradient(to bottom right, rgba(0,0,0,0), 60%, rgba(0,0,0,0.2));
 	}
-}
+}*/
 
 footer .logo {
 	transform: scale(0.55);
