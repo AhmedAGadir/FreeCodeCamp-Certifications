@@ -28,7 +28,7 @@ button {
   appearance: none;
 }
 
-nav a, aside a {
+nav a {
   text-decoration: none;
   color: inherit;
 }
@@ -55,7 +55,7 @@ strong {
 
 /* =========== NAVIGATION ============== */
 
-nav {
+/*nav {
   background-color: #fff;
   color: slateblue;
   display: flex;
@@ -134,7 +134,7 @@ nav li.active {
   nav button.sandwhich {
     display: inline-block;
   }
-}
+}*/
 
 /*  nav ul {
   animation-name: menu-drop;
@@ -231,7 +231,7 @@ main {
 .documentation-wrap {
   display: flex;
   align-items: flex-start;
-  max-width: 1150px; 
+/*   max-width: 1150px;  */
   margin: 50px auto;
 }
 
@@ -243,14 +243,14 @@ main {
   padding-bottom: 50px;
 }
 
-.documentation h2 {
+.documentation header {
   border-bottom: 1px solid lightgrey;
   font-size: 2.2rem;
   font-weight: 400;
   margin-top: 3px;
 }
 
-.documentation h2 + p {
+.documentation header + p {
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -277,7 +277,7 @@ main {
 
 /* =========== HEADING LINKS ICONS ========= */
 
-h2, h3 {
+header, h3 {
   position: relative;
 }
 
@@ -289,7 +289,7 @@ i.fa-link {
   position: absolute;
 }
 
-h2 i.fa-link {
+header i.fa-link {
   font-size: 1.6rem;
   left: -34px;
   top: 16px;
@@ -355,7 +355,7 @@ a.sb:hover {
   text-decoration: underline !important;
 }
 
-#grid-system > p > a.sb {
+#grid_system > p > a.sb {
   text-decoration: none;
 }
 
@@ -539,7 +539,7 @@ thead tr {
   padding-right: 40px;
 }
 
-#body-copy .example p {
+#body_copy .example p {
   font-size: 14px;
   line-height: 1.428;
   margin-bottom: 10px;
@@ -553,7 +553,7 @@ mark {
   background-color: lightgoldenrodyellow;
 }
 
-#inline-text-elements .example-wrap {
+#inline_text_elements .example-wrap {
   padding-top: 20px;
 }
 
@@ -576,8 +576,8 @@ mark {
   margin: 5px 0;
 }
 
-#alignment-classes .example p,
-#transformation-classes .example p {
+#alignment_classes .example p,
+#transformation_classes .example p {
   margin: 5px 0;
 }
 
@@ -615,57 +615,75 @@ mark {
 
 /* =========== SIDEBAR ========= */
 
-aside {
+nav {
   min-width: 220px;
-  margin-left: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
   color: grey;
-  position: sticky;
+  position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+  background: white;
+  z-index: 1;
+  height: 100%;
+  width: 350px;
 }
 
-aside .active {
+@media (min-width: 768px) {
+  body {
+   margin-left: 350px;
+ }
+}
+
+nav header {
+  margin: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: slateblue;
+}
+
+nav .active {
   font-weight: 600;
   border-left: 2px solid slateblue !important;
   color: slateblue;
 }
 
-aside ul {
+nav ul {
   list-style-type: none;
 }
 
-aside > ul > li > ul > li:first-child {
+nav > ul > li > ul > li:first-child {
   border-left: 2px solid transparent;
   padding: 4px 0 4px 20px;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-aside > ul > li > ul > li:not(:first-child) {
+nav > ul > li > ul > li:not(:first-child) {
   border-left: 2px solid transparent;
   padding: 4px 0 4px 40px;
   font-size: 0.85rem;
   display: none;  
 }
 
-aside > ul > li > ul > li:hover {
+nav > ul > li > ul > li:hover {
   border-color: slateblue;
   color: slateblue;
 }
 
-aside > ul > li:last-child {
+nav > ul > li:last-child {
   padding-left: 20px;
   font-size: 0.85rem; 
   margin-top: 15px;
 }
 
-aside > ul > li:last-child:hover {
+nav > ul > li:last-child:hover {
   color: slateblue;
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  aside {
+  nav {
     display: none;  
   }
 }
