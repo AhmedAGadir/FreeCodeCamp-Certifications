@@ -615,13 +615,14 @@ header i.fa-chevron-down:hover {
 .projects .mono {
 	font-family: monospace;
 	font-size: 1.3rem;
+	padding: 0 60px;
 }
 
 /* ============== BLOCKQUOTE ============== */
 
 
 .inspiration {
-	min-height: 100vh;
+	min-height: 80vh;
 	padding: 10vh 60px;
 	background-color: #f4f4f4;
 	display: flex;
@@ -888,7 +889,7 @@ footer > p:last-of-type span {
 	.degree,
 	.skills,
 	.inspiration,
-	.testimonials {
+	.testimonials, {
 		padding: 10vh 15px;
 	}
 
@@ -896,7 +897,8 @@ footer > p:last-of-type span {
 		padding: 30px 15px;
 	}
 
-	.projects {
+	.projects,
+	.projects .mono {
 		padding: 0 15px;
 	}
 
