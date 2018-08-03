@@ -9,31 +9,40 @@
 
 
 /* ============== TYPOGRAPHY ============== */
+html {
+	font-size: 10px;
+}
+
+@media (min-width: 1500px) {
+	html {
+		font-size: 20px;
+	}
+}
 
 
 body {
 	font-family: 'Open sans', sans-serif;
-	max-width: 1440px;
-  margin: 0 auto;
+	/*max-width: 1440px;
+*/  margin: 0 auto;
   color: #4D5A6F;
   line-height: 1.7;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 h1 {	
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 2rem;
+	font-size: 3.2rem;
 	color: #fff;
 	line-height: 1.5;
 }
 
  h2 {
-	font-size: 1.8rem;
+	font-size: 2.9rem;
 	font-family: 'Ubuntu', sans-serif;
 }
 
 h3 {
-	font-size: 1.6rem;
+	font-size: 2.6rem;
 }
 
 button {
@@ -74,12 +83,12 @@ header {
 header .button-wrap {
 	position: absolute;
 	z-index: 1;
-	top: 20px;
-	right: 60px;
-	width: 90px;
-	height: 50px;
-	border-top: 3px solid;
-	border-bottom: 3px solid;
+	top: 2rem;
+	right: 6rem;
+	width: 9rem;
+	height: 5rem;
+	border-top: 0.3rem solid;
+	border-bottom: 0.3rem solid;
 	border-color: #fff;
 	color: #fff;
 	/*background-color: see javaScript;*/
@@ -95,7 +104,7 @@ header .button-wrap:hover {
 header button {
 	width: 100%;
 	height: 100%;
-	font-size: 1.4rem;
+	font-size: 2.2rem;
 	color: inherit;
 	background-color: inherit;
 }
@@ -104,10 +113,10 @@ header button:before,
 header button:after {
 	content: '';
 	position: absolute;
-	top: -3px;
-	border: 3px solid;
+	top: -0.3rem;
+	border: 0.3rem solid;
 	border-color: inherit;
-	width: 50px;
+	width: 5rem;
 	height: 100%;
 	border-radius: 50%;
 	background-color: inherit;
@@ -115,11 +124,11 @@ header button:after {
 }
 
 header button:before {
-	left: -25px;
+	left: -2.5rem;
 }
 
 header button:after {
-	right: -25px;
+	right: -2.5rem;
 }
 
 header .title-wrap {
@@ -135,17 +144,17 @@ header .title-wrap {
 }
 
 header .avatar-wrap {
-	width: 200px;
-	height: 200px;
+	width: 20rem;
+	height: 20rem;
 	position: relative;
-	margin: 20px;
+	margin: 2rem;
 }
 
 header .avatar-outer-ring {
 	display: block;
 	width: 100%;
 	height: 100%;
-	border: 4px solid white;
+	border: 0.4rem solid white;
 	border-radius: 50%
 }
 
@@ -160,24 +169,24 @@ header img.avatar-img {
 }
 
 header h1 {
-	width: 500px;
+	width: 50rem;
 	text-align: center;
 }
 
 header h1 .pipebar {
-	border-right: 2px solid white;
+	border-right: 0.2rem solid white;
 }
 
 
 header i.fa-chevron-down {
 	position: absolute;
-	bottom: 20px;
+	bottom: 2rem;
 	right: 50%;
-	font-size: 1.5rem;
+	font-size: 2.4rem;
 	color: white;
 
 	transition: all 0.5s ease;
-	transform: translateX(10px);
+	transform: translateX(0.1rem);
 
 	animation-name: chevron-float;
 	animation-iteration-count: infinite;
@@ -187,13 +196,13 @@ header i.fa-chevron-down {
 
 @keyframes chevron-float {
 	0% {
-		bottom: 20px;
+		bottom: 2rem;
 	}
 	50% {
-		bottom: 30px;
+		bottom: 3rem;
 	}
 	100% {
-		bottom: 20px;
+		bottom: 2rem;
 	}
 }
 
@@ -208,19 +217,19 @@ header i.fa-chevron-down:hover {
 
 .intro {
 	min-height: 100vh;
-	padding: 10vh 60px;
+	padding: 10vh 6rem;
 	/*background-color: see javaScript;*/
 	color: #fff;
 	position: relative;
 }
 
 .intro .logo {
-	transform: scale(0.55);
+	transform: scale(0.8);
 	margin: 0 auto;
 }
 
 .intro .text-body {
-	letter-spacing: 0.4px
+	letter-spacing: 0.04rem
 }
 
 
@@ -230,7 +239,7 @@ header i.fa-chevron-down:hover {
 .degree {
 	min-height: 100vh;
 	margin: 0 auto;
-	padding: 10vh 60px;
+	padding: 10vh 6rem;
 	background-color: #97A3B7;
 	display: flex;
 	flex-wrap: wrap;
@@ -240,53 +249,56 @@ header i.fa-chevron-down:hover {
 }
 
 .degree .text-wrap {
-	width: 760px;
-	padding: 30px;
+	width: 76rem;
+	padding: 3rem;
 	color: #fff;
 }
 
 .degree .text-wrap .text-title {
 	margin: 5vh auto;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 }
 
 .degree .text-wrap .text-title h2 {
 	text-align: left;
 	font-family: 'teko', sans-serif;
-	font-size: 2.2rem;
-	letter-spacing: 1px;
+	font-size: 3.5rem;
+	letter-spacing: 0.1rem;
 }
 
 .degree .text-wrap .text-body {
 	margin-bottom: 10vh;
-	letter-spacing: 0.4px;
+	letter-spacing: 0.04rem;
+}
+
+.degree .text-wrap .text-body p {
+	text-align: left;
 }
 
 .degree .img-wrap {
-	min-width: 320px;
-	max-width: 380px;
+	min-width: 32rem;
+	max-width: 38rem;
 }
 
-@media (min-width: 1260px) {
-	.img-wrap {
+@media (max-width: 1260px) {
+	.degree .text-wrap {
 		order: -1;
 	}
 
-	.degree .text-wrap .text-body {
-		text-align: left;
+	.degree .text-wrap .text-body p {
+		text-align: center;
 	}
 
 	.degree .text-wrap .text-title {
-		justify-content: unset;
+		justify-content: center;
 	}
 }
 
 .degree-img {
 	width: 100%;
-	border-radius: 10px;
-	border: 2px solid lightgrey;
+	border-radius: 1rem;
+	border: 0.2rem solid lightgrey;
 }
 
 @media (max-width: 370px) {
@@ -302,12 +314,12 @@ header i.fa-chevron-down:hover {
 .degree .text-wrap .cogs-wrap {
 	transform: scale(0.8);
 	position: relative;
-  min-width: 73px;
-	height: 55px;
+  min-width: 7.3rem;
+	height: 5.5rem;
 }
 
 #cog1 {
-	font-size: 3.3rem;
+	font-size: 5.3rem;
 	position: absolute;
 	left: 0;
 	animation-name: cog-rotate-counter-clockwise;
@@ -317,7 +329,7 @@ header i.fa-chevron-down:hover {
 }
 
 #cog2, #cog3 {
-	font-size: 1.5rem;
+	font-size: 2.4rem;
 	position: absolute;
 	right: 0;
 
@@ -359,11 +371,11 @@ header i.fa-chevron-down:hover {
 
 
 .skills {
-	padding: 10vh 60px;
+	padding: 10vh 6rem;
 }
 
 .skills .text-body {
-	letter-spacing: 0.3px
+	letter-spacing: 0.03rem
 }
 
 .skills .cards {
@@ -377,32 +389,32 @@ header i.fa-chevron-down:hover {
 	flex: 1;
 	text-align: left;
 	font-family: 'Teko', sans-serif;
-	margin: 4px;
-	padding: 10px;
+	margin: 0.4rem;
+	padding: 1rem;
 	/*background-color: see javaScript;*/
-	min-width: 250px;
+	min-width: 25rem;
 }
 
 .skills .cards li {
-	margin: 8px 0;
-	padding-right: 20px;
+	margin: 0.8rem 0;
+	padding-right: 2rem;
 	list-style-type: none;
 	color: #293347;
 	color: #fff;
-	font-size: 1.7rem;
+	font-size: 2.7rem;
 	font-weight: 300;
-	letter-spacing: 1px;
+	letter-spacing: 0.01rem;
 }
 
 .skills .cards li h3 {
 	color: #fff;
-	font-size: 2.2rem;
+	font-size: 3rem;
 	font-weight: 400;
 	text-align: center;
 }
 
 .skills .cards li i {
-	font-size: 3rem;
+	font-size: 4.8rem;
 }
 
 @media (min-width: 920px) {
@@ -426,11 +438,11 @@ header i.fa-chevron-down:hover {
 /* ========= RECENT WORK ========= */
 
 .projects {
-	padding: 0 60px;
+	padding: 0 6rem;
 }
 
 .projects .text-body {
-	letter-spacing: 0.3px
+	letter-spacing: 0.03rem
 }
 
 .projects h2 {
@@ -509,37 +521,37 @@ header i.fa-chevron-down:hover {
 }
 
 .thumbnail {
-	width: 380px;
-	height: calc(380px / 16 * 9);
-	margin: 10px;
-	border-radius: 5px;
+	width: 38rem;
+	height: calc(38rem / 16 * 9);
+	margin: 1rem;
+	border-radius: 0.5rem;
 	background-color: #97A3B7;
 	transition: 0.5s all ease;
 	flex-shrink: 0;
-	border: 1px solid #97A3B7;
+	border: 0.1rem solid #97A3B7;
 	background-size: 100%;
-	box-shadow: 0 2px 2px #97A3B7;
+	box-shadow: 0 0.2rem 0.2rem #97A3B7;
 }
 
 @media (max-width: 425px) {
 	.thumbnail {
-		width: 320px;
-		height: calc(320px / 16 * 9);
+		width: 32rem;
+		height: calc(32rem / 16 * 9);
 	}
 }
 
 .thumbnail .text-wrap {
 	background: #4D5A6F;
 	color: #fff;
-	border-radius: 5px;
+	border-radius: 0.5rem;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
 	transition: 0.5s all ease;
-	padding: 15px;
-	font-size: 1.12rem;
+	padding: 1.5rem;
+	font-size: 1.8rem;
 }
 
 .thumbnail .text-wrap:hover, 
@@ -552,19 +564,19 @@ header i.fa-chevron-down:hover {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: 'Ubuntu', sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: 0.1rem;
 	text-align: center;
 }
 
 .projects .button-wrap {
-	margin: 40px auto;
-	height: 60px;
-	width: 220px;
+	margin: 4rem auto;
+	height: 6rem;
+	width: 22rem;
 	position: relative;
 	border-color: #4D5A6F; 
 	color: #4D5A6F;
-	border-top: 3px solid;
-	border-bottom: 3px solid;
+	border-top: 0.3rem solid;
+	border-bottom: 0.3rem solid;
 	background-color: #fff;
 	transition: all 0.3s ease;
 	z-index: 2;
@@ -580,7 +592,7 @@ header i.fa-chevron-down:hover {
 .projects .button-wrap button {
 	width: 100%;
 	height: 100%;
-	font-size: 1.2rem;
+	font-size: 1.9rem;
 	background-color: inherit;
 	color: inherit;
 }
@@ -589,22 +601,22 @@ header i.fa-chevron-down:hover {
 .projects .button-wrap button:after {
 	content: '';
 	position: absolute;
-	top: -3px;
+	top: -0.3rem;
 	z-index: -1;
-	width: 60px;
+	width: 6rem;
 	background-color: inherit;
 	height: 100%;
 	border-radius: 50%;
-	border: 3px solid;
+	border: 0.3rem solid;
 	border-color: inherit;
 }
 
 .projects .button-wrap button:before {
-	left: -30px;
+	left: -3rem;
 }
 
 .projects .button-wrap button:after {
-	right: -30px;
+	right: -3rem;
 }
 
 .projects .button-wrap button a {
@@ -614,8 +626,8 @@ header i.fa-chevron-down:hover {
 
 .projects .mono {
 	font-family: monospace;
-	font-size: 1.3rem;
-	padding: 0 60px;
+	font-size: 2rem;
+	padding: 0 6rem;
 }
 
 /* ============== BLOCKQUOTE ============== */
@@ -631,28 +643,28 @@ header i.fa-chevron-down:hover {
 }
 
 .inspiration blockquote {
-	max-width: 650px;
+	max-width: 65rem;
 }
 
 .inspiration blockquote p {
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 	text-align: center;
-	border-left: 5px solid lightgrey
+	border-left: 0.5rem solid lightgrey
 }
 
 .inspiration blockquote i {
-	font-size: 2rem;
-	margin: 2px;
+	font-size: 3.2rem;
+	margin: 0.2rem;
 }
 
 .inspiration blockquote span.quote-text {
-	font-size: 1.6rem;
-	letter-spacing: 0.4px;
+	font-size: 2.6rem;
+	letter-spacing: 0.04rem;
 }
 
 .inspiration blockquote span.quote-footer {
 	display: block;
-	margin: 5px 0;
+	margin: 0.5rem 0;
 	text-align: right;
 }
 
@@ -666,8 +678,8 @@ header i.fa-chevron-down:hover {
 
 
 .testimonials {
-	height: calc(100% + 80px);
-	padding: 10vh 60px;
+	height: calc(100% + 8rem);
+	padding: 10vh 6rem;
 	text-align: center;
 }
 
@@ -676,19 +688,19 @@ header i.fa-chevron-down:hover {
 }
 
 .testimonials p {
-	letter-spacing: 0.3px;
+	letter-spacing: 0.03rem;
 }
 
 .testimonials img {
-	width: 180px;
+	width: 18rem;
 	display: block;
 	position: relative;
-	left: 10px;
-	margin: 20px auto;
+	left: 1rem;
+	margin: 2rem auto;
 }
 
 .testimonials blockquote {
-	max-width: 600px;
+	max-width: 60rem;
 	margin: 10vh auto;
 }
 
@@ -698,7 +710,7 @@ header i.fa-chevron-down:hover {
 
 .testimonials blockquote span.quote-footer {
 	display: block;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.02rem;
 }
 
 
@@ -707,42 +719,42 @@ header i.fa-chevron-down:hover {
 
 footer .invitation {
 	position: relative;
-	top: -80px;
+	top: -8rem;
 	margin: 0 auto;
 	width: 80%;
-	min-height: 160px;
-	border-radius: 10px;
+	min-height: 16rem;
+	border-radius: 1rem;
 	background-color: #4D5A6F;
-	padding: 15px;
+	padding: 1.5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.5);
 }
 
 footer .invitation p {
 	text-align: center;
-	padding: 20px;
-	letter-spacing: 0.3px;
+	padding: 2rem;
+	letter-spacing: 0.03rem;
 }
 
 @media (min-width: 950px) {
 	footer .invitation p {
-			max-width: 400px;
+			max-width: 40rem;
 	}
 	footer .invitation .button-wrap {
-		right: 10px;
+		right: 1rem;
 	}
 }
 
 footer .invitation .button-wrap {
 	position: relative;
 	z-index: 1;
-	width: 120px;
-	height: 55px;
-	border-top: 3px solid;
-	border-bottom: 3px solid;
+	width: 12rem;
+	height: 5.5rem;
+	border-top: 0.3rem solid;
+	border-bottom: 0.3rem solid;
 	border-color: #fff;
 	color: #fff;
 	background-color: #4D5A6F;
@@ -760,17 +772,17 @@ footer .invitation button {
 	height: 100%;
 	color: inherit;
 	background-color: inherit;
-	font-size: 1.2rem;
+	font-size: 2rem;
 }
 
 footer .invitation button:before,
 footer .invitation button:after {
 	content: '';
 	position: absolute;
-	top: -3px;
-	border: 3px solid;
+	top: -0.3rem;
+	border: 0.3rem solid;
 	border-color: inherit;
-	width: 50px;
+	width: 5rem;
 	height: 100%;
 	border-radius: 50%;
 	background-color: inherit;
@@ -778,11 +790,11 @@ footer .invitation button:after {
 }
 
 footer .invitation button:before {
-	left: -25px;
+	left: -2.5rem;
 }
 
 footer .invitation button:after {
-	right: -25px;
+	right: -2.5rem;
 }
 
 /* ============== FOOTER ============== */
@@ -806,14 +818,14 @@ footer {
 }*/
 
 footer .logo {
-	transform: scale(0.55);
-	margin: 0 auto;
+	transform: scale(0.9);
+	margin: 0 auto 5vh;
 }
 
 footer .motto {
 	text-align: center;
-	font-size: 1.4rem;
-	letter-spacing: 0.6px;
+	font-size: 2.2rem;
+	letter-spacing: 0.06rem;
 }
 
 footer .social-media {
@@ -822,10 +834,10 @@ footer .social-media {
 
 footer .social-media a {
 	display: inline-block;
-	margin: 5vh 20px;
+	margin: 5vh 2rem;
 	transition: 1s all ease;
 	position: relative;
-	font-size: 2.5rem;
+	font-size: 4rem;
 }
 
 footer .social-media a {
@@ -847,7 +859,7 @@ footer .social-media a:hover {
 		bottom: 0px;
 	}
 	50% {
-		bottom: 10px;
+		bottom: 1rem;
 	}
 	100% {
 		bottom: 0px;
@@ -856,18 +868,18 @@ footer .social-media a:hover {
 
 footer > p:last-of-type {
 	text-align: center;
-	font-size: 1rem;
+	font-size: 1.6rem;
 	padding-bottom: 5vh;
-	letter-spacing: 0.8px;
+	letter-spacing: 0.08rem;
 }
 footer > p:last-of-type span {
-	font-size: 1.5rem;
+	font-size: 2.4rem;
 }
 
 /* ============== SCROLLBAR ============== */
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 0.8rem;
 }
  
 ::-webkit-scrollbar-track {
@@ -889,21 +901,21 @@ footer > p:last-of-type span {
 	.degree,
 	.skills,
 	.inspiration,
-	.testimonials, {
-		padding: 10vh 15px;
+	.testimonials {
+		padding: 10vh 1.5rem;
 	}
 
 	.degree .text-wrap {
-		padding: 30px 15px;
+		padding: 3rem 1.5rem;
 	}
 
 	.projects,
 	.projects .mono {
-		padding: 0 15px;
+		padding: 0 1.5rem;
 	}
 
 	.projects .thumbnail {
-		margin: 10px 0;
+		margin: 1rem 0;
 	}
 
 }
