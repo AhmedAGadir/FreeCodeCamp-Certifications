@@ -822,7 +822,7 @@ footer .invitation button:after {
 
 
 footer {
-	min-height: 80vh;
+	/*min-height: 80vh;*/
 	/*background-color: see javaScript;*/
 	position: relative;
 	color: #fff;
@@ -937,6 +937,10 @@ footer > p:last-of-type span {
 
 	.projects .thumbnail {
 		margin: 1rem 0;
+	}
+
+	h1 {
+		font-size: 3rem;
 	}
 
 }
