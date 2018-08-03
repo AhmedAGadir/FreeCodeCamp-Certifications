@@ -918,6 +918,10 @@ footer > p:last-of-type span {
 
 @media (max-width: 425px) {
 
+	h1 {
+		font-size: 3rem;
+	}
+
 	.intro,
 	.degree,
 	.skills,
@@ -937,10 +941,6 @@ footer > p:last-of-type span {
 
 	.projects .thumbnail {
 		margin: 1rem 0;
-	}
-
-	h1 {
-		font-size: 3rem;
 	}
 
 }
