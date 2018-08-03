@@ -435,6 +435,26 @@ header i.fa-chevron-down:hover {
 	}
 }
 
+@media (min-width: 1500px) {
+	.skills .cards {
+		align-items: stretch;
+	}
+}
+
+@media (min-width: 1790px) {
+	.skills .cards {
+		align-items: flex-end;
+	}
+	.skills ul:last-of-type li:not(:first-of-type) {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 2310px) {
+	.skills ul:last-of-type li:not(:first-of-type) {
+		display: block;
+	}
+}
 
 /* ========= RECENT WORK ========= */
 
