@@ -19,11 +19,16 @@ html {
 	}
 }
 
+@media (max-width: 425px) {
+	html {
+		font-size: 9px;
+	}
+}
+
 
 body {
 	font-family: 'Open sans', sans-serif;
-	/*max-width: 1440px;
-*/  margin: 0 auto;
+	margin: 0 auto;
   color: #4D5A6F;
   line-height: 1.7;
   font-size: 2rem;
@@ -281,17 +286,14 @@ header i.fa-chevron-down:hover {
 	max-width: 38rem;
 }
 
-@media (max-width: 1260px) {
-	.degree .text-wrap {
-		order: -1;
+@media (max-width: 425px) {
+
+	.degree .text-wrap .text-title {
+		justify-content: center;
 	}
 
 	.degree .text-wrap .text-body p {
 		text-align: center;
-	}
-
-	.degree .text-wrap .text-title {
-		justify-content: center;
 	}
 }
 
@@ -308,7 +310,6 @@ header i.fa-chevron-down:hover {
 		margin: 0 auto;
 	}
 }
-
 /* === COGS == */
 
 .degree .text-wrap .cogs-wrap {
@@ -403,7 +404,7 @@ header i.fa-chevron-down:hover {
 	color: #fff;
 	font-size: 2.7rem;
 	font-weight: 300;
-	letter-spacing: 0.01rem;
+	letter-spacing: 0.04rem;
 }
 
 .skills .cards li h3 {
@@ -801,7 +802,7 @@ footer .invitation button:after {
 
 
 footer {
-	min-height: 100vh;
+	min-height: 80vh;
 	/*background-color: see javaScript;*/
 	position: relative;
 	color: #fff;

@@ -6,11 +6,26 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 10px;
+}
+
+@media (min-width: 1500px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 425px) {
+	html {
+		font-size: 9px;
+	}
+}
+
 body {
 	font-family: 'Open sans', sans-serif;
-	max-width: 1440px;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   background-color: #faf7ff;
 }
 
@@ -36,18 +51,18 @@ header {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 15px 30px;
-	border-bottom: 3px solid;
+	padding: 1.5rem 3rem;
+	border-bottom: 0.3rem solid;
 	/*border-color: see-javascript;*/
-	margin-bottom: 100px;
+	margin-bottom: 10rem;
 }
 
 header .avatar-wrap {
-	width: 150px;
-	height: 150px;
+	width: 15rem;
+	height: 15rem;
 	position: relative;
 	position: absolute;
-	top: 30px;
+	top: 3rem;
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: #fff;
@@ -58,7 +73,7 @@ header .avatar-outer-ring {
 	display: block;
 	width: 100%;
 	height: 100%;
-	border: 3px solid;
+	border: 0.3rem solid;
 	/*border-color: see javascript;*/
 	border-radius: 50%;
 	background-color: #faf7ff;
@@ -75,8 +90,8 @@ header img.avatar-img {
 }
 
 header > span {
-	font-size: 2.5rem;
-	padding: 15px;
+	font-size: 4rem;
+	padding: 1.5rem;
 	/*color: see javascript;*/
 	transition: 0.2s all ease;
 }
@@ -89,14 +104,14 @@ header > span:hover {
 /* ================ MAIN =============== */
 
 main {
-	padding: 0 15px;
+	padding: 0 1.5rem;
 }
 
  #form-title {
 	margin: 10vh 0 7vh;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 2rem;
+	font-size: 3.2rem;
 	color: #363F4E;
 }
 
@@ -113,8 +128,8 @@ form {
 	color: white;
 	width: 70%;
 	margin: 0 auto 10vh;
-	padding: 30px 60px;
-	border-radius: 10px;
+	padding: 3rem 6rem;
+	border-radius: 1rem;
 }
 
 form > div {
@@ -124,38 +139,38 @@ form > div {
 
 form input, form textarea {
 	display: block;
-	text-indent: 5px;
+	text-indent: 0.5rem;
 	width: inherit;
-	margin-bottom: 30px;
+	margin-bottom: 3rem;
 	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 0.3px;
-	font-size: 1.1rem;
-	padding: 10px;
-	border-radius: 3px;
-	border: 2px solid lightgrey;
+	letter-spacing: 0.03rem;
+	font-size: 1.8rem;
+	padding: 1rem;
+	border-radius: 0.3rem;
+	border: 0.2rem solid lightgrey;
 	color: #363F4E;
 }
 
 form input:focus, form textarea:focus {
-	box-shadow: 0 0 7px lightblue;
+	box-shadow: 0 0 0.7rem lightblue;
 }
 
 form input {
-	height: 40px;
+	height: 4rem;
 }
 
 form textarea {
-	height: 150px;
+	height: 15rem;
 }
 
 form .button-wrap {
 	margin: 0 auto;
 	position: relative;
 	z-index: 1;
-	width: 120px;
-	height: 50px;
-	border-top: 3px solid;
-	border-bottom: 3px solid;
+	width: 12rem;
+	height: 5rem;
+	border-top: 0.3rem solid;
+	border-bottom: 0.3rem solid;
 	border-color: #fff;
 	color: #fff;
 	/*background-color: see javascript;*/
@@ -173,17 +188,17 @@ form button {
 	height: 100%;
 	color: inherit;
 	background-color: inherit;
-	font-size: 1.4rem;
+	font-size: 2.2rem;
 }
 
 form button:before,
 form button:after {
 	content: '';
 	position: absolute;
-	top: -3px;
-	border: 3px solid;
+	top: -0.3rem;
+	border: 0.3rem solid;
 	border-color: inherit;
-	width: 50px;
+	width: 5rem;
 	height: 100%;
 	border-radius: 50%;
 	background-color: inherit;
@@ -191,28 +206,28 @@ form button:after {
 }
 
 form button:before {
-	left: -25px;
+	left: -2.5rem;
 }
 
 form button:after {
-	right: -25px;
+	right: -2.5rem;
 }
 
 form .button-wrap:active {
 	position: relative;
-	top: 3px;
+	top: 0.3rem;
 }
 
 
 @media (max-width: 768px) {
 	
 	header {
-		padding: 10px;
+		padding: 1rem;
 	}
 
 	form {
 		width: 100%;
-		padding: 30px 15px;
+		padding: 3rem 1.5rem;
 	}
 
 }
@@ -222,7 +237,7 @@ form .button-wrap:active {
 /* ============== SCROLLBAR ============== */
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 0.8rem;
 }
  
 ::-webkit-scrollbar-track {
