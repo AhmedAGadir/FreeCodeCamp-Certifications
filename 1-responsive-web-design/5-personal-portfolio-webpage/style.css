@@ -762,11 +762,13 @@ footer .invitation p {
 
 @media (min-width: 950px) {
 	footer .invitation p {
-			max-width: 40rem;
+			max-width: 38rem;
 	}
-	footer .invitation .button-wrap {
-		right: 1rem;
-	}
+}
+
+footer .invitation .wrap {
+	width: 18.8rem;
+	position: relative;
 }
 
 footer .invitation .button-wrap {
@@ -780,6 +782,7 @@ footer .invitation .button-wrap {
 	color: #fff;
 	background-color: #4D5A6F;
 	transition: 0.5s all ease;
+	margin: 0 auto;
 }
 
 footer .invitation .button-wrap:hover {
