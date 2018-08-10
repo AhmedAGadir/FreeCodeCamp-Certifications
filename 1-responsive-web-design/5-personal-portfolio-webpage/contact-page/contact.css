@@ -16,11 +16,11 @@ html {
 	}
 }
 
-@media (max-width: 425px) {
+/*@media (max-width: 425px) {
 	html {
 		font-size: 9px;
 	}
-}
+}*/
 
 body {
 	font-family: 'Open sans', sans-serif;
