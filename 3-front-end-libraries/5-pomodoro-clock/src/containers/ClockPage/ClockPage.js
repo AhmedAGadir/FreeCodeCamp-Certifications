@@ -65,7 +65,7 @@ class ClockPage extends Component {
 	}
 
 	switch = () => {
-		const nextSession = Object.keys(this.state.sessions).find(key => key !== this.state.activeSession)
+		const nextSession = Object.keys(this.state.sessions).find(key => key !== this.state.active)
 		this.switchTimer = setTimeout(() => this.switch(), this.state.sessions[nextSession] * 60 * 1000);
 		this.setState({
 			active: nextSession,
@@ -91,6 +91,7 @@ class ClockPage extends Component {
 					min={5}
 					max={30} />
 				<p>Hello World</p>
+				<p>{this.state.active}</p>
 				<PomodoroClock 
 					started={this.state.started}
 					currentDate={this.state.nowDate}

@@ -10,8 +10,8 @@ const pomdoroClock = props => {
 	  		seconds = Math.floor((difference % (1000 * 60)) / 1000);
   		}
 
-  		minutes = minutes.toString().length > 1 ? minutes :'0' + minutes;
-  		seconds = seconds.toString().length > 1 ? seconds : '0' + seconds;
+  		minutes = minutes > 9 ? minutes.toString() : '0' + minutes;
+  		seconds = seconds > 9 ? seconds.toString() : '0' + seconds;
 
 	return (
 		<p>{minutes} : {seconds}</p>
