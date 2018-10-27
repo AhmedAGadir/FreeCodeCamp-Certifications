@@ -1,4 +1,5 @@
 import React from 'react';
+import { zeroFill } from '../../utility';
 
 const pomdoroClock = props => {
 		let minutes = props.sessionLength;
@@ -10,11 +11,8 @@ const pomdoroClock = props => {
 	  		seconds = Math.floor((difference % (1000 * 60)) / 1000);
   		}
 
-  		minutes = minutes > 9 ? minutes.toString() : '0' + minutes;
-  		seconds = seconds > 9 ? seconds.toString() : '0' + seconds;
-
 	return (
-		<p>{minutes} : {seconds}</p>
+		<p>{zeroFill(minutes)} : {zeroFill(seconds)}</p>
 	)
 }
 

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PomodoroConfig from '../../components/PomodoroConfig/PomodoroConfig';
 import PomodoroClock from '../../components/PomodoroClock/PomodoroClock';
+import PomodoroBeepSound from '../../components/PomodoroBeepSound/PomodoroBeepSound';
+import { capitalize } from '../../utility';
 
 const DEFAULT_STATE = {
 	sessions: {
@@ -10,7 +12,8 @@ const DEFAULT_STATE = {
 	active: 'work',
 	nowDate: null,
 	endDate: null,
-	started: false
+	started: false,
+	alarmToggle: false,
 };
 
 class ClockPage extends Component {
@@ -67,10 +70,11 @@ class ClockPage extends Component {
 	switch = () => {
 		const nextSession = Object.keys(this.state.sessions).find(key => key !== this.state.active)
 		this.switchTimer = setTimeout(() => this.switch(), this.state.sessions[nextSession] * 60 * 1000);
-		this.setState({
+		this.setState(prevState => ({
 			active: nextSession,
-			endDate: new Date(new Date().getTime() + (this.state.sessions[nextSession] * 60 * 1000))
-		})
+			endDate: new Date(new Date().getTime() + (this.state.sessions[nextSession] * 60 * 1000)),
+			alarmToggle: !prevState.alarmToggle,
+		}))
 	}
 
 	render() {
@@ -91,12 +95,13 @@ class ClockPage extends Component {
 					min={5}
 					max={30} />
 				<p>Hello World</p>
-				<p>{this.state.active}</p>
+				<p>{capitalize(this.state.active)}</p>
 				<PomodoroClock 
 					started={this.state.started}
 					currentDate={this.state.nowDate}
 					finishDate={this.state.endDate}
 					sessionLength={this.state.sessions[this.state.active]} />
+				<PomodoroBeepSound toggle={this.state.alarmToggle} />
 				{!this.state.started 
 					? <button onClick={this.startTimer}>start</button>
 					: <button onClick={this.continueTimer}>continue</button>}
