@@ -13,7 +13,7 @@ html {
 	font-size: 10px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1700px) {
 	html {
 		font-size: 20px;
 	}
@@ -34,7 +34,7 @@ body {
   font-size: 2rem;
 }
 
-h1 {	
+h1 {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 3.2rem;
 	color: #fff;
@@ -422,7 +422,7 @@ header i.fa-chevron-down:hover {
 	.skills .cards {
 		align-items: flex-end;
 	}
-	
+
 	.skills ul:last-of-type li:not(:first-of-type) {
 		display: inline-block;
 	}
@@ -431,11 +431,11 @@ header i.fa-chevron-down:hover {
 
 @media (min-width: 1125px) {
 	.skills ul:last-of-type li:not(:first-of-type) {
-		display: block;	
+		display: block;
 	}
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1700px) {
 	.skills .cards {
 		align-items: stretch;
 	}
@@ -575,7 +575,7 @@ header i.fa-chevron-down:hover {
 	font-size: 1.8rem;
 }
 
-.thumbnail .text-wrap:hover, 
+.thumbnail .text-wrap:hover,
 .thumbnail .text-wrap:focus {
 	opacity: 0.9;
 	cursor: pointer;
@@ -594,7 +594,7 @@ header i.fa-chevron-down:hover {
 	height: 6rem;
 	width: 22rem;
 	position: relative;
-	border-color: #4D5A6F; 
+	border-color: #4D5A6F;
 	color: #4D5A6F;
 	border-top: 0.3rem solid;
 	border-bottom: 0.3rem solid;
@@ -905,16 +905,16 @@ footer > p:last-of-type span {
 ::-webkit-scrollbar {
     width: 0.8rem;
 }
- 
+
 ::-webkit-scrollbar-track {
   /*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    background: #4D5A6F; 
+    background: #4D5A6F;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: #4D5A6F; 
+	background: #4D5A6F;
 }
 
 /* ========= remove padding when screen is small ========= */
@@ -952,20 +952,13 @@ footer > p:last-of-type span {
 
 
 
-/* ========= COLOR PALETTE ========= 
+/* ========= COLOR PALETTE =========
 
 homagegrey: 97A3B7;
-darker : 4D5A6F; 
+darker : 4D5A6F;
 offwhite: f4f4f4;
-blue: dodgerblue 
+blue: dodgerblue
 red: ff4359;
 
 
 */
-
-
-
-
-
-
-
