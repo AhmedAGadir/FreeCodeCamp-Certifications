@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import { capitalize, zeroFill } from '../../utility';
+import Button from '@material-ui/core/Button';
+import './PomodoroConfig.css';
 
 class PomodoroConfig extends Component {
 	state = {
@@ -29,11 +31,19 @@ class PomodoroConfig extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="config-wrap">
 				<p>{capitalize(this.props.type)} Length</p>
-				<button onClick={this.decrement} disabled={this.props.disabled}>-</button>
+				<Button
+					variant='contained'
+					color='primary'
+					onClick={this.decrement}
+					disabled={this.props.disabled}>-</Button>
 				{zeroFill(this.props.value)}
-				<button onClick={this.increment} disabled={this.props.disabled}>+</button>
+				<Button
+					variant='contained'
+					color='primary'
+					onClick={this.increment}
+					disabled={this.props.disabled}>+</Button>
 				{this.state.error ? <span>{this.state.error}</span> : null}
 			</div>
 		)

@@ -3,6 +3,7 @@ import PomodoroConfig from '../../components/PomodoroConfig/PomodoroConfig';
 import PomodoroClock from '../../components/PomodoroClock/PomodoroClock';
 import PomodoroBeepSound from '../../components/PomodoroBeepSound/PomodoroBeepSound';
 import { capitalize } from '../../utility';
+import Button from '@material-ui/core/Button';
 
 const DEFAULT_STATE = {
 	sessions: {
@@ -13,6 +14,7 @@ const DEFAULT_STATE = {
 	nowDate: null,
 	endDate: null,
 	started: false,
+	paused: false,
 	alarmToggle: false,
 };
 
@@ -24,16 +26,21 @@ class ClockPage extends Component {
 		this.switchTimer = null;
 	}
 
+	componentWillUnmount() {
+		clearInterval(this.tickInterval);
+		clearTimeout(this.switchTimer);
+	}
+
 	adjustTimerConfig = (session, amount) => {
 		let sessions = {...this.state.sessions};
 		sessions[session] = sessions[session] + amount;
-		this.setState({sessions})		
+		this.setState({sessions})
 	}
 
 	startTimer = () => {
 		this.tickInterval = setInterval(() => this.tick(), 1000);
 		this.switchTimer = setTimeout(() => this.switch(), this.state.sessions.work * 60 * 1000);
-		this.setState(prevState => ({	
+		this.setState(prevState => ({
 			nowDate: new Date(),
 			endDate: new Date(new Date().getTime() + (prevState.sessions.work * 60 * 1000)),
 			started: true
@@ -47,7 +54,8 @@ class ClockPage extends Component {
 		this.switchTimer = setTimeout(() => this.switch(), difference);
 		this.setState({
 			nowDate: new Date(),
-			endDate: new Date(new Date().getTime() + difference)
+			endDate: new Date(new Date().getTime() + difference),
+			paused: false
 		})
 	}
 
@@ -55,6 +63,7 @@ class ClockPage extends Component {
 		clearInterval(this.tickInterval);
 		this.tickInterval = false;
 		clearTimeout(this.switchTimer);
+		this.setState({paused: true})
 	}
 
 	resetTimer = () => {
@@ -96,17 +105,30 @@ class ClockPage extends Component {
 					max={30} />
 				<p>Hello World</p>
 				<p>{capitalize(this.state.active)}</p>
-				<PomodoroClock 
+				<PomodoroClock
 					started={this.state.started}
 					currentDate={this.state.nowDate}
 					finishDate={this.state.endDate}
 					sessionLength={this.state.sessions[this.state.active]} />
 				<PomodoroBeepSound toggle={this.state.alarmToggle} />
-				{!this.state.started 
-					? <button onClick={this.startTimer}>start</button>
-					: <button onClick={this.continueTimer}>continue</button>}
-				<button onClick={this.pauseTimer}>pause</button>
-				<button onClick={this.resetTimer}>reset</button>
+				{!this.state.started
+					? <Button
+						variant='contained'
+						color='primary'
+						onClick={this.startTimer}>start</Button>
+					: <Button
+						variant='contained'
+						color='primary'
+						onClick={this.continueTimer}
+						disabled={!this.state.paused}>continue</Button>}
+				<Button
+					variant='contained'
+					color='primary'
+					onClick={this.pauseTimer}>pause</Button>
+				<Button
+					variant='contained'
+					color='secondary'
+					onClick={this.resetTimer}>reset</Button>
 			</div>
 		)
 	}

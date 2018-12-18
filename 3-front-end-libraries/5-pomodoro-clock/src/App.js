@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Layout from './components/Layout/Layout';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
-class App extends Component {
-  render() {
-    return <Layout />
-  }
-}
+const app = props => (
+    <CssBaseline>
+        <Layout />
+    </CssBaseline>
+)
 
-export default App;
+export default app;

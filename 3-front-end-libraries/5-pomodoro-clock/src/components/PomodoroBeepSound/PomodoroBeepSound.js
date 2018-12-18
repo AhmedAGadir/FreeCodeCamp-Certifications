@@ -6,16 +6,13 @@ class PomdoroBeepSound extends Component {
 		super(props);
 		this.audioRef = React.createRef();
 	}
-	
+
 	componentWillReceiveProps(nextProps) {
 		if (this.props.toggle !== nextProps.toggle) {
 			this.audioRef.current.currentTime = 0;
+			this.audioRef.current.volume = 0.15;
 			this.audioRef.current.play();
 		}
-	}
-
-	componentWillUpdate() {
-		this.audioRef.current.volume = 0.15;
 	}
 
 	render() {
