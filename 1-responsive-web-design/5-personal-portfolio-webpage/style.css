@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Open+sans|Teko:300,400');
-
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-
 /* ============== TYPOGRAPHY ============== */
+
 html {
 	font-size: 10px;
 }
 
-@media (min-width: 1700px) {
+/* @media (min-width: 1700px) {
 	html {
 		font-size: 20px;
 	}
-}
+} */
 
 /*@media (max-width: 425px) {
 	html {
@@ -25,13 +23,12 @@ html {
 	}
 }*/
 
-
 body {
 	font-family: 'Open sans', sans-serif;
 	margin: 0 auto;
-  color: #4D5A6F;
-  line-height: 1.7;
-  font-size: 2rem;
+	color: #4D5A6F;
+	line-height: 1.7;
+	font-size: 2rem;
 }
 
 h1 {
@@ -41,7 +38,7 @@ h1 {
 	line-height: 1.5;
 }
 
- h2 {
+h2 {
 	font-size: 2.9rem;
 	font-family: 'Ubuntu', sans-serif;
 }
@@ -71,13 +68,12 @@ button:hover {
 	text-align: center;
 }
 
-.text-body  {
+.text-body {
 	text-align: center;
 	margin-bottom: 20vh;
 }
 
 /* ============== HEADER ============== */
-
 
 header {
 	height: 100vh;
@@ -101,7 +97,7 @@ header .button-wrap {
 }
 
 header .button-wrap:hover {
-/*	border-color: see javaScript;
+	/*	border-color: see javaScript;
 	color: see javaScript;
 	background-color: see javaScript;*/
 }
@@ -114,8 +110,7 @@ header button {
 	background-color: inherit;
 }
 
-header button:before,
-header button:after {
+header button:before, header button:after {
 	content: '';
 	position: absolute;
 	top: -0.3rem;
@@ -145,7 +140,7 @@ header .title-wrap {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 }
 
 header .avatar-wrap {
@@ -168,7 +163,6 @@ header img.avatar-img {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 	width: 85%;
 	border-radius: 50%;
 }
@@ -182,17 +176,14 @@ header h1 .pipebar {
 	border-right: 0.2rem solid white;
 }
 
-
 header i.fa-chevron-down {
 	position: absolute;
 	bottom: 2rem;
 	right: 50%;
 	font-size: 2.4rem;
 	color: white;
-
 	transition: all 0.5s ease;
 	transform: translateX(50%);
-
 	animation-name: chevron-float;
 	animation-iteration-count: infinite;
 	animation-duration: 1s;
@@ -216,9 +207,7 @@ header i.fa-chevron-down:hover {
 	cursor: pointer;
 }
 
-
 /* ============== INTRODUCTION ============== */
-
 
 .intro {
 	min-height: 100vh;
@@ -237,9 +226,7 @@ header i.fa-chevron-down:hover {
 	letter-spacing: 0.04rem
 }
 
-
 /* ============== DEGREE ============== */
-
 
 .degree {
 	min-height: 100vh;
@@ -287,11 +274,9 @@ header i.fa-chevron-down:hover {
 }
 
 @media (max-width: 425px) {
-
 	.degree .text-wrap .text-title {
 		justify-content: center;
 	}
-
 	.degree .text-wrap .text-body p {
 		text-align: center;
 	}
@@ -310,12 +295,13 @@ header i.fa-chevron-down:hover {
 		margin: 0 auto;
 	}
 }
+
 /* === COGS == */
 
 .degree .text-wrap .cogs-wrap {
 	transform: scale(0.8);
 	position: relative;
-  min-width: 7.3rem;
+	min-width: 7.3rem;
 	height: 5.5rem;
 }
 
@@ -333,7 +319,6 @@ header i.fa-chevron-down:hover {
 	font-size: 2.4rem;
 	position: absolute;
 	right: 0;
-
 	animation-name: cog-rotate-clockwise;
 	animation-iteration-count: infinite;
 	animation-duration: 4s;
@@ -347,7 +332,6 @@ header i.fa-chevron-down:hover {
 #cog3 {
 	bottom: 0;
 }
-
 
 @keyframes cog-rotate-clockwise {
 	0% {
@@ -367,9 +351,7 @@ header i.fa-chevron-down:hover {
 	}
 }
 
-
 /* ============== SKILLS ============== */
-
 
 .skills {
 	padding: 10vh 6rem;
@@ -422,11 +404,9 @@ header i.fa-chevron-down:hover {
 	.skills .cards {
 		align-items: flex-end;
 	}
-
 	.skills ul:last-of-type li:not(:first-of-type) {
 		display: inline-block;
 	}
-
 }
 
 @media (min-width: 1125px) {
@@ -471,16 +451,14 @@ header i.fa-chevron-down:hover {
 	margin: 20vh auto 5vh;
 }
 
-.web-design,
-.algo-data {
+.web-design, .algo-data {
 	margin: 10vh auto;
 }
 
-.projects > .web-design > p,
-.projects > .algo-data > p {
+.projects>.web-design>p, .projects>.algo-data>p {
 	text-align: center;
-  display: block;
-  margin: 5vh 0;
+	display: block;
+	margin: 5vh 0;
 }
 
 .web-design .thumbnail-wrap a, .algo-data .thumbnail-wrap a {
@@ -575,8 +553,7 @@ header i.fa-chevron-down:hover {
 	font-size: 1.8rem;
 }
 
-.thumbnail .text-wrap:hover,
-.thumbnail .text-wrap:focus {
+.thumbnail .text-wrap:hover, .thumbnail .text-wrap:focus {
 	opacity: 0.9;
 	cursor: pointer;
 }
@@ -618,8 +595,7 @@ header i.fa-chevron-down:hover {
 	color: inherit;
 }
 
-.projects .button-wrap button:before,
-.projects .button-wrap button:after {
+.projects .button-wrap button:before, .projects .button-wrap button:after {
 	content: '';
 	position: absolute;
 	top: -0.3rem;
@@ -652,7 +628,6 @@ header i.fa-chevron-down:hover {
 }
 
 /* ============== BLOCKQUOTE ============== */
-
 
 .inspiration {
 	min-height: 80vh;
@@ -697,14 +672,13 @@ header i.fa-chevron-down:hover {
 
 /* ============== TESTIMONIALS ============== */
 
-
 .testimonials {
 	height: calc(100% + 8rem);
 	padding: 10vh 6rem;
 	text-align: center;
 }
 
-.testimonials > p {
+.testimonials>p {
 	margin-bottom: 10vh;
 }
 
@@ -734,9 +708,7 @@ header i.fa-chevron-down:hover {
 	letter-spacing: 0.02rem;
 }
 
-
 /* ============== INVITATION ============== */
-
 
 footer .invitation {
 	position: relative;
@@ -751,7 +723,7 @@ footer .invitation {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,0.5);
+	box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
 footer .invitation p {
@@ -762,7 +734,7 @@ footer .invitation p {
 
 @media (min-width: 950px) {
 	footer .invitation p {
-			max-width: 38rem;
+		max-width: 38rem;
 	}
 }
 
@@ -799,8 +771,7 @@ footer .invitation button {
 	font-size: 2rem;
 }
 
-footer .invitation button:before,
-footer .invitation button:after {
+footer .invitation button:before, footer .invitation button:after {
 	content: '';
 	position: absolute;
 	top: -0.3rem;
@@ -822,7 +793,6 @@ footer .invitation button:after {
 }
 
 /* ============== FOOTER ============== */
-
 
 footer {
 	/*min-height: 80vh;*/
@@ -877,7 +847,6 @@ footer .social-media a:hover {
 	animation-timing-function: ease-in;
 }
 
-
 @keyframes bounce {
 	0% {
 		bottom: 0px;
@@ -890,29 +859,31 @@ footer .social-media a:hover {
 	}
 }
 
-footer > p:last-of-type {
+footer>p:last-of-type {
 	text-align: center;
 	font-size: 1.6rem;
 	padding-bottom: 5vh;
 	letter-spacing: 0.08rem;
 }
-footer > p:last-of-type span {
+
+footer>p:last-of-type span {
 	font-size: 2.4rem;
 }
 
 /* ============== SCROLLBAR ============== */
 
 ::-webkit-scrollbar {
-    width: 0.8rem;
+	width: 0.8rem;
 }
 
 ::-webkit-scrollbar-track {
-  /*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	/*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #4D5A6F;
+	background: #4D5A6F;
 }
+
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: #4D5A6F;
 }
@@ -920,37 +891,22 @@ footer > p:last-of-type span {
 /* ========= remove padding when screen is small ========= */
 
 @media (max-width: 425px) {
-
 	h1 {
 		font-size: 3rem;
 	}
-
-	.intro,
-	.degree,
-	.skills,
-	.inspiration,
-	.testimonials {
+	.intro, .degree, .skills, .inspiration, .testimonials {
 		padding: 10vh 1.5rem;
 	}
-
 	.degree .text-wrap {
 		padding: 3rem 1.5rem;
 	}
-
-	.projects,
-	.projects .mono {
+	.projects, .projects .mono {
 		padding: 0 1.5rem;
 	}
-
 	.projects .thumbnail {
 		margin: 1rem 0;
 	}
-
 }
-
-
-
-
 
 /* ========= COLOR PALETTE =========
 
