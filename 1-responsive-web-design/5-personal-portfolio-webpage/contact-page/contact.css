@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Open+sans|Teko:300,400');
-
 * {
 	margin: 0;
 	padding: 0;
@@ -10,11 +9,11 @@ html {
 	font-size: 10px;
 }
 
-@media (min-width: 1700px) {
+/* @media (min-width: 1700px) {
 	html {
 		font-size: 20px;
 	}
-}
+} */
 
 /*@media (max-width: 425px) {
 	html {
@@ -24,9 +23,9 @@ html {
 
 body {
 	font-family: 'Open sans', sans-serif;
-  margin: 0 auto;
-  font-size: 1.9rem;
-  background-color: #faf7ff;
+	margin: 0 auto;
+	font-size: 1.9rem;
+	background-color: #faf7ff;
 }
 
 button:hover {
@@ -84,19 +83,18 @@ header img.avatar-img {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 	width: 85%;
 	border-radius: 50%;
 }
 
-header > span {
+header>span {
 	font-size: 4rem;
 	padding: 1.5rem;
 	/*color: see javascript;*/
 	transition: 0.2s all ease;
 }
 
-header > span:hover {
+header>span:hover {
 	opacity: 0.8;
 	cursor: pointer;
 }
@@ -107,7 +105,7 @@ main {
 	padding: 0 1.5rem;
 }
 
- #form-title {
+#form-title {
 	margin: 10vh 0 7vh;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
@@ -132,10 +130,9 @@ form {
 	border-radius: 1rem;
 }
 
-form > div {
+form>div {
 	width: 100%;
 }
-
 
 form input, form textarea {
 	display: block;
@@ -191,8 +188,7 @@ form button {
 	font-size: 2.2rem;
 }
 
-form button:before,
-form button:after {
+form button:before, form button:after {
 	content: '';
 	position: absolute;
 	top: -0.3rem;
@@ -218,35 +214,30 @@ form .button-wrap:active {
 	top: 0.3rem;
 }
 
-
 @media (max-width: 768px) {
-
 	header {
 		padding: 1rem;
 	}
-
 	form {
 		width: 100%;
 		padding: 3rem 1.5rem;
 	}
-
 }
-
-
 
 /* ============== SCROLLBAR ============== */
 
 ::-webkit-scrollbar {
-    width: 0.8rem;
+	width: 0.8rem;
 }
 
 ::-webkit-scrollbar-track {
-  /*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	/*  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #363F4E;
+	background: #363F4E;
 }
+
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: #363F4E;
 }
