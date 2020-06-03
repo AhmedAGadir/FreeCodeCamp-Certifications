@@ -6,7 +6,7 @@ function splitNum(num) {
     let digits = num.toString().split('');
     let arr = [];
     let n = 0;
-    for (let i = digits.length - 1; i >= 0 ; i--) {
+    for (let i = digits.length - 1; i >= 0; i--) {
         arr.push((digits[i] * Math.pow(10, n)).toString())
         n++;
     }
@@ -21,14 +21,14 @@ function convertToRoman(num) {
         x = '';
         if (arr[i] == 0) continue;
         if (arr[i][0] == 9) {
-            x = NUM_LETTERS[i][0] + NUM_LETTERS[i+1][0];
+            x = NUM_LETTERS[i][0] + NUM_LETTERS[i + 1][0];
             result.unshift(x);
             continue;
         } else if (arr[i][0] == 4) {
             x = NUM_LETTERS[i][0] + NUM_LETTERS[i][1];
             result.unshift(x);
             continue;
-        } 
+        }
         if (arr[i][0] >= 5) {
             x += NUM_LETTERS[i][1];
             arr[i] -= 5 * Math.pow(10, i);
@@ -118,7 +118,7 @@ function convertToRoman(num) {
             console.log('x is ', x);
             result.unshift(x);
             continue;
-        } 
+        }
 
         if (arr[i][0] >= 5) {
             console.log('more than or equal to five * 10^i')
@@ -140,7 +140,7 @@ function convertToRoman(num) {
     }
     console.log(result)
     console.log(result.join(''))
-    
+
     return result.join('');
 }
 
